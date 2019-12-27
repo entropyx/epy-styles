@@ -1,0 +1,34 @@
+.select {
+  display: inline-block;
+  width: 100%;
+  outline: 0;
+
+  .select-trigger {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+
+    .select-value {
+      color: $jungle-green;
+      font-size: 16px;
+    }
+
+    .select-arrow-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+
+      .select-arrow {
+        background-image: url("../assets/icons/arrow_down_green.svg");
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.tooltip {
+  margin-top: 16px;
+  margin-bottom: 45px;
+  width: 100%;
+}
+
+.tooltip-header {
+  background-image: url("../assets/icons/help_icon.svg");
+  background-position: 0;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding-left: 24px;
+
+  .tooltip-title {
+    background-image: url("../assets/icons/arrow_down_tooltip.svg");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    color: $java;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    padding-right: 24px;
+
+    &.active {
+      background-image: url("../assets/icons/arrow up tooltip.svg");
+    }
+  }
+}
+.tooltip-content {
+  background-color: #f7f7f7;
+  display: none;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+
+  &.active {
+    display: block;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+  }
+}

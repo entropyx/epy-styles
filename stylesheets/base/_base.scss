@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
-
+@import "../abstracts/variables";
 /**
  * Set up a decent box model on the root element
  */
@@ -22,14 +22,17 @@ html {
 }
 
 /**
- * Basic styles for links
+ * Basic styles
  */
-a {
-  color: $brand-color;
-  text-decoration: none;
 
-  @include on-event {
-    color: $text-color;
-    text-decoration: underline;
-  }
+body {
+  color: $dusty-gray;
+}
+
+i.left {
+  margin-right: 0;
+}
+
+i.right {
+  margin-left: 0;
 }

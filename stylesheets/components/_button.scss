@@ -1,3 +1,133 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+@import "../abstracts/variables";
+
+.btn {
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  min-height: 40px;
+  min-width: 180px;
+  text-align: center;
+  padding: 8px 24px;
+}
+
+.btn-primary {
+  background-color: $jungle-green;
+  color: $white;
+  border: none;
+
+  &:focus,
+  &:hover {
+    background-color: #21aa6f;
+  }
+
+  &:disabled,
+  & button[disabled] {
+    cursor: auto;
+    background-color: $silver;
+    border: 1px solid #cecece;
+  }
+}
+
+.btn-outline {
+  background-color: $white;
+  border: 1px solid $jungle-green;
+  color: $jungle-green;
+
+  &:focus,
+  &:hover {
+    background-color: $white;
+    border: 1px solid #21aa6f;
+    color: #21aa6f;
+  }
+
+  &:disabled,
+  & button[disabled] {
+    cursor: auto;
+    background-color: $white;
+    border: 1px solid #cecece;
+    color: $silver;
+  }
+}
+
+.btn-default {
+  background-color: $white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  border: none;
+  color: $dusty-gray;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+
+  &:focus {
+    background-color: $white;
+  }
+  &:hover {
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.btn-destructive {
+  background-color: $white;
+  border: 1px solid $wuzzy-brown;
+  color: $wuzzy-brown;
+
+  &:focus,
+  &:hover {
+    background-color: $white;
+  }
+}
+
+.btn-link {
+  border: none;
+  background-color: $white;
+  color: $jungle-green;
+
+  &:hover {
+    color: $java;
+    font-weight: 600;
+  }
+
+  &:focus {
+    background-color: $white;
+    color: #089aa6;
+    font-weight: 600;
+  }
+}
+
+.btn-icon {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+}
+
+.btn-border-none {
+  border: none;
+  background-color: transparent;
+
+  &:focus,
+  &:hover {
+    border: none;
+  }
+}
+
+.btn-square {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 144px;
+  justify-content: center;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  width: 152px;
+
+  .image {
+    max-height: 72px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+}
