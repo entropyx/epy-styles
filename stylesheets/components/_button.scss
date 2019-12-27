@@ -9,7 +9,7 @@
   cursor: pointer;
   font-size: 16px;
   line-height: 20px;
-  min-height: 40px;
+  height: 40px;
   min-width: 180px;
   text-align: center;
   padding: 8px 24px;
@@ -17,6 +17,7 @@
 
 .btn-primary {
   background-color: $jungle-green;
+  box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
   color: $white;
   border: none;
 
@@ -37,6 +38,7 @@
   background-color: $white;
   border: 1px solid $jungle-green;
   color: $jungle-green;
+  box-shadow: none !important;
 
   &:focus,
   &:hover {
@@ -51,6 +53,16 @@
     background-color: $white;
     border: 1px solid #cecece;
     color: $silver;
+  }
+}
+
+.btn-border-none {
+  border: none;
+  background-color: transparent;
+
+  &:focus,
+  &:hover {
+    border: none;
   }
 }
 
@@ -93,10 +105,33 @@
 
   &:focus {
     background-color: $white;
-    color: #089aa6;
+    color: $niagara;
     font-weight: 600;
   }
 }
+
+// SIZE
+
+.btn-small {
+  font-size: 12px !important;
+  height: 32px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  box-shadow: 0 1px 1px 0 rgba(212, 212, 212, 0.5) !important;
+}
+
+.btn-large {
+  font-size: 18px !important;
+  height: 48px !important;
+  box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.51) !important;
+}
+
+.btn-tight {
+  min-width: 88px;
+  box-shadow: 0 1px 1px 0 rgba(212, 212, 212, 0.5) !important;
+}
+
+// CONTENT
 
 .btn-icon {
   align-items: center;
@@ -105,24 +140,10 @@
   width: inherit;
 }
 
-.btn-border-none {
-  border: none;
-  background-color: transparent;
-
-  &:focus,
-  &:hover {
-    border: none;
-  }
-}
-
+// FIGURE
 .btn-square {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  @include btn-figure;
   height: 144px;
-  justify-content: center;
-  padding-bottom: 24px;
-  padding-top: 24px;
   width: 152px;
 
   .image {
@@ -130,4 +151,10 @@
     margin-top: 4px;
     margin-bottom: 4px;
   }
+}
+
+.btn-rectangle {
+  @include btn-figure;
+  width: 390px;
+  height: 144px;
 }

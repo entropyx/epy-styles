@@ -1,34 +1,107 @@
 .select {
-  display: inline-block;
-  width: 100%;
-  outline: 0;
-
-  .select-trigger {
-    display: flex;
-    cursor: pointer;
+  .select-wrapper {
     position: relative;
-    box-sizing: border-box;
-    justify-content: space-evenly;
+  }
 
-    .select-value {
-      color: $jungle-green;
+  .options-wrapper {
+    background: transparent;
+    background-color: $white;
+    border-radius: 4px;
+    border-top: 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    display: block;
+    left: 0;
+    opacity: 0;
+    padding: 4px;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transition: all 0.5s;
+    visibility: hidden;
+    z-index: 2;
+
+    .option {
+      position: relative;
+      display: block;
+      padding: 4px 16px;
       font-size: 16px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: all 0.5s;
+      border-bottom: 1px solid $white;
+      margin: 1px 0;
+      text-align: left;
+    }
+    .option:hover {
+      cursor: pointer;
+      background-color: #ededed;
+    }
+    .option.selected {
+      color: $white !important;
+      background-color: $silver;
+    }
+  }
+  &.select-open .options-wrapper {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+
+  &.select-open {
+    .arrow {
+      margin-top: -12px !important;
+      transform: rotate(180deg);
+      right: 0;
+    }
+  }
+}
+
+.select-box {
+  .select-trigger {
+    @include select-trigger;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 0 16px;
+  }
+}
+
+.select-outline {
+  .select-trigger {
+    @include select-trigger;
+    border-bottom: 1px solid $alto;
+  }
+
+  .options-wrapper {
+    margin-top: -4px;
+  }
+}
+
+.select-line .filter-wrapper {
+  position: relative;
+  text-align: center;
+
+  input {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.4em;
+    height: 30px;
+    padding: 0.375em 0.75em;
+    padding-left: 16px;
+    margin: 10px 0;
+    padding-bottom: 3px;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    width: 87%;
+
+    &:focus {
+      outline: none;
     }
 
-    .select-arrow-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-right: 24px;
-      padding-left: 24px;
-      padding-right: 24px;
-
-      .select-arrow {
-        background-image: url("../assets/icons/arrow_down_green.svg");
-        background-repeat: no-repeat;
-        width: 20px;
-        height: 10px;
-      }
+    &:active .custom-options {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
     }
   }
 }
