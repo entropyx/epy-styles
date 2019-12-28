@@ -48,6 +48,12 @@ $matisse: #1c7593;
 $wuzzy-brown: #c55757;
 $bus-yellow: #ffde03;
 
+// Shadows
+$small-shadow: 0 1px 1px 0 rgba(212, 212, 212, 0.5);
+$medium-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
+$large-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.51);
+$x-large-shadow: 0 2px 4px 0 rgba(212, 212, 212, 0.5);
+
 // Gradients
 $green-gradient: linear-gradient(90deg, $java 0%, $jungle-green 100%);
 $blue-gradient: linear-gradient(270deg, #29bbc6 100%, $matisse 0%);

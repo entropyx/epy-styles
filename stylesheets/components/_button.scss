@@ -10,14 +10,21 @@
   font-size: 16px;
   line-height: 20px;
   height: 40px;
-  min-width: 180px;
+  width: 180px;
   text-align: center;
   padding: 8px 24px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    box-shadow: $x-large-shadow;
+    -webkit-box-shadow: $x-large-shadow;
+  }
 }
 
 .btn-primary {
   background-color: $jungle-green;
-  box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
+  box-shadow: $medium-shadow;
   color: $white;
   border: none;
 
@@ -76,9 +83,22 @@
   &:focus {
     background-color: $white;
   }
-  &:hover {
-    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+  &:hover,
+  &:focus {
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1) !important;
+    -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1) !important;
+  }
+}
+
+.btn-info {
+  background-color: $java;
+  border: none;
+  box-shadow: $small-shadow;
+  -webkit-box-shadow: $small-shadow;
+
+  .icon {
+    height: 16px;
+    width: 16px;
   }
 }
 
@@ -117,18 +137,18 @@
   height: 32px !important;
   padding-top: 4px !important;
   padding-bottom: 4px !important;
-  box-shadow: 0 1px 1px 0 rgba(212, 212, 212, 0.5) !important;
+  box-shadow: $small-shadow !important;
 }
 
 .btn-large {
   font-size: 18px !important;
   height: 48px !important;
-  box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.51) !important;
+  box-shadow: $large-shadow !important;
 }
 
 .btn-tight {
   min-width: 88px;
-  box-shadow: 0 1px 1px 0 rgba(212, 212, 212, 0.5) !important;
+  box-shadow: $small-shadow !important;
 }
 
 // CONTENT
@@ -137,13 +157,14 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  width: inherit;
 }
 
 // FIGURE
 .btn-square {
   @include btn-figure;
   height: 144px;
+  padding-bottom: 24px;
+  padding-top: 24px;
   width: 152px;
 
   .image {
@@ -153,8 +174,18 @@
   }
 }
 
+.btn-square-small {
+  @include btn-figure;
+  height: 32px !important;
+
+  width: 32px !important;
+}
+
 .btn-rectangle {
   @include btn-figure;
-  width: 390px;
+
   height: 144px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  width: 390px;
 }
