@@ -1,7 +1,26 @@
 .tooltip {
-  margin-top: 16px;
   margin-bottom: 45px;
+  margin-top: 16px;
   width: 100%;
+
+  &:hover {
+    .tooltip-header .tooltip-title {
+      color: $niagara;
+    }
+  }
+
+  &.active {
+    .tooltip-header .tooltip-title {
+      background-image: url("../assets/icons/arrow up tooltip.svg");
+      color: $niagara !important;
+    }
+
+    .tooltip-content {
+      display: block;
+      transition: 0.25s;
+      -webkit-transition: 0.25s;
+    }
+  }
 }
 
 .tooltip-header {
@@ -20,26 +39,17 @@
     background-repeat: no-repeat;
     color: $java;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     padding-right: 24px;
-
-    &.active {
-      background-image: url("../assets/icons/arrow up tooltip.svg");
-    }
   }
 }
+
 .tooltip-content {
-  background-color: #f7f7f7;
+  background-color: $albaster;
   display: none;
   padding-bottom: 32px;
   padding-top: 32px;
   transition: 0.25s;
   -webkit-transition: 0.25s;
-
-  &.active {
-    display: block;
-    transition: 0.25s;
-    -webkit-transition: 0.25s;
-  }
 }

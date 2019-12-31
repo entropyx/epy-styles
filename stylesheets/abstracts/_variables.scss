@@ -57,3 +57,9 @@ $x-large-shadow: 0 2px 4px 0 rgba(212, 212, 212, 0.5);
 // Gradients
 $green-gradient: linear-gradient(90deg, $java 0%, $jungle-green 100%);
 $blue-gradient: linear-gradient(270deg, #29bbc6 100%, $matisse 0%);
+$loader-gradient: linear-gradient(
+  to right,
+  $albaster 8%,
+  $seashell 18%,
+  $albaster 23%
+);

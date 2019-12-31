@@ -1,3 +1,4 @@
+// BASE
 .select {
   .select-wrapper {
     position: relative;
@@ -49,13 +50,13 @@
       margin-top: 16px;
     }
   }
-  &.select-open .options-wrapper {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
-  }
+  &.active {
+    .options-wrapper {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+    }
 
-  &.select-open {
     .arrow {
       margin-top: -12px !important;
       transform: rotate(180deg);
@@ -64,9 +65,11 @@
   }
 }
 
-.select-box {
+// TRIGGER TYPE
+
+.select-outline {
   .select-trigger {
-    @include select-trigger;
+    @include select-trigger($jungle-green);
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 0 16px;
@@ -75,7 +78,7 @@
 
 .select-line {
   .select-trigger {
-    @include select-trigger;
+    @include select-trigger($jungle-green);
     border-bottom: 1px solid $alto;
   }
 
@@ -84,31 +87,82 @@
   }
 }
 
-.select-line .filter-wrapper {
-  position: relative;
-  text-align: center;
+.select-border-none {
+  .select-trigger {
+    @include select-trigger($jungle-green);
+  }
+}
 
-  input {
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 0.4em;
-    height: 30px;
-    padding: 0.375em 0.75em;
-    padding-left: 16px;
-    margin: 10px 0;
-    padding-bottom: 3px;
-    box-shadow: none;
-    box-sizing: content-box;
-    transition: all 0.3s;
-    width: 87%;
+// TRIGGER COLOR
 
-    &:focus {
-      outline: none;
+.select-primary {
+  .select-trigger {
+    @include select-trigger($white);
+    background-color: $jungle-green;
+    border: none;
+    color: $white;
+    border-radius: 4px;
+    padding: 0 16px;
+
+    &:focus,
+    &:hover {
+      background-color: #21aa6f;
+    }
+  }
+
+  &.select-outline {
+    .select-trigger {
+      @include select-trigger($jungle-green);
+      background-color: $white;
+      border: 1px solid $jungle-green;
+      box-shadow: none !important;
+      color: $jungle-green;
+
+      &:focus,
+      &:hover {
+        background-color: $white;
+        border: 1px solid #21aa6f;
+        color: #21aa6f;
+      }
     }
 
-    &:active .custom-options {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: all;
+    // &.active {
+    //   .select-trigger {
+    //     background-color: $white;
+    //     border: 1px solid #21aa6f;
+    //     color: #21aa6f;
+    //   }
+    // }
+  }
+}
+
+// ACTIVE CLASS
+.select-primary {
+  &.active {
+    .select-trigger {
+      background-color: #21aa6f;
+    }
+  }
+}
+
+.select-primary {
+  &.select-outline {
+    &.active {
+      .select-trigger {
+        background-color: $white;
+        border: 1px solid #21aa6f;
+        color: #21aa6f;
+      }
+    }
+  }
+}
+
+.select-line,
+.select-outline,
+.select-border-none {
+  &.active {
+    .select-trigger {
+      @include select-trigger("dark-green");
     }
   }
 }

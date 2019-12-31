@@ -4,13 +4,16 @@
 
 @import "../abstracts/variables";
 
+// BASE
+
 .btn {
+  background-color: transparent;
   border-radius: 4px;
+  color: $dusty-gray;
   cursor: pointer;
   font-size: 16px;
   line-height: 20px;
   height: 40px;
-  width: 180px;
   text-align: center;
   padding: 8px 24px;
   outline: none;
@@ -22,11 +25,13 @@
   }
 }
 
+// TYPE
+
 .btn-primary {
   background-color: $jungle-green;
+  border: none;
   box-shadow: $medium-shadow;
   color: $white;
-  border: none;
 
   &:focus,
   &:hover {
@@ -39,82 +44,74 @@
     background-color: $silver;
     border: 1px solid #cecece;
   }
+
+  &.btn-outline {
+    background-color: $white;
+    border: 1px solid $jungle-green;
+    color: $jungle-green;
+    // box-shadow: none !important;
+
+    &:focus,
+    &:hover {
+      background-color: $white;
+      border: 1px solid #21aa6f;
+      color: #21aa6f;
+    }
+  }
 }
 
 .btn-outline {
-  background-color: $white;
-  border: 1px solid $jungle-green;
-  color: $jungle-green;
+  color: $dusty-gray;
+  border: 1px solid $alto;
+  background-color: transparent;
   box-shadow: none !important;
-
-  &:focus,
-  &:hover {
-    background-color: $white;
-    border: 1px solid #21aa6f;
-    color: #21aa6f;
-  }
 
   &:disabled,
   & button[disabled] {
-    cursor: auto;
-    background-color: $white;
-    border: 1px solid #cecece;
-    color: $silver;
-  }
-}
-
-.btn-border-none {
-  border: none;
-  background-color: transparent;
-
-  &:focus,
-  &:hover {
-    border: none;
-  }
-}
-
-.btn-default {
-  background-color: $white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-  border: none;
-  color: $dusty-gray;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-
-  &:focus {
-    background-color: $white;
-  }
-  &:hover,
-  &:focus {
-    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1) !important;
-    -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1) !important;
-  }
-}
-
-.btn-info {
-  background-color: $java;
-  border: none;
-  box-shadow: $small-shadow;
-  -webkit-box-shadow: $small-shadow;
-
-  .icon {
-    height: 16px;
-    width: 16px;
+    cursor: auto !important;
+    border: 1px solid #cecece !important;
+    color: $silver !important;
   }
 }
 
 .btn-destructive {
-  background-color: $white;
-  border: 1px solid $wuzzy-brown;
+  @include btn-border-none;
+  background-color: transparent;
+  // border: 1px solid $wuzzy-brown;
   color: $wuzzy-brown;
 
   &:focus,
   &:hover {
     background-color: $white;
   }
+
+  &.btn-outline {
+    border: 1px solid $wuzzy-brown;
+  }
+}
+
+.btn-info {
+  background-color: $java !important;
+  border: none !important;
+  box-shadow: $small-shadow;
+  padding: 8px;
+  -webkit-box-shadow: $small-shadow;
+}
+
+.btn-default {
+  background-color: $white;
+  box-shadow: $medium-shadow;
+  border: none;
+  color: $dusty-gray;
+  -webkit-box-shadow: $medium-shadow;
+
+  &:focus {
+    background-color: $white;
+  }
 }
 
 .btn-link {
-  border: none;
+  @include btn-border-none;
   background-color: $white;
   color: $jungle-green;
 
@@ -128,6 +125,10 @@
     color: $niagara;
     font-weight: 600;
   }
+}
+
+.btn-border-none {
+  @include btn-border-none;
 }
 
 // SIZE
@@ -162,12 +163,20 @@
 // FIGURE
 .btn-square {
   @include btn-figure;
+  box-shadow: $x-large-shadow !important;
   height: 144px;
   padding-bottom: 24px;
   padding-top: 24px;
   width: 152px;
+  &:hover,
+  &:focus {
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1) !important;
+    -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1) !important;
+  }
 
-  .image {
+  .icon,
+  img,
+  .img {
     max-height: 72px;
     margin-top: 4px;
     margin-bottom: 4px;
@@ -176,16 +185,26 @@
 
 .btn-square-small {
   @include btn-figure;
+  box-shadow: $small-shadow;
+  background-color: transparent;
+  border: 1px solid $seashell;
   height: 32px !important;
-
+  min-width: 32px;
+  padding: 8px;
   width: 32px !important;
+  -webkit-box-shadow: $small-shadow;
 }
 
 .btn-rectangle {
   @include btn-figure;
-
+  box-shadow: $x-large-shadow !important;
   height: 144px;
   padding-bottom: 24px;
   padding-top: 24px;
   width: 390px;
+  &:hover,
+  &:focus {
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1) !important;
+    -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1) !important;
+  }
 }

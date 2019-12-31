@@ -6,6 +6,7 @@
 
 body {
   font-family: $main-font;
+  font-size: 16px;
 }
 
 h1,
@@ -64,10 +65,39 @@ h6 {
   width: 67px;
 }
 
-.text-red {
+.text-danger {
   @extend .text-small;
   color: $wuzzy-brown;
 }
+
+.text-green {
+  color: $jungle-green;
+}
+
+.text-blue {
+  color: $java;
+}
+
+.text-red {
+  color: $wuzzy-brown;
+}
+
+.text-yellow {
+  color: $bus-yellow;
+}
+
+.text-light-green {
+  color: $yellow-green;
+}
+
+.text-lavander {
+  color: $lavander;
+}
+
+.text-purple {
+  color: $royal-purple;
+}
+
 button,
 input,
 optgroup,
