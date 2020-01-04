@@ -2,10 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./stylesheets/main.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/epy.css" />
+    <title>Document name</title>
   </head>
   <body style="padding: 40px 60px">
     <!-- ************************FONTS************************** -->
@@ -58,6 +56,49 @@
       </div>
     </div>
     <hr />
+    <!-- ************************CONTENT************************** -->
+    <div style="margin-top:50px">
+      <h5>Content (background colors)</h5>
+      <div class="row">
+        <div class="col s2">
+          <div style="width: 70%; height: 30px;" class="content-green"></div>
+          <span style="display:display-block">content-green</span>
+        </div>
+        <div class="col s2">
+          <div style="width: 70%; height: 30px;" class="content-blue"></div>
+          <span style="display:display-block">content-blue</span>
+        </div>
+        <div class="col s2">
+          <div
+            style="width: 70%; height: 30px;"
+            class="content-light-green"
+          ></div>
+          <span style="display:display-block">content-light-green</span>
+        </div>
+        <div class="col s2">
+          <div style="width: 70%; height: 30px;" class="content-lavander"></div>
+          <span style="display:display-block">content-lavander</span>
+        </div>
+        <div class="col s2">
+          <div style="width: 70%; height: 30px;" class="content-purple"></div>
+          <span style="display:display-block">content-purple</span>
+        </div>
+        <div class="col s2">
+          <div style="width: 70%; height: 30px;" class="content-yellow"></div>
+          <span style="display:display-block">content-yellow</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s2">
+          <div style="width: 70%; height: 30px;" class="content-red"></div>
+          <span style="display:display-block">content-red</span>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      container
+    </div>
     <!-- ************************BUTTONS************************** -->
     <div style="margin-top:50px">
       <h5>Buttons</h5>
@@ -212,21 +253,20 @@
       </div>
     </div>
     <hr />
-
     <!-- ************************INPUT************************** -->
     <div style="margin-top:50px">
       <h5>Inputs</h5>
       <div class="row">
         <div class="col s2">
-          <div class="input input-box">
+          <div class="input input-outline">
             <div class="wrapper-input">
               <input type="text" placeholder="Campaign name" />
             </div>
           </div>
-          <span>input input-box</span>
+          <span>input input-outline</span>
         </div>
         <div class="col s2">
-          <div class="input input-box">
+          <div class="input input-outline">
             <div class="wrapper-input">
               <img
                 class="icon icon-left"
@@ -235,10 +275,10 @@
               <input type="text" />
             </div>
           </div>
-          <span>input input-box</span>
+          <span>input input-outline</span>
         </div>
         <div class="col s2">
-          <div class="input input-box">
+          <div class="input input-outline">
             <div class="wrapper-input">
               <input type="text" />
               <img
@@ -247,7 +287,7 @@
               />
             </div>
           </div>
-          <span>input input-box</span>
+          <span>input input-outline</span>
         </div>
 
         <div class="col s2">
@@ -280,7 +320,6 @@
       </div>
     </div>
     <hr />
-
     <!-- ************************SELECT************************** -->
     <div style="margin-top:50px; height: 950px;">
       <h5>Selects</h5>
@@ -500,7 +539,7 @@
                 <div class="arrow arrow-open"></div>
               </div>
               <div class="options-wrapper">
-                <div class="input input-box">
+                <div class="input input-outline">
                   <div class="wrapper-input">
                     <input type="text" />
                     <img
@@ -528,7 +567,6 @@
       </div>
     </div>
     <hr />
-
     <!-- ************************TOOLTIP************************** -->
     <div style="margin-top:50px">
       <h5>Tooltips</h5>
@@ -558,7 +596,6 @@
       </div>
     </div>
     <hr />
-
     <!-- ************************LOADERS************************** -->
     <div style="margin-top:50px">
       <h5>Loaders</h5>
@@ -579,6 +616,8 @@
           <div class="bar-loader subtitle"></div>
           <span>bar-loader detail (92px)</span>
           <div class="bar-loader detail"></div>
+          <span>bar-loader detail dark</span>
+          <div class="bar-loader detail dark"></div>
         </div>
       </div>
       <h6>table-loader</h6>
@@ -646,11 +685,6 @@
         </div>
       </div>
       <h6>progress-bar</h6>
-      <!-- <div class="bar-loader">
-        <div class="progress-bar" value="77"></div>
-        <p class="message">Cargando... 20% Completado</p>
-      </div> -->
-
       <progress max="100" value="10"></progress>
     </div>
     <hr />
