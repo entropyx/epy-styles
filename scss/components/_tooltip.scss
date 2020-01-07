@@ -54,3 +54,13 @@
   transition: 0.25s;
   -webkit-transition: 0.25s;
 }
+
+
+.tooltip-large {
+  .tooltip-header {
+    span {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+}

@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="dist/css/epy.css" />
+    <!-- <link rel="stylesheet" href="epy.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document name</title>
   </head>
   <body style="padding: 40px 60px">
@@ -144,6 +146,33 @@
       </div>
       <div class="row">
         <div class="col s2">
+          <button class="btn btn-primary">
+            <i class="fa fa-user left"></i> primary
+          </button>
+        </div>
+        <div class="col s2">
+          <button class="btn btn-primary">
+            primary<i class="fa fa-user right"></i>
+          </button>
+        </div>
+        <div class="col s2">
+          <button class="btn btn-primary btn-outline">
+            <i class="fa fa-user left"></i>outline
+          </button>
+        </div>
+        <div class="col s2">
+          <button class="btn btn-primary btn-outline">
+            outline<i class="fa fa-user right"></i>
+          </button>
+        </div>
+        <div class="col s2">
+          <button class="btn btn-destructive">
+            <i class="fa fa-user left"></i>destructive
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s2">
           <button class="btn btn-destructive">
             destructive
           </button>
@@ -155,25 +184,26 @@
           </button>
           <span style="display:block">btn btn-destructive btn-outline</span>
         </div>
-        <div class="col s2">
-          <div class="btn btn-border-none btn-icon">
+        <div class="col s3">
+          <div class="btn btn-border-none">
             <img
-              class="icon"
+              class="icon left"
               src="./assets/icons/create_campaign_icon_on.svg"
             />
-            <span class="text">Create a new campaign</span>
+            Create a new campaign
+           
           </div>
-          <span style="display:block">btn btn-border-none btn-icon</span>
+          <span style="display:block">btn btn-border-none</span>
         </div>
-        <div class="col s2">
-          <div class="btn btn-border-none btn-icon">
-            <span class="text">Create a new campaign</span>
+        <div class="col s3">
+          <div class="btn btn-border-none">
+              Create a new campaign
             <img
-              class="icon"
+              class="icon right"
               src="./assets/icons/create_campaign_icon_on.svg"
             />
           </div>
-          <span style="display:block">btn btn-border-none btn-icon</span>
+          <span style="display:block">btn btn-border-none</span>
         </div>
         <div class="col s2">
           <button class="btn btn-link">
@@ -259,40 +289,34 @@
       <div class="row">
         <div class="col s2">
           <div class="input input-outline">
-            <div class="wrapper-input">
+            <div class="input-wrapper">
               <input type="text" placeholder="Campaign name" />
             </div>
           </div>
           <span>input input-outline</span>
         </div>
         <div class="col s2">
-          <div class="input input-outline">
-            <div class="wrapper-input">
-              <img
-                class="icon icon-left"
-                src="./assets/icons/search_icon.svg"
-              />
+          <div class="input input-outline input-icon">
+            <div class="input-wrapper">
+              <i class="fa fa-search left"></i>
               <input type="text" />
             </div>
           </div>
           <span>input input-outline</span>
         </div>
         <div class="col s2">
-          <div class="input input-outline">
-            <div class="wrapper-input">
+          <div class="input input-outline input-icon">
+            <div class="input-wrapper">
               <input type="text" />
-              <img
-                class="icon icon-right"
-                src="./assets/icons/search_icon.svg"
-              />
+              <i class="fa fa-search right"></i>
             </div>
           </div>
           <span>input input-outline</span>
         </div>
 
         <div class="col s2">
-          <div class="input input-line">
-            <div class="wrapper-input">
+          <div class="input input-line validate">
+            <div class="input-wrapper">
               <input type="text" />
             </div>
           </div>
@@ -300,8 +324,8 @@
         </div>
 
         <div class="col s2">
-          <div class="input input-line">
-            <div class="wrapper-input">
+          <div class="input input-line validate">
+            <div class="input-wrapper">
               <input type="email" placeholder="email" value="1234" />
             </div>
           </div>
@@ -309,8 +333,8 @@
         </div>
 
         <div class="col s2">
-          <div class="input input-line">
-            <div class="wrapper-input">
+          <div class="input input-line validate">
+            <div class="input-wrapper">
               <input type="email" placeholder="country" />
               <img class="icon" src="./assets/icons/search_icon.svg" />
             </div>
@@ -318,6 +342,51 @@
           <span>input input-line</span>
         </div>
       </div>
+      <div class="row">
+        <div class="col s2">
+            <div class="input input-outline validate">
+                <div class="input-wrapper">
+                  <input type="email" placeholder="Email" class="invalid"/>
+                </div>
+              </div>
+        </div>
+        <div class="col s2">
+            <div class="input input-outline validate">
+                <div class="input-wrapper">
+                  <input type="email" placeholder="Email" class="invalid"/>
+                  <!-- <span class="legend-error">Email no valid</span> -->
+                  <span class="legend-error">
+                    Error
+                  </span>
+                </div>
+              </div>
+        </div>
+        <div class="col s4">
+            <div class="input input-outline">
+              <div class="title-container">
+                  <span class="upper-title">Campaign name</span>
+                  <span class="helper">(something you’ll remember it with)</span>
+              </div>
+                <div class="input-wrapper">
+                  <input type="email" placeholder="Campaign name"/>
+                </div>
+              </div>
+        </div>
+        <div class="col s4">
+            <div class="input input-line">
+              <div class="title-container">
+                  <span class="normal-title">Campaign name</span>
+                  <span class="helper">(something you’ll remember it with)</span>
+              </div>
+                <div class="input-wrapper">
+                  <input type="email" placeholder="Campaign name"/>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="row">
+          
+        </div>
     </div>
     <hr />
     <!-- ************************SELECT************************** -->
@@ -540,7 +609,7 @@
               </div>
               <div class="options-wrapper">
                 <div class="input input-outline">
-                  <div class="wrapper-input">
+                  <div class="input-wrapper">
                     <input type="text" />
                     <img
                       class="icon icon-right"
@@ -571,7 +640,7 @@
     <div style="margin-top:50px">
       <h5>Tooltips</h5>
       <div class="row">
-        <div class="col s2">
+        <div class="col s5">
           <span>tooltip</span>
           <div class="tooltip">
             <div class="tooltip-header">
@@ -582,7 +651,7 @@
             </div>
           </div>
         </div>
-        <div class="col s2">
+        <div class="col s5">
           <span>tooltip active</span>
           <div class="tooltip active">
             <div class="tooltip-header">
@@ -594,6 +663,31 @@
           </div>
         </div>
       </div>
+
+      <div class="row">
+          <div class="col s5">
+            <span>tooltip</span>
+            <div class="tooltip tooltip-large">
+              <div class="tooltip-header">
+                <span class="tooltip-title">tooltip title?</span>
+              </div>
+              <div class="tooltip-content">
+                tooltip content
+              </div>
+            </div>
+          </div>
+          <div class="col s5">
+            <span>tooltip active</span>
+            <div class="tooltip tooltip-large active">
+              <div class="tooltip-header">
+                <span class="tooltip-title">tooltip title?</span>
+              </div>
+              <div class="tooltip-content">
+                tooltip content
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
     <hr />
     <!-- ************************LOADERS************************** -->

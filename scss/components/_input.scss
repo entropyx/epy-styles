@@ -13,35 +13,107 @@ input {
   &::placeholder {
     color: $silver;
   }
+
+  .title-container {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .normal-title {
+      font-size: 14px;
+    }
+    
+    .upper-title {
+      text-transform: uppercase;
+      color: $dusty-gray;
+      font-size: 10px;
+      font-family: $aux-font;
+    }
+
+    .helper {
+      color: $dusty-gray;
+      font-size: 14px;
+      line-height: 18px;
+      margin-left: 4px;
+    }
+  }
 }
 
 .input-outline {
-  .wrapper-input {
+  .input-wrapper {
     align-items: center;
     border: 1px solid $silver;
     border-radius: 5px;
     display: flex;
     height: 40px;
     justify-content: space-between;
-    padding-right: 16px;
-    padding-left: 16px;
 
-    .icon {
-      &.icon-right {
-        margin-left: 16px;
-      }
-      &.icon-left {
-        margin-right: 16px;
-      }
+    input {
+      padding-right: 16px;
+      padding-left: 16px;
     }
+
+    .legend-error {
+      color: $wuzzy-brown;
+      font-size: 8px;
+      display: none;
+    }
+  }
+
+  &.validate {
+    input[type="date"]:invalid,
+    input[type="datetime-local"]:invalid,
+    input[type="datetime"]:invalid,
+    input[type="email"]:invalid,
+    input[type="number"]:invalid input[type="password"]:invalid,
+    input[type="search"]:invalid,
+    input[type="tel"]:invalid,
+    input[type="text"]:invalid,
+    input[type="time"]:invalid,
+    input[type="url"]:invalid,
+    textarea.materialize-textarea,
+    &.invalid {
+        border-bottom: 1px solid $wuzzy-brown;
+        border-radius: 4px;
+        box-shadow: 0 1px 0 0 $wuzzy-brown;
+        -webkit-box-shadow: 0 1px 0 0 $wuzzy-brown; 
+    }
+
+    &.invalid + .legend-error {
+      display: block!important;
+    }
+  
+    input:not([type]):focus:not([readonly]),
+    input[type="date"]:not(.browser-default):focus:not([readonly]),
+    input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+    input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+    input[type="email"]:not(.browser-default):focus:not([readonly]),
+    input[type="number"]:not(.browser-default):focus:not([readonly]),
+    input[type="password"]:not(.browser-default):focus:not([readonly]),
+    input[type="search"]:not(.browser-default):focus:not([readonly]),
+    input[type="tel"]:not(.browser-default):focus:not([readonly]),
+    input[type="text"]:not(.browser-default):focus:not([readonly]),
+    input[type="time"]:not(.browser-default):focus:not([readonly]),
+    input[type="url"]:not(.browser-default):focus:not([readonly]),
+    textarea.materialize-textarea:focus:not([readonly])
+    &.valid {
+        border-bottom: 1px solid $jungle-green;
+        border-radius: 4px;
+        box-shadow: 0 1px 0 0 $jungle-green;
+        -webkit-box-shadow: 0 1px 0 0 $jungle-green;
+        
+    }
+
   }
 }
 
 .input-line {
-  .wrapper-input {
+  .input-wrapper {
     display: flex;
     justify-content: space-between;
     text-align: center;
+
     input {
       border: none;
       border-bottom: 1px solid $alto;
@@ -72,6 +144,9 @@ input {
       border-bottom: 1px solid #d4d4d4;
     }
 
+   
+  }
+  &.validate {
     input:not([type]):focus:not([readonly]),
     input[type="date"]:not(.browser-default):focus:not([readonly]),
     input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
@@ -84,12 +159,13 @@ input {
     input[type="text"]:not(.browser-default):focus:not([readonly]),
     input[type="time"]:not(.browser-default):focus:not([readonly]),
     input[type="url"]:not(.browser-default):focus:not([readonly]),
-    textarea.materialize-textarea:focus:not([readonly]) {
+    textarea.materialize-textarea:focus:not([readonly]) 
+    &.valid {
       border-bottom: 1px solid $jungle-green;
-      -webkit-box-shadow: 0 1px 0 0 $jungle-green;
       box-shadow: 0 1px 0 0 $jungle-green;
+      -webkit-box-shadow: 0 1px 0 0 $jungle-green;
     }
-
+  
     input[type="date"]:invalid,
     input[type="datetime-local"]:invalid,
     input[type="datetime"]:invalid,
@@ -100,10 +176,22 @@ input {
     input[type="text"]:invalid,
     input[type="time"]:invalid,
     input[type="url"]:invalid,
-    textarea.materialize-textarea {
+    textarea.materialize-textarea,
+    &.invalid  {
       border-bottom: 1px solid $wuzzy-brown;
-      -webkit-box-shadow: 0 1px 0 0 $wuzzy-brown;
       box-shadow: 0 1px 0 0 $wuzzy-brown;
+      -webkit-box-shadow: 0 1px 0 0 $wuzzy-brown;
     }
   }
+
 }
+
+.input-icon {
+  .input-wrapper {
+    padding: 0 16px;
+  }
+  input {
+    padding: 0!important
+  }
+}
+

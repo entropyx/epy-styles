@@ -68,13 +68,22 @@ body {
   background-color: transparent;
 }
 
-i.left {
-  margin-right: 0;
+// i.left, .icon &.left {
+//   margin-right: 8px;
+// }
+
+i, .icon {
+  &.left {
+    margin-right: 8px;
+  }
+  &.right{
+    margin-left: 8px;
+  }
 }
 
-i.right {
-  margin-left: 0;
-}
+// i.right .icon-right{
+//   margin-left: 8px;
+// }
 
 .container {
   margin: initial;
