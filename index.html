@@ -2,9 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="dist/css/epy.css" />
-    <!-- <link rel="stylesheet" href="epy.css" /> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="dist/css/epy.css" /> -->
+    <link rel="stylesheet" href="epy.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Document name</title>
   </head>
   <body style="padding: 40px 60px">
@@ -184,20 +187,19 @@
           </button>
           <span style="display:block">btn btn-destructive btn-outline</span>
         </div>
-        <div class="col s3">
+        <div class="col s2">
           <div class="btn btn-border-none">
             <img
               class="icon left"
               src="./assets/icons/create_campaign_icon_on.svg"
             />
             Create a new campaign
-           
           </div>
           <span style="display:block">btn btn-border-none</span>
         </div>
-        <div class="col s3">
+        <div class="col s2">
           <div class="btn btn-border-none">
-              Create a new campaign
+            Create a new campaign
             <img
               class="icon right"
               src="./assets/icons/create_campaign_icon_on.svg"
@@ -286,7 +288,7 @@
     <!-- ************************INPUT************************** -->
     <div style="margin-top:50px">
       <h5>Inputs</h5>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col s2">
           <div class="input input-outline">
             <div class="input-wrapper">
@@ -344,49 +346,97 @@
       </div>
       <div class="row">
         <div class="col s2">
-            <div class="input input-outline validate">
-                <div class="input-wrapper">
-                  <input type="email" placeholder="Email" class="invalid"/>
-                </div>
-              </div>
+          <div class="input input-outline validate">
+            <div class="input-wrapper">
+              <input type="email" placeholder="Email" class="invalid" />
+            </div>
+          </div>
         </div>
         <div class="col s2">
-            <div class="input input-outline validate">
-                <div class="input-wrapper">
-                  <input type="email" placeholder="Email" class="invalid"/>
-                  <!-- <span class="legend-error">Email no valid</span> -->
-                  <span class="legend-error">
-                    Error
-                  </span>
-                </div>
-              </div>
+          <div class="input input-outline validate">
+            <div class="input-wrapper">
+              <input type="email" placeholder="Email" class="invalid" />
+              <span class="legend-error">
+                Error
+              </span>
+            </div>
+          </div>
         </div>
         <div class="col s4">
-            <div class="input input-outline">
-              <div class="title-container">
-                  <span class="upper-title">Campaign name</span>
-                  <span class="helper">(something you’ll remember it with)</span>
-              </div>
-                <div class="input-wrapper">
-                  <input type="email" placeholder="Campaign name"/>
-                </div>
-              </div>
+          <div class="input input-outline">
+            <div class="title-container">
+              <span class="upper-title">Campaign name</span>
+              <span class="helper">(something you’ll remember it with)</span>
+            </div>
+            <div class="input-wrapper">
+              <input type="email" placeholder="Campaign name" />
+            </div>
+          </div>
         </div>
         <div class="col s4">
-            <div class="input input-line">
-              <div class="title-container">
-                  <span class="normal-title">Campaign name</span>
-                  <span class="helper">(something you’ll remember it with)</span>
-              </div>
-                <div class="input-wrapper">
-                  <input type="email" placeholder="Campaign name"/>
-                </div>
-              </div>
+          <div class="input input-line">
+            <div class="title-container">
+              <span class="normal-title">Campaign name</span>
+              <span class="helper">(something you’ll remember it with)</span>
+            </div>
+            <div class="input-wrapper">
+              <input type="email" placeholder="Campaign name" />
+            </div>
+          </div>
         </div>
       </div>
+      <div class="row"></div> -->
       <div class="row">
-          
+        <div class="col s2">
+          <div class="input-line">
+            <div class="input-container">
+              <input class="input-text" type="text" value="input line" />
+            </div>
+          </div>
         </div>
+        <div class="col s2">
+          <div class="input-line">
+            <div class="input-container">
+              <input class="input-text" type="email" placeholder="email" />
+            </div>
+          </div>
+        </div>
+        <div class="col s2">
+          <div class="input-line">
+            <div class="input-container icon-left">
+              <input class="input-text" type="email" placeholder="email" />
+              <i class="fa fa-user leading-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col s2">
+          <div class="input-line">
+            <div class="input-container icon-right">
+              <i class="fa fa-user leading-icon"></i>
+              <input class="input-text" type="email" placeholder="email" />
+            </div>
+          </div>
+        </div>
+        <div class="col s2">
+          <div class="input input-line invalid">
+            <div class="input-container icons-sides">
+              <i class="fa fa-user left"></i>
+              <input
+                class="input-text"
+                type="email"
+                id="email"
+                placeholder="email"
+              />
+              <!-- <i class="fa fa-times right"></i> -->
+
+              <img src="./assets/icons/x - small.svg" class="icon right" />
+             
+            </div>
+           
+          </div>
+        </div>
+        </div>
+      </div>
     </div>
     <hr />
     <!-- ************************SELECT************************** -->
@@ -665,29 +715,29 @@
       </div>
 
       <div class="row">
-          <div class="col s5">
-            <span>tooltip</span>
-            <div class="tooltip tooltip-large">
-              <div class="tooltip-header">
-                <span class="tooltip-title">tooltip title?</span>
-              </div>
-              <div class="tooltip-content">
-                tooltip content
-              </div>
+        <div class="col s5">
+          <span>tooltip</span>
+          <div class="tooltip tooltip-large">
+            <div class="tooltip-header">
+              <span class="tooltip-title">tooltip title?</span>
             </div>
-          </div>
-          <div class="col s5">
-            <span>tooltip active</span>
-            <div class="tooltip tooltip-large active">
-              <div class="tooltip-header">
-                <span class="tooltip-title">tooltip title?</span>
-              </div>
-              <div class="tooltip-content">
-                tooltip content
-              </div>
+            <div class="tooltip-content">
+              tooltip content
             </div>
           </div>
         </div>
+        <div class="col s5">
+          <span>tooltip active</span>
+          <div class="tooltip tooltip-large active">
+            <div class="tooltip-header">
+              <span class="tooltip-title">tooltip title?</span>
+            </div>
+            <div class="tooltip-content">
+              tooltip content
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <hr />
     <!-- ************************LOADERS************************** -->
