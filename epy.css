@@ -4403,57 +4403,118 @@ textarea {
   -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1) !important;
 }
 
-.input-line .input-container {
-  height: 48px;
-  border-radius: 4px 4px 0 0;
-  background-color: #f7f7f7;
-  width: 100%;
+.input .input-container {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   position: relative;
+  width: 100%;
 }
-.input-line .input-container .input-text {
-  height: inherit;
-  width: inherit;
+.input .input-container .input-text {
   background-color: transparent;
   border: none;
-  padding: 16px;
-  outline: none;
   color: #717171;
+  outline: none;
+  padding: 16px;
+  width: inherit;
 }
-.input-line .input-container .input-text::placeholder {
+.input .input-container .input-text::placeholder {
   color: #c7c7c7;
 }
-.input-line .input-container i,
-.input-line .input-container .icon {
-  position: absolute;
+.input .input-container input {
+  height: 48px;
+  width: inherit;
+}
+.input .input-container textarea {
+  min-height: 72px;
+  height: 72px;
+  width: inherit;
+}
+.input .input-container i,
+.input .input-container .icon {
   height: 14px;
+  position: absolute;
   width: 14px;
 }
-.input-line .input-container.icon-left .input-text {
+.input .input-container.icon-left .input-text {
   padding-left: 40px;
 }
-.input-line .input-container.icon-left i,
-.input-line .input-container.icon-left .icon {
+.input .input-container.icon-left i,
+.input .input-container.icon-left .icon {
   left: 16px;
 }
-.input-line .input-container.icon-right .input-text {
+.input .input-container.icon-right .input-text {
   padding-right: 40px;
 }
-.input-line .input-container.icon-right i,
-.input-line .input-container.icon-right .icon {
+.input .input-container.icon-right i,
+.input .input-container.icon-right .icon {
   right: 16px;
 }
-.input-line .input-container.icons-sides .input-text {
-  padding-right: 40px;
+.input .input-container.icons-sides .input-text {
   padding-left: 40px;
+  padding-right: 40px;
 }
-.input-line .input-container.icons-sides .right {
+.input .input-container.icons-sides .right {
   right: 16px;
 }
-.input-line .input-container.icons-sides .left {
+.input .input-container.icons-sides .left {
   left: 16px;
+}
+.input .input-container.unit-sufix span,
+.input .input-container.unit-sufix label {
+  position: absolute;
+}
+.input.validate input:not([type]):focus:not([readonly]),
+.input.validate input[type=date]:not(.browser-default):focus:not([readonly]),
+.input.validate input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+.input.validate input[type=datetime]:not(.browser-default):focus:not([readonly]),
+.input.validate input[type=email]:not(.browser-default):focus:not([readonly]),
+.input.validate input[type=number]:not(.browser-default):focus:not([readonly]),
+.input.validate input[type=password]:not(.browser-default):focus:not([readonly]),
+.input.validate input[type=search]:not(.browser-default):focus:not([readonly]),
+.input.validate input[type=tel]:not(.browser-default):focus:not([readonly]),
+.input.validate input[type=text]:not(.browser-default):focus:not([readonly]),
+.input.validate input[type=time]:not(.browser-default):focus:not([readonly]),
+.input.validate input[type=url]:not(.browser-default):focus:not([readonly]),
+.input.validate textarea.input-text:focus:not([readonly]) {
+  border-bottom: 1px solid #26c580;
+  box-shadow: 0 1px 0 0 #26c580;
+  -webkit-box-shadow: 0 1px 0 0 #26c580;
+}
+.input.validate input[type=date]:invalid,
+.input.validate input[type=datetime-local]:invalid,
+.input.validate input[type=datetime]:invalid,
+.input.validate input[type=email]:invalid,
+.input.validate input[type=email]:required,
+.input.validate input[type=number]:invalid,
+.input.validate input[type=password]:invalid,
+.input.validate input[type=search]:invalid,
+.input.validate input[type=tel]:invalid,
+.input.validate input[type=text]:invalid,
+.input.validate input[type=time]:invalid,
+.input.validate input[type=url]:invalid,
+.input.validate textarea:required:focus,
+.input.validate .invalid {
+  border-bottom: 1px solid #c55757;
+  box-shadow: 0 1px 0 0 #c55757;
+  -webkit-box-shadow: 0 1px 0 0 #c55757;
+}
+.input.validate textarea {
+  resize: none;
+  overflow: hidden;
+  min-height: 69px;
+}
+
+.input-line .input-label {
+  color: #717171;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.input-line .input-container {
+  background-color: #f7f7f7;
+  border-radius: 4px 4px 0 0;
 }
 .input-line .input-container input:not([type]),
 .input-line .input-container input[type=date]:not(.browser-default),
@@ -4467,40 +4528,33 @@ textarea {
 .input-line .input-container input[type=text]:not(.browser-default),
 .input-line .input-container input[type=time]:not(.browser-default),
 .input-line .input-container input[type=url]:not(.browser-default),
-.input-line .input-container textarea.materialize-textarea {
+.input-line .input-container textarea.input-text {
   border-bottom: 1px solid #9b9b9b;
 }
-.input-line .input-container input:not([type]):focus:not([readonly]),
-.input-line .input-container input[type=date]:not(.browser-default):focus:not([readonly]),
-.input-line .input-container input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
-.input-line .input-container input[type=datetime]:not(.browser-default):focus:not([readonly]),
-.input-line .input-container input[type=email]:not(.browser-default):focus:not([readonly]),
-.input-line .input-container input[type=number]:not(.browser-default):focus:not([readonly]),
-.input-line .input-container input[type=password]:not(.browser-default):focus:not([readonly]),
-.input-line .input-container input[type=search]:not(.browser-default):focus:not([readonly]),
-.input-line .input-container input[type=tel]:not(.browser-default):focus:not([readonly]),
-.input-line .input-container input[type=text]:not(.browser-default):focus:not([readonly]),
-.input-line .input-container input[type=time]:not(.browser-default):focus:not([readonly]),
-.input-line .input-container input[type=url]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) .input-line .input-container.valid {
-  border-bottom: 1px solid #26c580;
-  box-shadow: 0 1px 0 0 #26c580;
-  -webkit-box-shadow: 0 1px 0 0 #26c580;
+.input-line .input-container .input-text:disabled, .input-line .input-container .input-textinput[disabled], .input-line .input-container .input-text.disabled {
+  background-color: #f7f7f7;
+  border-bottom: none !important;
+  color: #c7c7c7;
+  cursor: auto;
+  pointer-events: none !important;
 }
-.input-line .input-container input[type=date]:invalid,
-.input-line .input-container input[type=datetime-local]:invalid,
-.input-line .input-container input[type=datetime]:invalid,
-.input-line .input-container input[type=email]:invalid,
-.input-line .input-container input[type=number]:invalid input[type=password]:invalid,
-.input-line .input-container input[type=search]:invalid,
-.input-line .input-container input[type=tel]:invalid,
-.input-line .input-container input[type=text]:invalid,
-.input-line .input-container input[type=time]:invalid,
-.input-line .input-container input[type=url]:invalid,
-.input-line .input-container textarea.materialize-textarea,
-.input-line .input-container .invalid {
-  border-bottom: 1px solid #c55757;
-  box-shadow: 0 1px 0 0 #c55757;
-  -webkit-box-shadow: 0 1px 0 0 #c55757;
+
+.input-outline .input-label {
+  color: #9b9b9b;
+  display: inline-block;
+  font-family: "Open Sans";
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+.input-outline .input-container .input-text {
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+}
+.input-outline .input-container .input-text:disabled, .input-outline .input-container .input-textinput[disabled], .input-outline .input-container .input-text.disabled {
+  background-color: #f7f7f7;
+  color: #c7c7c7;
+  cursor: auto;
+  pointer-events: none !important;
 }
 
 .select {

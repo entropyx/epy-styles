@@ -8,7 +8,8 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "css/epy.css"
     }),
-    new CopyWebpackPlugin([{ from: "assets", to: "assets" }])
+    new CopyWebpackPlugin([{ from: "assets", to: "assets" }]),
+    new CopyWebpackPlugin([{ from: "epy.css", to: "css/epy.css" }])
   ],
   module: {
     rules: [

@@ -1,537 +1,196 @@
 @import "../abstracts/variables";
+.input {
+  .input-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
 
-// .input,
-// input {
-//   background-color: transparent;
-//   border: none;
-//   color: $dove-gray;
-//   font-size: 16px;
-//   height: 40px;
-//   width: 100%;
-//   outline: none;
-
-//   &::placeholder {
-//     color: $silver;
-//   }
-
-//   .title-container {
-//     margin-bottom: 8px;
-//     display: flex;
-//     justify-content: flex-start;
-//     align-items: center;
-
-//     .normal-title {
-//       font-size: 14px;
-//     }
-
-//     .upper-title {
-//       text-transform: uppercase;
-//       color: $dusty-gray;
-//       font-size: 10px;
-//       font-family: $aux-font;
-//     }
-
-//     .helper {
-//       color: $dusty-gray;
-//       font-size: 14px;
-//       line-height: 18px;
-//       margin-left: 4px;
-//     }
-//   }
-// }
-
-// .input-outline {
-//   .input-wrapper {
-//     align-items: center;
-//     border: 1px solid $silver;
-//     border-radius: 5px;
-//     display: flex;
-//     height: 40px;
-//     justify-content: space-between;
-
-//     input {
-//       padding-right: 16px;
-//       padding-left: 16px;
-//     }
-
-//     .legend-error {
-//       color: $wuzzy-brown;
-//       font-size: 8px;
-//       display: none;
-//     }
-//   }
-
-//   &.validate {
-//     input[type="date"]:invalid,
-//     input[type="datetime-local"]:invalid,
-//     input[type="datetime"]:invalid,
-//     input[type="email"]:invalid,
-//     input[type="number"]:invalid input[type="password"]:invalid,
-//     input[type="search"]:invalid,
-//     input[type="tel"]:invalid,
-//     input[type="text"]:invalid,
-//     input[type="time"]:invalid,
-//     input[type="url"]:invalid,
-//     textarea.materialize-textarea,
-//     &.invalid {
-//         border-bottom: 1px solid $wuzzy-brown;
-//         border-radius: 4px;
-//         box-shadow: 0 1px 0 0 $wuzzy-brown;
-//         -webkit-box-shadow: 0 1px 0 0 $wuzzy-brown;
-//     }
-
-//     &.invalid + .legend-error {
-//       display: block!important;
-//     }
-
-//     input:not([type]):focus:not([readonly]),
-//     input[type="date"]:not(.browser-default):focus:not([readonly]),
-//     input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
-//     input[type="datetime"]:not(.browser-default):focus:not([readonly]),
-//     input[type="email"]:not(.browser-default):focus:not([readonly]),
-//     input[type="number"]:not(.browser-default):focus:not([readonly]),
-//     input[type="password"]:not(.browser-default):focus:not([readonly]),
-//     input[type="search"]:not(.browser-default):focus:not([readonly]),
-//     input[type="tel"]:not(.browser-default):focus:not([readonly]),
-//     input[type="text"]:not(.browser-default):focus:not([readonly]),
-//     input[type="time"]:not(.browser-default):focus:not([readonly]),
-//     input[type="url"]:not(.browser-default):focus:not([readonly]),
-//     textarea.materialize-textarea:focus:not([readonly])
-//     &.valid {
-//         border-bottom: 1px solid $jungle-green;
-//         border-radius: 4px;
-//         box-shadow: 0 1px 0 0 $jungle-green;
-//         -webkit-box-shadow: 0 1px 0 0 $jungle-green;
-
-//     }
-
-//   }
-// }
-
-// .input-line {
-//   .input-wrapper {
-//     display: flex;
-//     justify-content: space-between;
-//     text-align: center;
-
-//     input {
-//       border: none;
-//       border-bottom: 1px solid $alto;
-//       border-radius: 0;
-//       box-shadow: none;
-//       box-sizing: content-box;
-//       height: 24px;
-//       line-height: normal;
-//       outline: none;
-//       padding-bottom: 4px;
-//       -webkit-box-shadow: none;
-//       -webkit-box-sizing: content-box;
-//     }
-
-//     input:not([type]),
-//     input[type="date"]:not(.browser-default),
-//     input[type="datetime-local"]:not(.browser-default),
-//     input[type="datetime"]:not(.browser-default),
-//     input[type="email"]:not(.browser-default),
-//     input[type="number"]:not(.browser-default),
-//     input[type="password"]:not(.browser-default),
-//     input[type="search"]:not(.browser-default),
-//     input[type="tel"]:not(.browser-default),
-//     input[type="text"]:not(.browser-default),
-//     input[type="time"]:not(.browser-default),
-//     input[type="url"]:not(.browser-default),
-//     textarea.materialize-textarea {
-//       border-bottom: 1px solid #d4d4d4;
-//     }
-
-//   }
-//   &.validate {
-//     input:not([type]):focus:not([readonly]),
-//     input[type="date"]:not(.browser-default):focus:not([readonly]),
-//     input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
-//     input[type="datetime"]:not(.browser-default):focus:not([readonly]),
-//     input[type="email"]:not(.browser-default):focus:not([readonly]),
-//     input[type="number"]:not(.browser-default):focus:not([readonly]),
-//     input[type="password"]:not(.browser-default):focus:not([readonly]),
-//     input[type="search"]:not(.browser-default):focus:not([readonly]),
-//     input[type="tel"]:not(.browser-default):focus:not([readonly]),
-//     input[type="text"]:not(.browser-default):focus:not([readonly]),
-//     input[type="time"]:not(.browser-default):focus:not([readonly]),
-//     input[type="url"]:not(.browser-default):focus:not([readonly]),
-//     textarea.materialize-textarea:focus:not([readonly])
-//     &.valid {
-//       border-bottom: 1px solid $jungle-green;
-//       box-shadow: 0 1px 0 0 $jungle-green;
-//       -webkit-box-shadow: 0 1px 0 0 $jungle-green;
-//     }
-
-//     input[type="date"]:invalid,
-//     input[type="datetime-local"]:invalid,
-//     input[type="datetime"]:invalid,
-//     input[type="email"]:invalid,
-//     input[type="number"]:invalid input[type="password"]:invalid,
-//     input[type="search"]:invalid,
-//     input[type="tel"]:invalid,
-//     input[type="text"]:invalid,
-//     input[type="time"]:invalid,
-//     input[type="url"]:invalid,
-//     textarea.materialize-textarea,
-//     &.invalid  {
-//       border-bottom: 1px solid $wuzzy-brown;
-//       box-shadow: 0 1px 0 0 $wuzzy-brown;
-//       -webkit-box-shadow: 0 1px 0 0 $wuzzy-brown;
-//     }
-//   }
-
-// }
-
-// .input-icon {
-//   .input-wrapper {
-//     padding: 0 16px;
-//   }
-//   input {
-//     padding: 0!important
-//   }
-// }
-
-@mixin input-container {
-  height: 48px;
-  border-radius: 4px 4px 0 0;
-  background-color: $albaster;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-
-  .input-text {
-    height: inherit;
-    width: inherit;
-    background-color: transparent;
-    border: none;
-    padding: 16px;
-    outline: none;
-    color: $dove-gray;
-
-    &::placeholder {
-      color: $silver;
-    }
-  }
-
-  i,
-  .icon {
-    position: absolute;
-    height: 14px;
-    width: 14px;
-  }
-
-  &.icon-left {
     .input-text {
-      padding-left: 40px;
+      background-color: transparent;
+      border: none;
+      color: $dove-gray;
+      outline: none;
+      padding: 16px;
+      width: inherit;
+
+      &::placeholder {
+        color: $silver;
+      }
+    }
+
+    input {
+      height: 48px;
+      width: inherit;
+    }
+
+    textarea {
+      min-height: 72px;
+      height: 72px;
+      width: inherit;
     }
 
     i,
     .icon {
-      left: 16px;
+      height: 14px;
+      position: absolute;
+      width: 14px;
+    }
+
+    &.icon-left {
+      .input-text {
+        padding-left: 40px;
+      }
+
+      i,
+      .icon {
+        left: 16px;
+      }
+    }
+
+    &.icon-right {
+      .input-text {
+        padding-right: 40px;
+      }
+
+      i,
+      .icon {
+        right: 16px;
+      }
+    }
+
+    &.icons-sides {
+      .input-text {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      .right {
+        right: 16px;
+      }
+
+      .left {
+        left: 16px;
+      }
+    }
+
+    &.unit-sufix {
+      span,
+      label {
+        position: absolute;
+      }
     }
   }
 
-  &.icon-right {
-    .input-text {
-      padding-right: 40px;
+  &.validate {
+    input:not([type]):focus:not([readonly]),
+    input[type="date"]:not(.browser-default):focus:not([readonly]),
+    input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+    input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+    input[type="email"]:not(.browser-default):focus:not([readonly]),
+    input[type="number"]:not(.browser-default):focus:not([readonly]),
+    input[type="password"]:not(.browser-default):focus:not([readonly]),
+    input[type="search"]:not(.browser-default):focus:not([readonly]),
+    input[type="tel"]:not(.browser-default):focus:not([readonly]),
+    input[type="text"]:not(.browser-default):focus:not([readonly]),
+    input[type="time"]:not(.browser-default):focus:not([readonly]),
+    input[type="url"]:not(.browser-default):focus:not([readonly]),
+    textarea.input-text:focus:not([readonly]) {
+      border-bottom: 1px solid $jungle-green;
+      box-shadow: 0 1px 0 0 $jungle-green;
+      -webkit-box-shadow: 0 1px 0 0 $jungle-green;
     }
 
-    i,
-    .icon {
-      right: 16px;
+    input[type="date"]:invalid,
+    input[type="datetime-local"]:invalid,
+    input[type="datetime"]:invalid,
+    input[type="email"]:invalid,
+    input[type="email"]:required,
+    input[type="number"]:invalid,
+    input[type="password"]:invalid,
+    input[type="search"]:invalid,
+    input[type="tel"]:invalid,
+    input[type="text"]:invalid,
+    input[type="time"]:invalid,
+    input[type="url"]:invalid,
+    textarea:required:focus,
+    .invalid {
+      border-bottom: 1px solid $wuzzy-brown;
+      box-shadow: 0 1px 0 0 $wuzzy-brown;
+      -webkit-box-shadow: 0 1px 0 0 $wuzzy-brown;
     }
-  }
 
-  &.icons-sides {
-    .input-text {
-      padding-right: 40px;
-      padding-left: 40px;
+    textarea {
+      resize: none;
+      overflow: hidden;
+      min-height: 69px;
     }
-    .right {
-      right: 16px;
-    }
-
-    .left {
-      left: 16px;
-    }
-  }
-
-  input:not([type]),
-  input[type="date"]:not(.browser-default),
-  input[type="datetime-local"]:not(.browser-default),
-  input[type="datetime"]:not(.browser-default),
-  input[type="email"]:not(.browser-default),
-  input[type="number"]:not(.browser-default),
-  input[type="password"]:not(.browser-default),
-  input[type="search"]:not(.browser-default),
-  input[type="tel"]:not(.browser-default),
-  input[type="text"]:not(.browser-default),
-  input[type="time"]:not(.browser-default),
-  input[type="url"]:not(.browser-default),
-  textarea.materialize-textarea {
-    border-bottom: 1px solid $dusty-gray;
-  }
-
-  input:not([type]):focus:not([readonly]),
-  input[type="date"]:not(.browser-default):focus:not([readonly]),
-  input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
-  input[type="datetime"]:not(.browser-default):focus:not([readonly]),
-  input[type="email"]:not(.browser-default):focus:not([readonly]),
-  input[type="number"]:not(.browser-default):focus:not([readonly]),
-  input[type="password"]:not(.browser-default):focus:not([readonly]),
-  input[type="search"]:not(.browser-default):focus:not([readonly]),
-  input[type="tel"]:not(.browser-default):focus:not([readonly]),
-  input[type="text"]:not(.browser-default):focus:not([readonly]),
-  input[type="time"]:not(.browser-default):focus:not([readonly]),
-  input[type="url"]:not(.browser-default):focus:not([readonly]),
-  textarea.materialize-textarea:focus:not([readonly]) &.valid {
-    border-bottom: 1px solid $jungle-green;
-    box-shadow: 0 1px 0 0 $jungle-green;
-    -webkit-box-shadow: 0 1px 0 0 $jungle-green;
-  }
-
-  input[type="date"]:invalid,
-  input[type="datetime-local"]:invalid,
-  input[type="datetime"]:invalid,
-  input[type="email"]:invalid,
-  input[type="number"]:invalid input[type="password"]:invalid,
-  input[type="search"]:invalid,
-  input[type="tel"]:invalid,
-  input[type="text"]:invalid,
-  input[type="time"]:invalid,
-  input[type="url"]:invalid,
-  textarea.materialize-textarea,
-  .invalid {
-    border-bottom: 1px solid $wuzzy-brown;
-    box-shadow: 0 1px 0 0 $wuzzy-brown;
-    -webkit-box-shadow: 0 1px 0 0 $wuzzy-brown;
   }
 }
-
-// .input {
-//   &.invalid {
-//     input {
-//       border-bottom: 1px solid $wuzzy-brown;
-//       box-shadow: 0 1px 0 0 $wuzzy-brown;
-//       -webkit-box-shadow: 0 1px 0 0 $wuzzy-brown;
-//     }
-//   }
-
-//   &.valid {
-//     .input {
-//       border-bottom: 1px solid $jungle-green;
-//       box-shadow: 0 1px 0 0 $jungle-green;
-//       -webkit-box-shadow: 0 1px 0 0 $jungle-green;
-//     }
-//   }
-// }
 
 .input-line {
+  .input-label {
+    color: $dove-gray;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
   .input-container {
-    @include input-container;
+    background-color: $albaster;
+    border-radius: 4px 4px 0 0;
+
+    input:not([type]),
+    input[type="date"]:not(.browser-default),
+    input[type="datetime-local"]:not(.browser-default),
+    input[type="datetime"]:not(.browser-default),
+    input[type="email"]:not(.browser-default),
+    input[type="number"]:not(.browser-default),
+    input[type="password"]:not(.browser-default),
+    input[type="search"]:not(.browser-default),
+    input[type="tel"]:not(.browser-default),
+    input[type="text"]:not(.browser-default),
+    input[type="time"]:not(.browser-default),
+    input[type="url"]:not(.browser-default),
+    textarea.input-text {
+      border-bottom: 1px solid $dusty-gray;
+    }
+
+    .input-text {
+      &:disabled,
+      &input[disabled],
+      &.disabled {
+        background-color: $albaster;
+        border-bottom: none !important;
+        color: $silver;
+        cursor: auto;
+        pointer-events: none !important;
+      }
+    }
   }
 }
 
-// .input-container {
-//   &.input-icon {
-//     &.left {
-//       input,
-//       .input-text {
-//         padding-right: 24px;
-//       }
-//     }
-//   }
-// }
+.input-outline {
+  .input-label {
+    color: $dusty-gray;
+    display: inline-block;
+    font-family: $aux-font;
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+  .input-container {
+    .input-text {
+      border: 1px solid $silver;
+      border-radius: 4px;
 
-// .input,
-// input {
-//   background-color: transparent;
-//   border: none;
-//   color: $dove-gray;
-//   font-size: 16px;
-//   height: 40px;
-//   width: 100%;
-//   outline: none;
-
-//   &::placeholder {
-//     color: $silver;
-//   }
-
-//   .title-container {
-//     margin-bottom: 8px;
-//     display: flex;
-//     justify-content: flex-start;
-//     align-items: center;
-
-//     .normal-title {
-//       font-size: 14px;
-//     }
-
-//     .upper-title {
-//       text-transform: uppercase;
-//       color: $dusty-gray;
-//       font-size: 10px;
-//       font-family: $aux-font;
-//     }
-
-//     .helper {
-//       color: $dusty-gray;
-//       font-size: 14px;
-//       line-height: 18px;
-//       margin-left: 4px;
-//     }
-//   }
-// }
-
-// .input-outline {
-//   .input-wrapper {
-//     align-items: center;
-//     border: 1px solid $silver;
-//     border-radius: 5px;
-//     display: flex;
-//     height: 40px;
-//     justify-content: space-between;
-
-//     input {
-//       padding-right: 16px;
-//       padding-left: 16px;
-//     }
-
-//     .legend-error {
-//       color: $wuzzy-brown;
-//       font-size: 8px;
-//       display: none;
-//     }
-//   }
-
-//   &.validate {
-//     input[type="date"]:invalid,
-//     input[type="datetime-local"]:invalid,
-//     input[type="datetime"]:invalid,
-//     input[type="email"]:invalid,
-//     input[type="number"]:invalid input[type="password"]:invalid,
-//     input[type="search"]:invalid,
-//     input[type="tel"]:invalid,
-//     input[type="text"]:invalid,
-//     input[type="time"]:invalid,
-//     input[type="url"]:invalid,
-//     textarea.materialize-textarea,
-//     &.invalid {
-//       border-bottom: 1px solid $wuzzy-brown;
-//       border-radius: 4px;
-//       box-shadow: 0 1px 0 0 $wuzzy-brown;
-//       -webkit-box-shadow: 0 1px 0 0 $wuzzy-brown;
-//     }
-
-//     &.invalid + .legend-error {
-//       display: block !important;
-//     }
-
-//     input:not([type]):focus:not([readonly]),
-//     input[type="date"]:not(.browser-default):focus:not([readonly]),
-//     input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
-//     input[type="datetime"]:not(.browser-default):focus:not([readonly]),
-//     input[type="email"]:not(.browser-default):focus:not([readonly]),
-//     input[type="number"]:not(.browser-default):focus:not([readonly]),
-//     input[type="password"]:not(.browser-default):focus:not([readonly]),
-//     input[type="search"]:not(.browser-default):focus:not([readonly]),
-//     input[type="tel"]:not(.browser-default):focus:not([readonly]),
-//     input[type="text"]:not(.browser-default):focus:not([readonly]),
-//     input[type="time"]:not(.browser-default):focus:not([readonly]),
-//     input[type="url"]:not(.browser-default):focus:not([readonly]),
-//     textarea.materialize-textarea:focus:not([readonly]) &.valid {
-//       border-bottom: 1px solid $jungle-green;
-//       border-radius: 4px;
-//       box-shadow: 0 1px 0 0 $jungle-green;
-//       -webkit-box-shadow: 0 1px 0 0 $jungle-green;
-//     }
-//   }
-// }
-
-// .input-line {
-//   .input-wrapper {
-//     display: flex;
-//     justify-content: space-between;
-//     text-align: center;
-
-//     input {
-//       border: none;
-//       border-bottom: 1px solid $alto;
-//       border-radius: 0;
-//       box-shadow: none;
-//       box-sizing: content-box;
-//       height: 24px;
-//       line-height: normal;
-//       outline: none;
-//       padding-bottom: 4px;
-//       -webkit-box-shadow: none;
-//       -webkit-box-sizing: content-box;
-//     }
-
-//     input:not([type]),
-//     input[type="date"]:not(.browser-default),
-//     input[type="datetime-local"]:not(.browser-default),
-//     input[type="datetime"]:not(.browser-default),
-//     input[type="email"]:not(.browser-default),
-//     input[type="number"]:not(.browser-default),
-//     input[type="password"]:not(.browser-default),
-//     input[type="search"]:not(.browser-default),
-//     input[type="tel"]:not(.browser-default),
-//     input[type="text"]:not(.browser-default),
-//     input[type="time"]:not(.browser-default),
-//     input[type="url"]:not(.browser-default),
-//     textarea.materialize-textarea {
-//       border-bottom: 1px solid #d4d4d4;
-//     }
-//   }
-//   &.validate {
-//     input:not([type]):focus:not([readonly]),
-//     input[type="date"]:not(.browser-default):focus:not([readonly]),
-//     input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
-//     input[type="datetime"]:not(.browser-default):focus:not([readonly]),
-//     input[type="email"]:not(.browser-default):focus:not([readonly]),
-//     input[type="number"]:not(.browser-default):focus:not([readonly]),
-//     input[type="password"]:not(.browser-default):focus:not([readonly]),
-//     input[type="search"]:not(.browser-default):focus:not([readonly]),
-//     input[type="tel"]:not(.browser-default):focus:not([readonly]),
-//     input[type="text"]:not(.browser-default):focus:not([readonly]),
-//     input[type="time"]:not(.browser-default):focus:not([readonly]),
-//     input[type="url"]:not(.browser-default):focus:not([readonly]),
-//     textarea.materialize-textarea:focus:not([readonly]) &.valid {
-//       border-bottom: 1px solid $jungle-green;
-//       box-shadow: 0 1px 0 0 $jungle-green;
-//       -webkit-box-shadow: 0 1px 0 0 $jungle-green;
-//     }
-
-//     input[type="date"]:invalid,
-//     input[type="datetime-local"]:invalid,
-//     input[type="datetime"]:invalid,
-//     input[type="email"]:invalid,
-//     input[type="number"]:invalid input[type="password"]:invalid,
-//     input[type="search"]:invalid,
-//     input[type="tel"]:invalid,
-//     input[type="text"]:invalid,
-//     input[type="time"]:invalid,
-//     input[type="url"]:invalid,
-//     textarea.materialize-textarea,
-//     &.invalid {
-//       border-bottom: 1px solid $wuzzy-brown;
-//       box-shadow: 0 1px 0 0 $wuzzy-brown;
-//       -webkit-box-shadow: 0 1px 0 0 $wuzzy-brown;
-//     }
-//   }
-// }
-
-// .input-icon {
-//   .input-wrapper {
-//     padding: 0 16px;
-//   }
-//   input {
-//     padding: 0 !important;
-//   }
-// }
+      &:disabled,
+      &input[disabled],
+      &.disabled {
+        background-color: $albaster;
+        color: $silver;
+        cursor: auto;
+        pointer-events: none !important;
+      }
+    }
+  }
+}
