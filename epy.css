@@ -4496,10 +4496,11 @@ textarea {
 .input-line .input-container input[type=text]:invalid,
 .input-line .input-container input[type=time]:invalid,
 .input-line .input-container input[type=url]:invalid,
-.input-line .input-container textarea.materialize-textarea {
-  border-bottom: 1px solid #c55757 !important;
-  box-shadow: 0 1px 0 0 #c55757 !important;
-  -webkit-box-shadow: 0 1px 0 0 #c55757 !important;
+.input-line .input-container textarea.materialize-textarea,
+.input-line .input-container .invalid {
+  border-bottom: 1px solid #c55757;
+  box-shadow: 0 1px 0 0 #c55757;
+  -webkit-box-shadow: 0 1px 0 0 #c55757;
 }
 
 .select {

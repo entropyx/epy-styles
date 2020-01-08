@@ -305,10 +305,11 @@
   input[type="text"]:invalid,
   input[type="time"]:invalid,
   input[type="url"]:invalid,
-  textarea.materialize-textarea {
-    border-bottom: 1px solid $wuzzy-brown !important;
-    box-shadow: 0 1px 0 0 $wuzzy-brown !important;
-    -webkit-box-shadow: 0 1px 0 0 $wuzzy-brown !important;
+  textarea.materialize-textarea,
+  .invalid {
+    border-bottom: 1px solid $wuzzy-brown;
+    box-shadow: 0 1px 0 0 $wuzzy-brown;
+    -webkit-box-shadow: 0 1px 0 0 $wuzzy-brown;
   }
 }
 
