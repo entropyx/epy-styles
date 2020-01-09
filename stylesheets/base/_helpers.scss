@@ -53,3 +53,21 @@
   position: absolute;
   width: 1px;
 }
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.center-align {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.justify-align {
+  text-align: justify;
+}
