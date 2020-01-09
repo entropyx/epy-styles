@@ -1,11 +1,11 @@
 // BASE
 .select {
   width: 100%;
-  .select-wrapper {
+  .select-container {
     position: relative;
   }
 
-  .options-wrapper {
+  .options-container {
     background: transparent;
     background-color: $white;
     border-radius: 4px;
@@ -53,7 +53,7 @@
     }
   }
   &.active {
-    .options-wrapper {
+    .options-container {
       opacity: 1;
       visibility: visible;
       pointer-events: all;
@@ -82,9 +82,19 @@
   .select-trigger {
     @include select-trigger($jungle-green);
     border-bottom: 1px solid $alto;
+    background-color: $albaster;
+    border-radius: 4px 4px 0 0;
+
+    .select-value {
+      padding-left: 16px;
+    }
+    .arrow {
+      margin-right: 16px;
+      margin-left: 8px;
+    }
   }
 
-  .options-wrapper {
+  .options-container {
     margin-top: -4px;
   }
 }
@@ -108,7 +118,7 @@
 
     &:focus,
     &:hover {
-      background-color: #21aa6f;
+      background-color: $mountain-meadow;
     }
   }
 
@@ -123,16 +133,16 @@
       &:focus,
       &:hover {
         background-color: $white;
-        border: 1px solid #21aa6f;
-        color: #21aa6f;
+        border: 1px solid $mountain-meadow;
+        color: $mountain-meadow;
       }
     }
 
     // &.active {
     //   .select-trigger {
     //     background-color: $white;
-    //     border: 1px solid #21aa6f;
-    //     color: #21aa6f;
+    //     border: 1px solid $mountain-meadow;
+    //     color: $mountain-meadow;
     //   }
     // }
   }
@@ -142,7 +152,7 @@
 .select-primary {
   &.active {
     .select-trigger {
-      background-color: #21aa6f;
+      background-color: $mountain-meadow;
     }
   }
 }
@@ -152,8 +162,8 @@
     &.active {
       .select-trigger {
         background-color: $white;
-        border: 1px solid #21aa6f;
-        color: #21aa6f;
+        border: 1px solid $mountain-meadow;
+        color: $mountain-meadow;
       }
     }
   }

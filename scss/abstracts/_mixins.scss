@@ -44,11 +44,11 @@
     width: 16px;
 
     @if $color == $jungle-green {
-      background: url("../assets/icons/arrow_down_green.svg") no-repeat;
+      background: url("../../assets/icons/arrow_down_green.svg") no-repeat;
     } @else if $color == "dark-green" {
-      background: url("../assets/icons/arrow_down_dark_green.svg") no-repeat;
+      background: url("../../assets/icons/arrow_down_dark_green.svg") no-repeat;
     } @else {
-      background: url("../assets/icons/arrow_down_white.svg") no-repeat;
+      background: url("../../assets/icons/arrow_down_white.svg") no-repeat;
     }
   }
 }

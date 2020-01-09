@@ -4219,13 +4219,12 @@ textarea {
 .btn-primary {
   background-color: #26c580;
   border: none;
-  box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
   color: #ffffff;
 }
 .btn-primary:focus, .btn-primary:hover {
-  background-color: #21aa6f;
+  background-color: #20ab6f;
 }
-.btn-primary:disabled, .btn-primary button[disabled] {
+.btn-primary:disabled, .btn-primary button[disabled], .btn-primary.disabled {
   cursor: auto;
   background-color: #c7c7c7;
   border: 1px solid #cecece;
@@ -4237,17 +4236,18 @@ textarea {
 }
 .btn-primary.btn-outline:focus, .btn-primary.btn-outline:hover {
   background-color: #ffffff;
-  border: 1px solid #21aa6f;
-  color: #21aa6f;
+  border: 1px solid #20ab6f;
+  color: #20ab6f;
 }
 
 .btn-outline {
   color: #9b9b9b;
   border: 1px solid #d4d4d4;
   background-color: transparent;
-  box-shadow: none !important;
+  box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
 }
-.btn-outline:disabled, .btn-outline button[disabled] {
+.btn-outline:disabled, .btn-outline button[disabled] .disabled {
   cursor: auto !important;
   border: 1px solid #cecece !important;
   color: #c7c7c7 !important;
@@ -4425,6 +4425,11 @@ textarea {
   height: 48px;
   width: inherit;
 }
+.input .input-container textarea {
+  min-height: 72px;
+  height: 72px;
+  width: inherit;
+}
 .input .input-container i,
 .input .input-container .icon {
   height: 14px;
@@ -4454,6 +4459,33 @@ textarea {
 }
 .input .input-container.icons-sides .left {
   left: 16px;
+}
+.input .input-container.unit-suffix .unit,
+.input .input-container.unit-suffix .suffix {
+  position: absolute;
+}
+.input .input-container.unit-suffix .input-text {
+  text-align: right;
+  padding-left: 40px;
+  padding-right: 48px;
+}
+.input .input-container.unit-suffix input::-webkit-outer-spin-button,
+.input .input-container.unit-suffix input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.input .input-container.unit-suffix input[type=number] {
+  -moz-appearance: textfield;
+}
+.input .input-container.unit-suffix .unit {
+  left: 16px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.input .input-container.unit-suffix .suffix {
+  font-size: 12px;
+  line-height: 15px;
+  right: 16px;
+  text-transform: uppercase;
 }
 .input.validate input:not([type]):focus:not([readonly]),
 .input.validate input[type=date]:not(.browser-default):focus:not([readonly]),
@@ -4493,6 +4525,7 @@ textarea {
 .input.validate textarea {
   resize: none;
   overflow: hidden;
+  min-height: 69px;
 }
 
 .input-line .input-label {
@@ -4550,10 +4583,10 @@ textarea {
 .select {
   width: 100%;
 }
-.select .select-wrapper {
+.select .select-container {
   position: relative;
 }
-.select .options-wrapper {
+.select .options-container {
   background: transparent;
   background-color: #ffffff;
   border-radius: 4px;
@@ -4573,7 +4606,7 @@ textarea {
   visibility: hidden;
   z-index: 2;
 }
-.select .options-wrapper .option {
+.select .options-container .option {
   border-bottom: 1px solid #f7f7f7;
   position: relative;
   display: block;
@@ -4586,19 +4619,19 @@ textarea {
   margin: 1px 0;
   text-align: left;
 }
-.select .options-wrapper .option:hover {
+.select .options-container .option:hover {
   cursor: pointer;
   background-color: #ededed;
 }
-.select .options-wrapper .option.selected {
+.select .options-container .option.selected {
   color: #ffffff !important;
   background-color: #c7c7c7;
 }
-.select .options-wrapper .input {
+.select .options-container .input {
   margin-bottom: 8px;
   margin-top: 16px;
 }
-.select.active .options-wrapper {
+.select.active .options-container {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
@@ -4628,7 +4661,7 @@ textarea {
   margin-top: 12px;
   right: 0;
   width: 16px;
-  background: url("../assets/icons/arrow_down_green.svg") no-repeat;
+  background: url("../../assets/icons/arrow_down_green.svg") no-repeat;
 }
 
 .select-line .select-trigger {
@@ -4642,15 +4675,24 @@ textarea {
   line-height: 20px;
   position: relative;
   border-bottom: 1px solid #d4d4d4;
+  background-color: #f7f7f7;
+  border-radius: 4px 4px 0 0;
 }
 .select-line .select-trigger .arrow {
   height: 16px;
   margin-top: 12px;
   right: 0;
   width: 16px;
-  background: url("../assets/icons/arrow_down_green.svg") no-repeat;
+  background: url("../../assets/icons/arrow_down_green.svg") no-repeat;
 }
-.select-line .options-wrapper {
+.select-line .select-trigger .select-value {
+  padding-left: 16px;
+}
+.select-line .select-trigger .arrow {
+  margin-right: 16px;
+  margin-left: 8px;
+}
+.select-line .options-container {
   margin-top: -4px;
 }
 
@@ -4670,7 +4712,7 @@ textarea {
   margin-top: 12px;
   right: 0;
   width: 16px;
-  background: url("../assets/icons/arrow_down_green.svg") no-repeat;
+  background: url("../../assets/icons/arrow_down_green.svg") no-repeat;
 }
 
 .select-primary .select-trigger {
@@ -4694,10 +4736,10 @@ textarea {
   margin-top: 12px;
   right: 0;
   width: 16px;
-  background: url("../assets/icons/arrow_down_white.svg") no-repeat;
+  background: url("../../assets/icons/arrow_down_white.svg") no-repeat;
 }
 .select-primary .select-trigger:focus, .select-primary .select-trigger:hover {
-  background-color: #21aa6f;
+  background-color: #20ab6f;
 }
 .select-primary.select-outline .select-trigger {
   align-items: center;
@@ -4719,22 +4761,22 @@ textarea {
   margin-top: 12px;
   right: 0;
   width: 16px;
-  background: url("../assets/icons/arrow_down_green.svg") no-repeat;
+  background: url("../../assets/icons/arrow_down_green.svg") no-repeat;
 }
 .select-primary.select-outline .select-trigger:focus, .select-primary.select-outline .select-trigger:hover {
   background-color: #ffffff;
-  border: 1px solid #21aa6f;
-  color: #21aa6f;
+  border: 1px solid #20ab6f;
+  color: #20ab6f;
 }
 
 .select-primary.active .select-trigger {
-  background-color: #21aa6f;
+  background-color: #20ab6f;
 }
 
 .select-primary.select-outline.active .select-trigger {
   background-color: #ffffff;
-  border: 1px solid #21aa6f;
-  color: #21aa6f;
+  border: 1px solid #20ab6f;
+  color: #20ab6f;
 }
 
 .select-line.active .select-trigger,
@@ -4757,7 +4799,7 @@ textarea {
   margin-top: 12px;
   right: 0;
   width: 16px;
-  background: url("../assets/icons/arrow_down_dark_green.svg") no-repeat;
+  background: url("../../assets/icons/arrow_down_dark_green.svg") no-repeat;
 }
 
 .tooltip {

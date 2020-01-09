@@ -20,7 +20,7 @@
   text-align: center;
   padding: 8px 24px;
   outline: none;
-  
+
   &:hover,
   &:focus {
     box-shadow: $x-large-shadow;
@@ -33,16 +33,15 @@
 .btn-primary {
   background-color: $jungle-green;
   border: none;
-  box-shadow: $medium-shadow;
   color: $white;
-
   &:focus,
   &:hover {
-    background-color: #21aa6f;
+    background-color: $mountain-meadow;
   }
 
   &:disabled,
-  & button[disabled] {
+  & button[disabled],
+  &.disabled {
     cursor: auto;
     background-color: $silver;
     border: 1px solid #cecece;
@@ -52,13 +51,12 @@
     background-color: $white;
     border: 1px solid $jungle-green;
     color: $jungle-green;
-    // box-shadow: none !important;
 
     &:focus,
     &:hover {
       background-color: $white;
-      border: 1px solid #21aa6f;
-      color: #21aa6f;
+      border: 1px solid $mountain-meadow;
+      color: $mountain-meadow;
     }
   }
 }
@@ -67,10 +65,11 @@
   color: $dusty-gray;
   border: 1px solid $alto;
   background-color: transparent;
-  box-shadow: none !important;
+  box-shadow: $medium-shadow;
+  -webkit-box-shadow: $medium-shadow;
 
   &:disabled,
-  & button[disabled] {
+  & button[disabled] .disabled {
     cursor: auto !important;
     border: 1px solid #cecece !important;
     color: $silver !important;

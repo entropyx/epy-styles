@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="stylesheet" href="dist/css/epy.css" /> -->
-    <link rel="stylesheet" href="epy.css" />
+    <link rel="stylesheet" href="dist/css/epy.css" />
+    <!-- <link rel="stylesheet" href="epy.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -553,7 +553,7 @@
           <div class="input input-line validate">
             <div class="input-container unit-suffix">
               <span class="unit">$</span>
-              <input class="input-text invalid" type="number" placeholder="0" />
+              <input class="input-text" type="number" placeholder="0" />
               <span class="suffix">MXN</span>
             </div>
           </div>
@@ -568,14 +568,14 @@
         <div class="col s3" style="height: 230px;">
           <span style="display:block">select select-primary</span>
           <div class="select select-primary">
-            <div class="select-wrapper">
+            <div class="select-container">
               <div class="select-trigger">
                 <div class="select-value">
                   <span>Maximaze Clicks</span>
                 </div>
                 <div class="arrow arrow-open"></div>
               </div>
-              <div class="options-wrapper">
+              <div class="options-container">
                 <span class="option selected">Maximaze Clicks</span>
                 <span class="option">Maximaze Revenue</span>
                 <span class="option">Maximaze Impressions</span>
@@ -586,14 +586,14 @@
         <div class="col s3">
           <span style="display:block">select select-primary active</span>
           <div class="select select-primary active">
-            <div class="select-wrapper">
+            <div class="select-container">
               <div class="select-trigger">
                 <div class="select-value">
                   <span>Maximaze Clicks</span>
                 </div>
                 <div class="arrow arrow-open"></div>
               </div>
-              <div class="options-wrapper">
+              <div class="options-container">
                 <span class="option selected">Maximaze Clicks</span>
                 <span class="option">Maximaze Revenue</span>
                 <span class="option">Maximaze Impressions</span>
@@ -604,12 +604,12 @@
         <div class="col s3">
           <span style="display:block">select select-outline</span>
           <div class="select select-outline">
-            <div class="select-wrapper">
+            <div class="select-container">
               <div class="select-trigger">
                 <span>Maximaze Clicks</span>
                 <div class="arrow"></div>
               </div>
-              <div class="options-wrapper">
+              <div class="options-container">
                 <span class="option selected">Maximaze Clicks</span>
                 <span class="option">Maximaze Revenue</span>
                 <span class="option">Maximaze Impressions</span>
@@ -620,14 +620,14 @@
         <div class="col s3">
           <span style="display:block">select select-outline active</span>
           <div class="select select-outline active">
-            <div class="select-wrapper">
+            <div class="select-container">
               <div class="select-trigger">
                 <div class="select-value">
                   <span>Maximaze Clicks</span>
                 </div>
                 <div class="arrow arrow-open"></div>
               </div>
-              <div class="options-wrapper">
+              <div class="options-container">
                 <span class="option selected">Maximaze Clicks</span>
                 <span class="option">Maximaze Revenue</span>
                 <span class="option">Maximaze Impressions</span>
@@ -640,7 +640,7 @@
         <div class="col s3">
           <span style="display:block">select select-outline</span>
           <div class="select select-outline">
-            <div class="select-wrapper">
+            <div class="select-container">
               <div class="select-trigger">
                 <img class="icon" src="./assets/icons/user_editor.svg" />
                 <div class="select-value">
@@ -648,7 +648,7 @@
                 </div>
                 <div class="arrow arrow-open"></div>
               </div>
-              <div class="options-wrapper">
+              <div class="options-container">
                 <span class="option selected">Editor</span>
                 <span class="option">Administrator</span>
               </div>
@@ -658,7 +658,7 @@
         <div class="col s3">
           <span style="display:block">select select-outline active</span>
           <div class="select select-outline active">
-            <div class="select-wrapper">
+            <div class="select-container">
               <div class="select-trigger">
                 <img class="icon" src="./assets/icons/user_editor.svg" />
                 <div class="select-value">
@@ -666,7 +666,7 @@
                 </div>
                 <div class="arrow arrow-open"></div>
               </div>
-              <div class="options-wrapper">
+              <div class="options-container">
                 <span class="option selected">Editor</span>
                 <span class="option">Administrator</span>
               </div>
@@ -678,14 +678,14 @@
             >select select-primary select-outline</span
           >
           <div class="select select-primary select-outline">
-            <div class="select-wrapper">
+            <div class="select-container">
               <div class="select-trigger">
                 <div class="select-value">
                   <span>Maximaze Clicks</span>
                 </div>
                 <div class="arrow arrow-open"></div>
               </div>
-              <div class="options-wrapper">
+              <div class="options-container">
                 <span class="option selected">Maximaze Clicks</span>
                 <span class="option">Maximaze Revenue</span>
                 <span class="option">Maximaze Impressions</span>
@@ -698,14 +698,14 @@
             >select select-primary select-outline active</span
           >
           <div class="select select-primary select-outline active">
-            <div class="select-wrapper">
+            <div class="select-container">
               <div class="select-trigger">
                 <div class="select-value">
                   <span>Maximaze Clicks</span>
                 </div>
                 <div class="arrow arrow-open"></div>
               </div>
-              <div class="options-wrapper">
+              <div class="options-container">
                 <span class="option selected">Maximaze Clicks</span>
                 <span class="option">Maximaze Revenue</span>
                 <span class="option">Maximaze Impressions</span>
@@ -715,17 +715,17 @@
         </div>
       </div>
       <div class="row">
-        <div class="col s3">
+        <!-- <div class="col s3">
           <span style="display:block">select select-border-none</span>
           <div class="select select-border-none">
-            <div class="select-wrapper">
+            <div class="select-container">
               <div class="select-trigger">
                 <div class="select-value">
                   <span class="text-green">Maximaze Clicks</span>
                 </div>
                 <div class="arrow arrow-open"></div>
               </div>
-              <div class="options-wrapper">
+              <div class="options-container">
                 <span class="option selected">Maximaze Clicks</span>
                 <span class="option">Maximaze Revenue</span>
                 <span class="option">Maximaze Impressions</span>
@@ -736,32 +736,40 @@
         <div class="col s3">
           <span style="display:block">select select-border-none active</span>
           <div class="select select-border-none active">
-            <div class="select-wrapper">
+            <div class="select-container">
               <div class="select-trigger">
                 <div class="select-value">
                   <span class="text-green">Maximaze Clicks</span>
                 </div>
                 <div class="arrow arrow-open"></div>
               </div>
-              <div class="options-wrapper">
+              <div class="options-container">
                 <span class="option selected">Maximaze Clicks</span>
                 <span class="option">Maximaze Revenue</span>
                 <span class="option">Maximaze Impressions</span>
               </div>
             </div>
           </div>
+        </div> -->
+        <div class="col s2">
+          <span style="display: block;">input input-line</span>
+          <div class="input input-line">
+            <div class="input-container">
+              <input class="input-text" type="text" value="input line" />
+            </div>
+          </div>
         </div>
         <div class="col s3">
           <span style="display:block">select select-line</span>
           <div class="select select-line">
-            <div class="select-wrapper">
+            <div class="select-container">
               <div class="select-trigger">
                 <div class="select-value">
                   <span>Maximaze Clicks</span>
                 </div>
                 <div class="arrow arrow-open"></div>
               </div>
-              <div class="options-wrapper">
+              <div class="options-container">
                 <span class="option selected">Maximaze Clicks</span>
                 <span class="option">Maximaze Revenue</span>
                 <span class="option">Maximaze Impressions</span>
@@ -772,23 +780,28 @@
         <div class="col s3">
           <span style="display:block">select select-line active</span>
           <div class="select select-line active">
-            <div class="select-wrapper">
+            <div class="select-container">
               <div class="select-trigger">
                 <div class="select-value">
                   <span>Maximaze Clicks</span>
                 </div>
                 <div class="arrow arrow-open"></div>
               </div>
-              <div class="options-wrapper">
+              <div class="options-container">
                 <div class="input input-outline">
-                  <div class="input-wrapper">
-                    <input type="text" />
+                  <div class="input-container icon-right">
+                    <input
+                      class="input-text"
+                      type="text"
+                      placeholder="buscar"
+                    />
                     <img
                       class="icon icon-right"
                       src="./assets/icons/search_icon.svg"
                     />
                   </div>
                 </div>
+
                 <span class="option selected">Maximaze Clicks</span>
                 <span class="option">Maximaze Revenue</span>
                 <span class="option">Maximaze Impressions</span>
@@ -958,6 +971,7 @@
       type="text/javascript"
       src="http://code.jquery.com/jquery-1.7.1.min.js"
     ></script>
-    <script src="js/index.js" type="text/javascript"></script>
+    <!-- <script src="js/index.js" type="text/javascript"></script> -->
+    <script src="./dist/main.js" type="text/javascript"></script>
   </body>
 </html>
