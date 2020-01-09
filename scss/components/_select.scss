@@ -3,6 +3,32 @@
   width: 100%;
   .select-container {
     position: relative;
+
+    .title-container {
+      display: flex;
+      align-items: baseline;
+    }
+
+    .select-label {
+      color: $dove-gray;
+      display: inline-block;
+      font-size: 16px;
+      margin-bottom: 8px;
+
+      &.upper {
+        color: $dusty-gray;
+        font-family: $aux-font;
+        font-size: 10px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .select-helper {
+    color: $dusty-gray;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 4px;
   }
 
   .options-container {

@@ -30,7 +30,7 @@
   padding: 100%;
 }
 
-.bar-loader {
+@mixin basic-loader {
   animation-duration: 1s !important;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
@@ -39,12 +39,19 @@
   background: #f6f7f8;
   background: $loader-gradient;
   background-size: 800px 104px;
+}
+
+.bar-loader {
+  @include basic-loader;
+  border-radius: 2px;
   height: 16px;
   margin-bottom: 16px;
-  position: relative;
 
   &.title {
     width: 25%;
+  }
+  &.content-large {
+    width: 30%;
   }
   &.subtitle {
     width: 20%;
@@ -58,9 +65,24 @@
   }
 }
 
+.circle-loader {
+  @include basic-loader;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
 .table-loader {
   column-gap: 8%;
   display: grid;
+
+  &.col-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  &.col-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
 
   &.col-5 {
     grid-template-columns: repeat(5, 1fr);
@@ -76,6 +98,10 @@
 
   &.col-2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  &.col-1 {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -128,6 +154,61 @@
 .stat-loader {
   .table-loader {
     margin: 32px 16px;
+  }
+}
+
+.stat-loader-2 {
+  .divided-loader {
+    .table-loader-container {
+      grid-template-columns: 24% 3% 24% 3% 24% 3% 24%;
+    }
+  }
+
+  .chart-loader {
+    margin-top: 24px;
+  }
+}
+
+.campaign-loader {
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 75px;
+  }
+
+  .title-loader {
+    width: 100%;
+  }
+}
+
+// TEMPLATE CAMPAIGN-LOADER
+.divided-loader {
+  .title-loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+  }
+
+  .table-loader-container {
+    display: grid;
+    grid-template-columns: 20% 18px 20% 18px 20% 18px 20%;
+
+    .bar-loader {
+      width: 70%;
+    }
+
+    .table-loader {
+      margin-top: 16px;
+    }
+
+    .bar-divider {
+      box-sizing: border-box;
+      border-right: 1px solid $albaster;
+      height: 80px;
+      width: 2px;
+    }
   }
 }
 

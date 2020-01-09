@@ -72,11 +72,12 @@ body {
 //   margin-right: 8px;
 // }
 
-i, .icon {
+i,
+.icon {
   &.left {
     margin-right: 8px;
   }
-  &.right{
+  &.right {
     margin-left: 8px;
   }
 }
@@ -88,4 +89,8 @@ i, .icon {
 .container {
   margin: initial;
   width: 100%;
+}
+
+.upper {
+  text-transform: uppercase;
 }

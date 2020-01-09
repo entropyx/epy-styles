@@ -1,12 +1,22 @@
 @import "../abstracts/variables";
+
 .input {
+  width: fit-content;
+
+  .input-helper {
+    color: $dusty-gray;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 4px;
+  }
+
   .input-container {
     align-items: center;
     display: flex;
     justify-content: space-between;
     position: relative;
     width: 100%;
-   
+
     .input-text {
       background-color: transparent;
       border: none;

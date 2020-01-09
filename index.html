@@ -15,7 +15,7 @@
   <body style="padding: 40px 60px">
     <!-- ************************FONTS************************** -->
     <div style="margin-top:50px">
-      <h5>Fonts</h5>
+      <h1>Fonts</h1>
       <div class="row">
         <div class="col s2">
           <span class="title">title</span>
@@ -108,7 +108,7 @@
     </div>
     <!-- ************************BUTTONS************************** -->
     <div style="margin-top:50px">
-      <h5>Buttons</h5>
+      <h1>Buttons</h1>
       <div class="row">
         <div class="col s2">
           <button class="btn btn-default">
@@ -289,7 +289,7 @@
     <hr />
     <!-- ************************INPUT************************** -->
     <div style="margin-top:50px">
-      <h5>Inputs</h5>
+      <h1>Inputs</h1>
       <div class="row">
         <div class="col s2">
           <span style="display: block;">input input-line</span>
@@ -424,7 +424,18 @@
         </div>
         <div class="col s2">
           <div class="input input-outline validate">
-            <label class="input-label">Label</label>
+            <label class="input-label upper">Label</label>
+            <div class="input-container">
+              <input class="input-text" type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="col s2">
+          <div class="input input-line validate">
+            <div class="title-container">
+                <label class="input-label">Label</label>
+                <label class="input-helper">helper</label>
+            </div>
             <div class="input-container">
               <input class="input-text" type="text" />
             </div>
@@ -443,7 +454,7 @@
         </div>
         <div class="col s2">
           <div class="input input-outline validate">
-            <label class="input-label">Label</label>
+            <label class="input-label upper">Label</label>
             <div class="input-container">
               <textarea class="input-text" type="email"></textarea>
             </div>
@@ -466,8 +477,8 @@
     </div>
     <hr />
     <!-- ************************SELECT************************** -->
-    <div style="margin-top:50px; height: 950px;">
-      <h5>Selects</h5>
+    <div style="margin-top:50px; height: 1100px;">
+      <h1>Selects</h1>
       <div class="row">
         <div class="col s3" style="height: 230px;">
           <span style="display:block">select select-primary</span>
@@ -723,11 +734,72 @@
           </div>
         </div>
       </div>
+      <div class="row" style="margin-top:200px">
+        <div class="col s3">
+            <span style="display:block">select select-outline</span>
+            <div class="select select-outline active">
+              <div class="select-container">
+                <div class="title-container">
+                    <label class="select-label upper">Label</label>
+                </div>
+                <div class="select-trigger">
+                  <div class="select-value">
+                    <span>Select strategy</span>
+                  </div>
+                  <div class="arrow arrow-open"></div>
+                </div>
+                <div class="options-container">
+                  <span class="option selected">Maximaze Clicks</span>
+                  <span class="option">Maximaze Revenue</span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col s3">
+            <span style="display:block">select select-outline</span>
+            <div class="select select-line active">
+              <div class="select-container">
+                <label class="select-label">Label</label>
+                <div class="select-trigger">
+                  <div class="select-value">
+                    <span>Select strategy</span>
+                  </div>
+                  <div class="arrow arrow-open"></div>
+                </div>
+                <div class="options-container">
+                  <span class="option selected">Maximaze Clicks</span>
+                  <span class="option">Maximaze Revenue</span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col s3">
+            <span style="display:block">select select-outline</span>
+            <div class="select select-line active">
+              <div class="select-container">
+                <div class="title-container">
+                    <label class="select-label">Label</label>
+                    <label class="select-helper">helper</label>
+                </div>
+                <div class="select-trigger">
+                  <div class="select-value">
+                    <span>Select strategy</span>
+                  </div>
+                  <div class="arrow arrow-open"></div>
+                </div>
+                <div class="options-container">
+                  <span class="option selected">Maximaze Clicks</span>
+                  <span class="option">Maximaze Revenue</span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
     </div>
     <hr />
     <!-- ************************TOOLTIP************************** -->
     <div style="margin-top:50px">
-      <h5>Tooltips</h5>
+      <h1>Tooltips</h1>
       <div class="row">
         <div class="col s5">
           <span>tooltip</span>
@@ -781,14 +853,14 @@
     <hr />
     <!-- ************************LOADERS************************** -->
     <div style="margin-top:50px">
-      <h5>Loaders</h5>
-      <h6>bot-loader</h6>
+      <h1>Loaders</h1>
+      <h4>bot-loader</h4>
       <div class="row">
         <div class="col s1">
           <div class="bot-loader"></div>
         </div>
       </div>
-      <h6>bar-loader</h6>
+      <h4>bar-loader</h4>
       <div class="row">
         <div class="wrapper">
           <span>bar-loader (100%)</span>
@@ -803,7 +875,7 @@
           <div class="bar-loader detail dark"></div>
         </div>
       </div>
-      <h6>table-loader</h6>
+      <h4>table-loader</h4>
       <div class="row">
         <div class="col s4">
           <span>table-loader col-2</span>
@@ -839,113 +911,292 @@
           </div>
         </div>
       </div>
-      <h6>stat-loader</h6>
+      <h3>Templates</h3>
+      <h4>divided-loader</h4>
       <div class="row">
-        <div class="stat-loader">
-          <div class="bar-loader title"></div>
-          <div class="bar-loader subtitle"></div>
-          <div class="table-loader col-5">
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-          </div>
+        <div class="col s8">
+            <div class="divided-loader">
+              <div class="title-loader">
+                  <div class="bar-loader content-large"></div>
+                  <div class="bar-loader content-large"></div>
+              </div>
+              <div class="table-loader-container">
+                <div class="table-loader col-1">
+                    <div class="bar-loader"></div>
+                    <div class="bar-loader"></div>
+                </div>
+                <div class="bar-divider"></div>
+                <div class="table-loader col-1">
+                    <div class="bar-loader"></div>
+                    <div class="bar-loader"></div>
+                </div>
+                <div class="bar-divider"></div>
+                <div class="table-loader col-1">
+                    <div class="bar-loader"></div>
+                    <div class="bar-loader"></div>
+                </div>
+                <div class="bar-divider"></div>
+                <div class="table-loader col-1">
+                    <div class="bar-loader"></div>
+                    <div class="bar-loader"></div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <h4>stat-loader</h4>
+      <div class="row">
+        <div class="col s8">
+          <div class="stat-loader">
+            <div class="bar-loader title"></div>
+            <div class="bar-loader subtitle"></div>
+            <div class="table-loader col-5">
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+            </div>
 
-          <div class="bar-loader chart-loader">
-            <div class="chart-stroke-1"></div>
-            <div class="chart-stroke-2"></div>
-            <div class="chart-stroke-3"></div>
-            <div class="chart-stroke-4"></div>
-            <div class="chart-stroke-5"></div>
-            <div class="chart-stroke-6"></div>
+            <div class="bar-loader chart-loader">
+              <div class="chart-stroke-1"></div>
+              <div class="chart-stroke-2"></div>
+              <div class="chart-stroke-3"></div>
+              <div class="chart-stroke-4"></div>
+              <div class="chart-stroke-5"></div>
+              <div class="chart-stroke-6"></div>
+            </div>
           </div>
         </div>
       </div>
-      <h6>progress-bar</h6>
+      <h4>stat-loader (v2)</h4>
+      <div class="row">
+        <div class="col s8">
+          <div class="stat-loader-2">
+            <div class="divided-loader">
+              <div class="title-loader">
+                  <div class="bar-loader content-large"></div>
+                  <div class="bar-loader content-large"></div>
+              </div>
+              <div class="table-loader-container">
+                <div class="table-loader col-1">
+                    <div class="bar-loader"></div>
+                    <div class="bar-loader"></div>
+                </div>
+                <div class="bar-divider"></div>
+                <div class="table-loader col-1">
+                    <div class="bar-loader"></div>
+                    <div class="bar-loader"></div>
+                </div>
+                <div class="bar-divider"></div>
+                <div class="table-loader col-1">
+                    <div class="bar-loader"></div>
+                    <div class="bar-loader"></div>
+                </div>
+                <div class="bar-divider"></div>
+                <div class="table-loader col-1">
+                    <div class="bar-loader"></div>
+                    <div class="bar-loader"></div>
+                </div>
+              </div>
+
+              <div class="bar-loader chart-loader">
+                  <div class="chart-stroke-1"></div>
+                  <div class="chart-stroke-2"></div>
+                  <div class="chart-stroke-3"></div>
+                  <div class="chart-stroke-4"></div>
+                  <div class="chart-stroke-5"></div>
+                  <div class="chart-stroke-6"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s8">
+          <h4>campaign-loader</h4>
+          <div class="campaign-loader">
+            <div class="title-container">
+                <div class="title-loader">
+                    <div class="bar-loader content-large"></div>
+                    <div class="bar-loader content-large"></div>
+                </div>
+                <div class="circle-loader"></div>
+            </div>
+            <div class="table-loader col-4">
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4>progress-bar</h4>
       <progress max="100" value="10"></progress>
     </div>
     <hr />
 
     <!-- ************************CARDS************************** -->
     <div style="margin-top:50px">
+    
       <div class="row">
+        <h1>Cards</h1>
         <div class="col s4">
+          <span>card</span>
           <div class="card" style="height: 80px;">
-
           </div>
         </div>
+       
         <div class="col s4">
+          <span>card hoverable</span>
           <div class="card hoverable"  style="height: 80px;" >
           </div>
         </div>
       </div>
+      <span>card-panel card-campaign hoverable</span>
       <div class="row">
-        <div class="card-panel card-campaign">
-          <div class="card-header">
-              <span class="card-title">100 - Brand [Entropy]</span>
-              <span class="priority-label"  i18n>High priority</span>
-              <div class="camp-type">
-                <div class="camp-icon">
-                  <span *ngIf="campaign.type == 'search'" class="search-type-icon"></span>
+        <div class="col s6">
+            <div class="card-panel card-campaign hoverable">
+                <div class="card-header">
+                  <span class="card-title">100 - Brand [Entropy]</span>
+                  <span class="priority-label">High priority</span>
+                  <div class="camp-type">
+                    <div class="icon-circle-container">
+                      <span class="search-icon"></span>
+                    </div>
+                    <span>search</span>
+                    
+                  </div>
                 </div>
-                <span class="type-label">shopping</span>
+                <div class="camp-details">
+                  <div class="general-info">
+                      <div class="field-info">
+                          <span class="field upper">Daily Budget</span>
+                          <span class="field">$ 100</span>          
+                      </div>
+                      <div class="field-info">
+                          <span class="field upper">Status</span>
+                          <span class="field yellow">Paused</span>          
+                      </div>
+                      <div class="field-info">
+                          <span class="field upper">Goal</span>
+                          <span class="field">Maximaze Clicks</span>          
+                      </div>
+                  </div>
+                  <div class="stats">
+                      <span class="field subtitle">last 7 days: </span>
+                      <div class="stat">
+                          <span class="field upper">clicks</span>
+                          <b class="metric-score">1.1k</b> 
+                          <div class="metric-percent">
+                              <i class="material-icons up text-red">arrow_drop_down</i>
+                            <span>-17.19%</span>
+                          </div> 
+                      </div>
+                      <div class="stat">
+                          <span class="field upper">cost</span>
+                          <b class="metric-score">$20.0k</b> 
+                          <div class="metric-percent">
+                            <i class="material-icons up text-green">arrow_drop_down</i>
+                            <span>-17.19%</span>
+                          </div> 
+                      </div>
+                      <div class="stat">
+                          <span class="field upper">revenue</span>
+                          <b class="metric-score">$66.5k</b> 
+                          <div class="metric-percent">
+                              <i class="material-icons up text-green">arrow_drop_up</i>
+                            <span>36.69%</span>
+                          </div> 
+                      </div>
+                  </div>
+                </div>
               </div>
-              <div class="camp-details">
-                <div class="general-info">
-                    <div class="field-info">
-                        <span class="field info upper">Daily Budget</span>
-                        <span class="field info green">$ 100</span>          
-                    </div>
-                    <div class="field-info">
-                        <span class="field info upper">Status</span>
-                        <span class="field info yellow">Paused</span>          
-                    </div>
-                    <div class="field-info">
-                        <span class="field info upper">Goal</span>
-                        <span class="field info">Maximaze Clicks</span>          
-                    </div>
-
-                </div>
-                <div class="stats">
-                    <p class="info-card-title" i18n>last 7 days: </p>
-                    <div class="stat">
-                        <p class="info-card-title upper">clicks</p>
-                        <b class="metric-score">1.1k</b> 
-                        <div class="metric-percent">
-                            <i class="material-icons up red-text">arrow_drop_down</i>
-                          <span>-17.19%</span>
-                        </div> 
-                    </div>
-                    <div class="stat">
-                        <p class="info-card-title upper">cost</p>
-                        <b class="metric-score">$20.0k</b> 
-                        <div class="metric-percent">
-                          <i class="material-icons up red-text"></i>
-                          <i class="material-icons up red-text">arrow_drop_down</i>
-                        </div> 
-                    </div>
-                    <div class="stat">
-                        <p class="info-card-title upper">revenue</p>
-                        <b class="metric-score">$66.5k</b> 
-                        <div class="metric-percent">
-                            <i class="material-icons up">arrow_drop_up</i>
-                          <span>36.69%</span>
-                        </div> 
-                    </div>
-                </div>
-                
-              </div>
-              
-
-          </div>
 
         </div>
+        <div class="col s6">
+            <div class="campaign-loader card-panel">
+              <div class="title-container">
+                  <div class="title-loader">
+                      <div class="bar-loader content-large"></div>
+                      <div class="bar-loader content-large"></div>
+                  </div>
+                  <div class="circle-loader"></div>
+              </div>
+              <div class="table-loader col-4">
+                <div class="bar-loader"></div>
+                <div class="bar-loader"></div>
+                <div class="bar-loader"></div>
+                <div class="bar-loader"></div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col s8">
+              <div class="card-panel card-campaign hoverable">
+                  <div class="card-header">
+                    <span class="card-title">100 - Brand [Entropy]</span>
+                    <div class="camp-type">
+                      <div class="icon-circle-container">
+                        <span class="shopping-icon"></span>
+                      </div>
+                      <span>shopping</span>
+                      
+                    </div>
+                  </div>
+                  <div class="camp-details">
+                    <div class="general-info">
+                        <div class="field-info">
+                            <span class="field upper">Daily Budget</span>
+                            <span class="field">$ 100</span>          
+                        </div>
+                        <div class="field-info">
+                            <span class="field upper">Status</span>
+                            <span class="field green">Enabled</span>          
+                        </div>
+                        <div class="field-info">
+                            <span class="field upper">Goal</span>
+                            <span class="field">Maximaze Clicks</span>          
+                        </div>
+                    </div>
+                    <div class="stats">
+                        <span class="field subtitle">last 7 days: </span>
+                        <div class="stat">
+                            <span class="field upper">clicks</span>
+                            <b class="metric-score">1.1k</b> 
+                            <div class="metric-percent">
+                                <i class="material-icons up text-red">arrow_drop_down</i>
+                              <span>-17.19%</span>
+                            </div> 
+                        </div>
+                        <div class="stat">
+                            <span class="field upper">cost</span>
+                            <b class="metric-score">$20.0k</b> 
+                            <div class="metric-percent">
+                              <i class="material-icons up text-green">arrow_drop_down</i>
+                              <span>-17.19%</span>
+                            </div> 
+                        </div>
+                        <div class="stat">
+                            <span class="field upper">revenue</span>
+                            <b class="metric-score">$66.5k</b> 
+                            <div class="metric-percent">
+                                <i class="material-icons up text-green">arrow_drop_up</i>
+                              <span>36.69%</span>
+                            </div> 
+                        </div>
+                    </div>
+                  </div>
+                </div>
+  
+          </div>
       </div>
       
     </div>
