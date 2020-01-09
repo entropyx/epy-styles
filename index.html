@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="dist/css/epy.css" />
-    <!-- <link rel="stylesheet" href="epy.css" /> -->
+    <!-- <link rel="stylesheet" href="dist/css/epy.css" /> -->
+    <link rel="stylesheet" href="epy.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Document name</title>
   </head>
   <body style="padding: 40px 60px">
@@ -288,104 +290,6 @@
     <!-- ************************INPUT************************** -->
     <div style="margin-top:50px">
       <h5>Inputs</h5>
-      <!-- <div class="row">
-        <div class="col s2">
-          <div class="input input-outline">
-            <div class="input-wrapper">
-              <input type="text" placeholder="Campaign name" />
-            </div>
-          </div>
-          <span>input input-outline</span>
-        </div>
-        <div class="col s2">
-          <div class="input input-outline input-icon">
-            <div class="input-wrapper">
-              <i class="fa fa-search left"></i>
-              <input type="text" />
-            </div>
-          </div>
-          <span>input input-outline</span>
-        </div>
-        <div class="col s2">
-          <div class="input input-outline input-icon">
-            <div class="input-wrapper">
-              <input type="text" />
-              <i class="fa fa-search right"></i>
-            </div>
-          </div>
-          <span>input input-outline</span>
-        </div>
-
-        <div class="col s2">
-          <div class="input input-line validate">
-            <div class="input-wrapper">
-              <input type="text" />
-            </div>
-          </div>
-          <span>input input-line</span>
-        </div>
-
-        <div class="col s2">
-          <div class="input input-line validate">
-            <div class="input-wrapper">
-              <input type="email" placeholder="email" value="1234" />
-            </div>
-          </div>
-          <span>input input-line</span>
-        </div>
-
-        <div class="col s2">
-          <div class="input input-line validate">
-            <div class="input-wrapper">
-              <input type="email" placeholder="country" />
-              <img class="icon" src="./assets/icons/search_icon.svg" />
-            </div>
-          </div>
-          <span>input input-line</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s2">
-          <div class="input input-outline validate">
-            <div class="input-wrapper">
-              <input type="email" placeholder="Email" class="invalid" />
-            </div>
-          </div>
-        </div>
-        <div class="col s2">
-          <div class="input input-outline validate">
-            <div class="input-wrapper">
-              <input type="email" placeholder="Email" class="invalid" />
-              <span class="legend-error">
-                Error
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="col s4">
-          <div class="input input-outline">
-            <div class="title-container">
-              <span class="upper-title">Campaign name</span>
-              <span class="helper">(something you’ll remember it with)</span>
-            </div>
-            <div class="input-wrapper">
-              <input type="email" placeholder="Campaign name" />
-            </div>
-          </div>
-        </div>
-        <div class="col s4">
-          <div class="input input-line">
-            <div class="title-container">
-              <span class="normal-title">Campaign name</span>
-              <span class="helper">(something you’ll remember it with)</span>
-            </div>
-            <div class="input-wrapper">
-              <input type="email" placeholder="Campaign name" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row"></div> -->
       <div class="row">
         <div class="col s2">
           <span style="display: block;">input input-line</span>
@@ -715,7 +619,7 @@
         </div>
       </div>
       <div class="row">
-        <!-- <div class="col s3">
+        <div class="col s3">
           <span style="display:block">select select-border-none</span>
           <div class="select select-border-none">
             <div class="select-container">
@@ -750,15 +654,15 @@
               </div>
             </div>
           </div>
-        </div> -->
-        <div class="col s2">
+        </div>
+        <!-- <div class="col s2">
           <span style="display: block;">input input-line</span>
           <div class="input input-line">
             <div class="input-container">
               <input class="input-text" type="text" value="input line" />
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="col s3">
           <span style="display:block">select select-line</span>
           <div class="select select-line">
@@ -967,6 +871,84 @@
       <progress max="100" value="10"></progress>
     </div>
     <hr />
+
+    <!-- ************************CARDS************************** -->
+    <div style="margin-top:50px">
+      <div class="row">
+        <div class="col s4">
+          <div class="card" style="height: 80px;">
+
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card hoverable"  style="height: 80px;" >
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-panel card-campaign">
+          <div class="card-header">
+              <span class="card-title">100 - Brand [Entropy]</span>
+              <span class="priority-label"  i18n>High priority</span>
+              <div class="camp-type">
+                <div class="camp-icon">
+                  <span *ngIf="campaign.type == 'search'" class="search-type-icon"></span>
+                </div>
+                <span class="type-label">shopping</span>
+              </div>
+              <div class="camp-details">
+                <div class="general-info">
+                    <div class="field-info">
+                        <span class="field info upper">Daily Budget</span>
+                        <span class="field info green">$ 100</span>          
+                    </div>
+                    <div class="field-info">
+                        <span class="field info upper">Status</span>
+                        <span class="field info yellow">Paused</span>          
+                    </div>
+                    <div class="field-info">
+                        <span class="field info upper">Goal</span>
+                        <span class="field info">Maximaze Clicks</span>          
+                    </div>
+
+                </div>
+                <div class="stats">
+                    <p class="info-card-title" i18n>last 7 days: </p>
+                    <div class="stat">
+                        <p class="info-card-title upper">clicks</p>
+                        <b class="metric-score">1.1k</b> 
+                        <div class="metric-percent">
+                            <i class="material-icons up red-text">arrow_drop_down</i>
+                          <span>-17.19%</span>
+                        </div> 
+                    </div>
+                    <div class="stat">
+                        <p class="info-card-title upper">cost</p>
+                        <b class="metric-score">$20.0k</b> 
+                        <div class="metric-percent">
+                          <i class="material-icons up red-text"></i>
+                          <i class="material-icons up red-text">arrow_drop_down</i>
+                        </div> 
+                    </div>
+                    <div class="stat">
+                        <p class="info-card-title upper">revenue</p>
+                        <b class="metric-score">$66.5k</b> 
+                        <div class="metric-percent">
+                            <i class="material-icons up">arrow_drop_up</i>
+                          <span>36.69%</span>
+                        </div> 
+                    </div>
+                </div>
+                
+              </div>
+              
+
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
     <script
       type="text/javascript"
       src="http://code.jquery.com/jquery-1.7.1.min.js"

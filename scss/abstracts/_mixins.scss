@@ -28,6 +28,7 @@
 
 @mixin select-trigger($color) {
   align-items: center;
+  box-shadow: $medium-shadow;
   color: $dove-gray;
   cursor: pointer;
   display: flex;
@@ -36,6 +37,7 @@
   justify-content: space-between;
   line-height: 20px;
   position: relative;
+  -webkit-box-shadow: $medium-shadow;
 
   .arrow {
     height: 16px;
@@ -50,5 +52,10 @@
     } @else {
       background: url("../../assets/icons/arrow_down_white.svg") no-repeat;
     }
+  }
+
+  &:hover, &:focus {
+    box-shadow: $x-large-shadow;
+    -webkit-box-shadow:$x-large-shadow
   }
 }

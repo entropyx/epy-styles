@@ -33,6 +33,8 @@
 .btn-primary {
   background-color: $jungle-green;
   border: none;
+  box-shadow: $medium-shadow;
+  -webkit-box-shadow: $medium-shadow;
   color: $white;
   &:focus,
   &:hover {

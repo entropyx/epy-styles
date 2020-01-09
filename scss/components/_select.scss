@@ -81,9 +81,11 @@
 .select-line {
   .select-trigger {
     @include select-trigger($jungle-green);
-    border-bottom: 1px solid $alto;
+    border-bottom: 1px solid $dusty-gray;
     background-color: $albaster;
     border-radius: 4px 4px 0 0;
+    box-shadow: none !important;
+    height: 48px;
 
     .select-value {
       padding-left: 16px;
@@ -95,13 +97,14 @@
   }
 
   .options-container {
-    margin-top: -4px;
+    margin-top: -2.5px;
   }
 }
 
 .select-border-none {
   .select-trigger {
     @include select-trigger($jungle-green);
+    box-shadow: none !important;
   }
 }
 
@@ -127,7 +130,6 @@
       @include select-trigger($jungle-green);
       background-color: $white;
       border: 1px solid $jungle-green;
-      box-shadow: none !important;
       color: $jungle-green;
 
       &:focus,
@@ -137,14 +139,6 @@
         color: $mountain-meadow;
       }
     }
-
-    // &.active {
-    //   .select-trigger {
-    //     background-color: $white;
-    //     border: 1px solid $mountain-meadow;
-    //     color: $mountain-meadow;
-    //   }
-    // }
   }
 }
 

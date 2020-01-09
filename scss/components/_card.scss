@@ -1,0 +1,40 @@
+
+@mixin card {
+    border-radius: 5px;
+    //border de campanas graficos, card pasos para crear campana
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    width: 100%;
+
+    &.hoverable {
+        &:focus {
+            box-shadow: 0 2px 15px 0 rgba(0,0,0,0.1) !important;  
+            transition: box-shadow .25s;
+        }
+    }
+}
+
+.card {
+   @include card;
+}
+
+.card-panel {
+    @include card;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    padding: 32px;
+}
+
+.card-campaign {
+    .card-header {
+
+    }
+}
+
+span.search-type-icon{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url('../../assets/icons/search.svg');  
+  background-repeat: no-repeat;
+  background-size: 16px;
+}  
