@@ -2111,6 +2111,11 @@ textarea {
   border: 1px solid #20ab6f;
   color: #20ab6f;
 }
+.btn-primary.btn-outline:disabled, .btn-primary.btn-outline button[disabled], .btn-primary.btn-outline.disabled {
+  cursor: auto !important;
+  border: 1px solid #cecece !important;
+  color: #c7c7c7 !important;
+}
 
 .btn-outline {
   color: #9b9b9b;
@@ -2119,7 +2124,8 @@ textarea {
   box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
   -webkit-box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
 }
-.btn-outline:disabled, .btn-outline button[disabled] .disabled {
+.btn-outline:disabled, .btn-outline button[disabled],
+.btn-outline .disabled {
   cursor: auto !important;
   border: 1px solid #cecece !important;
   color: #c7c7c7 !important;
@@ -3121,7 +3127,7 @@ span.search-icon {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url("./assets/icons/search.svg");
+  background-image: url("../../assets/icons/search.svg");
   background-repeat: no-repeat;
   background-size: 16px;
 }
@@ -3130,7 +3136,7 @@ span.shopping-icon {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url("./assets/icons/shopping_icon.svg");
+  background-image: url("../../assets/icons/shopping_icon.svg");
   background-repeat: no-repeat;
   background-size: 16px;
 }
