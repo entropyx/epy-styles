@@ -2358,7 +2358,7 @@ textarea {
 .input .input-container.unit-suffix .input-text {
   text-align: right;
   padding-left: 40px;
-  padding-right: 48px;
+  padding-right: 56px;
 }
 .input .input-container.unit-suffix input::-webkit-outer-spin-button,
 .input .input-container.unit-suffix input::-webkit-inner-spin-button {
@@ -2416,7 +2416,7 @@ textarea {
 .input.validate textarea {
   resize: none;
   overflow: hidden;
-  min-height: 69px;
+  min-height: 104px;
 }
 
 .input-line .input-label {

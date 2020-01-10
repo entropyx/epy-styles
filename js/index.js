@@ -1,6 +1,6 @@
 function resize(element) {
-  if (element[0].scrollHeight < 72) {
-    element[0].style.height = "72px";
+  if (element[0].scrollHeight < 104) {
+    element[0].style.height = "104px";
   } else {
     element[0].style.height = element[0].scrollHeight + "px";
   }

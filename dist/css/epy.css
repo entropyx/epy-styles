@@ -2338,15 +2338,18 @@ textarea {
 .input .input-container.icon-right .icon {
   right: 16px;
 }
-.input .input-container.icons-sides .input-text {
+.input .input-container.cleaner .input-text {
   padding-left: 40px;
   padding-right: 40px;
 }
-.input .input-container.icons-sides .right {
+.input .input-container.cleaner .right {
   right: 16px;
 }
-.input .input-container.icons-sides .left {
+.input .input-container.cleaner .left {
   left: 16px;
+}
+.input .input-container.cleaner .clean {
+  cursor: pointer;
 }
 .input .input-container.unit-suffix .unit,
 .input .input-container.unit-suffix .suffix {
@@ -2355,7 +2358,7 @@ textarea {
 .input .input-container.unit-suffix .input-text {
   text-align: right;
   padding-left: 40px;
-  padding-right: 48px;
+  padding-right: 56px;
 }
 .input .input-container.unit-suffix input::-webkit-outer-spin-button,
 .input .input-container.unit-suffix input::-webkit-inner-spin-button {
@@ -2413,7 +2416,7 @@ textarea {
 .input.validate textarea {
   resize: none;
   overflow: hidden;
-  min-height: 69px;
+  min-height: 104px;
 }
 
 .input-line .input-label {
@@ -2424,7 +2427,7 @@ textarea {
   margin-bottom: 8px;
 }
 .input-line .input-container {
-  background-color: #f7f7f7;
+  background-color: #f7f7f7 !important;
   border-radius: 4px 4px 0 0;
 }
 .input-line .input-container input:not([type]),
