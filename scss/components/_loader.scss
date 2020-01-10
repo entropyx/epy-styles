@@ -76,31 +76,31 @@
   column-gap: 8%;
   display: grid;
 
-  &.col-7 {
+  &.col7 {
     grid-template-columns: repeat(7, 1fr);
   }
 
-  &.col-6 {
+  &.col6 {
     grid-template-columns: repeat(6, 1fr);
   }
 
-  &.col-5 {
+  &.col5 {
     grid-template-columns: repeat(5, 1fr);
   }
 
-  &.col-4 {
+  &.col4 {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  &.col-3 {
+  &.col3 {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  &.col-2 {
+  &.col2 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  &.col-1 {
+  &.col1 {
     grid-template-columns: 1fr;
   }
 }
