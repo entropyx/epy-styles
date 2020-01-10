@@ -2562,13 +2562,13 @@ textarea {
   cursor: pointer;
   display: flex;
   font-size: 16px;
-  height: 40px;
   justify-content: space-between;
   line-height: 20px;
   position: relative;
   -webkit-box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  height: 40px;
   padding: 0 16px;
 }
 .select-outline .select-trigger .arrow {
@@ -2590,7 +2590,6 @@ textarea {
   cursor: pointer;
   display: flex;
   font-size: 16px;
-  height: 40px;
   justify-content: space-between;
   line-height: 20px;
   position: relative;
@@ -2630,12 +2629,12 @@ textarea {
   cursor: pointer;
   display: flex;
   font-size: 16px;
-  height: 40px;
   justify-content: space-between;
   line-height: 20px;
   position: relative;
   -webkit-box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
   box-shadow: none !important;
+  height: 40px;
 }
 .select-border-none .select-trigger .arrow {
   height: 16px;
@@ -2656,7 +2655,6 @@ textarea {
   cursor: pointer;
   display: flex;
   font-size: 16px;
-  height: 40px;
   justify-content: space-between;
   line-height: 20px;
   position: relative;
@@ -2666,6 +2664,7 @@ textarea {
   color: #ffffff;
   border-radius: 4px;
   padding: 0 16px;
+  height: 40px;
 }
 .select-primary .select-trigger .arrow {
   height: 16px;
@@ -2688,7 +2687,6 @@ textarea {
   cursor: pointer;
   display: flex;
   font-size: 16px;
-  height: 40px;
   justify-content: space-between;
   line-height: 20px;
   position: relative;
@@ -2696,6 +2694,7 @@ textarea {
   background-color: #ffffff;
   border: 1px solid #26c580;
   color: #26c580;
+  height: 40px;
 }
 .select-primary.select-outline .select-trigger .arrow {
   height: 16px;
@@ -2733,7 +2732,6 @@ textarea {
   cursor: pointer;
   display: flex;
   font-size: 16px;
-  height: 40px;
   justify-content: space-between;
   line-height: 20px;
   position: relative;
