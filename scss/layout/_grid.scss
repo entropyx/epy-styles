@@ -1,0 +1,122 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS Grid classes.
+// ------
+
+$width: 98%;
+$gap: 2%;
+
+// devices
+$breakpoint-small: 22.5em; // 360px (mobile) 
+$breakpoint-medium: 48em; // 768px (tablet) 
+$breakpoint-large: 85.375em; // 1366px (desktop) 
+
+// container
+.epy-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  @media only screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-large) {
+    width: 85%;
+  }
+  @media only screen and (min-width: $breakpoint-large) {
+    max-width: 1366px;
+    width: 80%;
+  }
+}
+
+// container
+.epy-row {
+  position: relative;
+  width: 100%;
+}
+
+.epy-row [class^="col"] {
+  float: left;
+  margin: .5rem 1%;
+  margin-left: 1%;
+  min-height: 0.125rem;
+}
+
+.epy-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+// smalls columns (mobile)
+@media only screen and (max-width: $breakpoint-small) {
+
+  .col-1-s { width:($width / 4) - ($gap * 3 / 4); }
+  .col-2-s { width: ($width / 2) - ($gap * 2 / 4); }
+  .col-3-s { width: ($width / (4 / 3)) - ($gap * 1 / 4); }
+  .col-4-s { width: ($width / 1); }
+
+  .offset-1-s { margin-left: 26% !important }
+  .offset-2-s { margin-left: 51% !important }
+  .offset-3-s { margin-left: 76% !important }
+
+  .hidden-s {
+    display: none;
+  }
+
+}
+
+// medium columns (tablet)
+@media only screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
+
+  .col-1-m { width:($width / 8) - ($gap * 7 / 8); }
+  .col-2-m { width: ($width / 4) - ($gap * 6 / 8); }
+  .col-3-m { width: ($width / (8 / 3)) - ($gap * 5 / 8); }
+  .col-4-m { width: ($width / 2) - ($gap * 4 / 8); }
+  .col-5-m { width: ($width / (8 / 5)) - ($gap * 3 / 8); }
+  .col-6-m { width: ($width / (8 / 6)) - ($gap * 2 / 8); }
+  .col-7-m { width: ($width / (8 / 7)) - ($gap * 1 / 8); }
+  .col-8-m { width: $width; }
+
+  .offset-1-m { margin-left: 13.50% !important }
+  .offset-2-m { margin-left: 26% !important }
+  .offset-3-m { margin-left: 38.50% !important }
+  .offset-4-m { margin-left: 51% !important }
+  .offset-5-m { margin-left: 63.50% !important }
+  .offset-6-m { margin-left: 76% !important }
+  .offset-7-m { margin-left: 88.5% !important }
+
+  .hidden-m {
+    display: none;
+  }
+
+}
+
+// large columns (desktop)
+@media only screen and (min-width: $breakpoint-medium) {
+
+  .col-1 { width:($width / 12) - ($gap * 11 / 12); }
+  .col-2 { width: ($width / 6) - ($gap * 10 / 12); }
+  .col-3 { width: ($width / 4) - ($gap * 9 / 12); }
+  .col-4 { width: ($width / 3) - ($gap * 8 / 12); }
+  .col-5 { width: ($width / (12 / 5)) - ($gap * 7 / 12); }
+  .col-6 { width: ($width / 2) - ($gap * 6 / 12); }
+  .col-7 { width: ($width / (12 / 7)) - ($gap * 5 / 12); }
+  .col-8 { width: ($width / (12 / 8)) - ($gap * 4 / 12); }
+  .col-9 { width: ($width / (12 / 9)) - ($gap * 3 / 12); }
+  .col-10 { width: ($width / (12 / 10)) - ($gap * 2 / 12); }
+  .col-11 { width: ($width / (12 / 11)) - ($gap * 1 / 12); }
+  .col-12 { width: $width; }
+
+  .offset-1 { margin-left: 9.333% !important }
+  .offset-2 { margin-left: 17.666% !important }
+  .offset-3 { margin-left: 25.999% !important }
+  .offset-4 { margin-left: 34.332% !important }
+  .offset-5 { margin-left: 42.665% !important }
+  .offset-6 { margin-left: 50.998% !important }
+  .offset-7 { margin-left: 59.331% !important }
+  .offset-8 { margin-left: 67.664% !important }
+  .offset-9 { margin-left: 75.997% !important }
+  .offset-10 { margin-left: 84.33% !important }
+  .offset-11 { margin-left: 92.663% !important }
+
+  .hidden {
+    display: none;
+  }
+
+}

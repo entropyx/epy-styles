@@ -29,5 +29,13 @@
     "style-loader": "^1.1.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entropyx/sass-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/entropyx/sass-boilerplate/issues"
+  },
+  "homepage": "https://github.com/entropyx/sass-boilerplate#readme"
 }
