@@ -2293,6 +2293,7 @@ textarea {
 .input .input-container {
   align-items: center;
   display: flex;
+  height: inherit;
   justify-content: space-between;
   position: relative;
   width: 100%;
@@ -2303,14 +2304,13 @@ textarea {
   color: #717171;
   outline: none;
   padding: 16px;
-  width: inherit;
 }
 .input .input-container .input-text::placeholder {
   color: #c7c7c7;
 }
 .input .input-container input {
   height: 48px;
-  width: inherit;
+  width: 100%;
 }
 .input .input-container textarea {
   min-height: 72px;
@@ -2541,8 +2541,8 @@ textarea {
   background-color: #c7c7c7;
 }
 .select .options-container .input {
-  margin-bottom: 8px;
-  margin-top: 16px;
+  width: 98%;
+  margin: 8px 1%;
 }
 .select.active .options-container {
   opacity: 1;

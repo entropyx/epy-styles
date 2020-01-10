@@ -13,6 +13,7 @@
   .input-container {
     align-items: center;
     display: flex;
+    height: inherit;
     justify-content: space-between;
     position: relative;
     width: 100%;
@@ -21,9 +22,10 @@
       background-color: transparent;
       border: none;
       color: $dove-gray;
+      // height: inherit;
       outline: none;
       padding: 16px;
-      width: inherit;
+      // width: inherit;
 
       &::placeholder {
         color: $silver;
@@ -32,7 +34,7 @@
 
     input {
       height: 48px;
-      width: inherit;
+      width: 100%;
     }
 
     textarea {
