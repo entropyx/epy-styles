@@ -2322,6 +2322,7 @@ textarea {
   height: 14px;
   position: absolute;
   width: 14px;
+  color: #9b9b9b;
 }
 .input .input-container.icon-left .input-text {
   padding-left: 40px;
