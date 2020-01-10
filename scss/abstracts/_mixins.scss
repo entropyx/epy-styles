@@ -33,7 +33,6 @@
   cursor: pointer;
   display: flex;
   font-size: 16px;
-  height: 40px;
   justify-content: space-between;
   line-height: 20px;
   position: relative;
@@ -54,8 +53,9 @@
     }
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     box-shadow: $x-large-shadow;
-    -webkit-box-shadow:$x-large-shadow
+    -webkit-box-shadow: $x-large-shadow;
   }
 }

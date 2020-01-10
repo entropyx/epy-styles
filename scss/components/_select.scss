@@ -74,8 +74,8 @@
     }
 
     .input {
-      margin-bottom: 8px;
-      margin-top: 16px;
+      width: 98%;
+      margin: 8px 1%;
     }
   }
   &.active {
@@ -100,6 +100,7 @@
     @include select-trigger($jungle-green);
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    height: 40px;
     padding: 0 16px;
   }
 }
@@ -131,6 +132,7 @@
   .select-trigger {
     @include select-trigger($jungle-green);
     box-shadow: none !important;
+    height: 40px;
   }
 }
 
@@ -144,6 +146,7 @@
     color: $white;
     border-radius: 4px;
     padding: 0 16px;
+    height: 40px;
 
     &:focus,
     &:hover {
@@ -157,6 +160,7 @@
       background-color: $white;
       border: 1px solid $jungle-green;
       color: $jungle-green;
+      height: 40px;
 
       &:focus,
       &:hover {

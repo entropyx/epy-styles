@@ -13,6 +13,7 @@
   .input-container {
     align-items: center;
     display: flex;
+    height: inherit;
     justify-content: space-between;
     position: relative;
     width: 100%;
@@ -21,9 +22,10 @@
       background-color: transparent;
       border: none;
       color: $dove-gray;
+      // height: inherit;
       outline: none;
       padding: 16px;
-      width: inherit;
+      // width: inherit;
 
       &::placeholder {
         color: $silver;
@@ -32,7 +34,7 @@
 
     input {
       height: 48px;
-      width: inherit;
+      width: 100%;
     }
 
     textarea {
@@ -46,6 +48,7 @@
       height: 14px;
       position: absolute;
       width: 14px;
+      color: $dusty-gray;
     }
 
     &.icon-left {
@@ -70,7 +73,7 @@
       }
     }
 
-    &.icons-sides {
+    &.cleaner {
       .input-text {
         padding-left: 40px;
         padding-right: 40px;
@@ -81,6 +84,10 @@
 
       .left {
         left: 16px;
+      }
+
+      .clean {
+        cursor: pointer;
       }
     }
 
@@ -93,7 +100,7 @@
       .input-text {
         text-align: right;
         padding-left: 40px;
-        padding-right: 48px;
+        padding-right: 56px;
       }
 
       input::-webkit-outer-spin-button,
@@ -118,6 +125,18 @@
       }
     }
   }
+
+  // &.input-cleaner {
+  //   .input-container {
+  //     background: url("./assets/icons/x\ -\ small.svg") no-repeat;
+  //     background-position: calc(100% - 16px) 50%;
+  //     background-size: 14px 14px;
+
+  //     .input-text {
+  //       padding-right: 40px !important;
+  //     }
+  //   }
+  // }
 
   &.validate {
     input:not([type]):focus:not([readonly]),
@@ -160,7 +179,7 @@
     textarea {
       resize: none;
       overflow: hidden;
-      min-height: 69px;
+      min-height: 104px;
     }
   }
 }
@@ -174,7 +193,7 @@
     margin-bottom: 8px;
   }
   .input-container {
-    background-color: $albaster;
+    background-color: $albaster !important;
     border-radius: 4px 4px 0 0;
 
     input:not([type]),
