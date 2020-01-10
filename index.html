@@ -1,355 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./stylesheets/main.css" />
-    <title>Document</title>
-  </head>
-  <body style="padding: 40px 60px">
-    <!-- ************************FONTS************************** -->
-    <div style="margin-bottom:50px">
-      <h5>Fonts</h5>
-      <div class="row">
-        <div class="col s2">
-          <span class="title">title</span>
-        </div>
-        <div class="col s2"><span class="subtitle">subtitle</span></div>
-        <div class="col s2">
-          <span class="text-regular">text-regular</span>
-        </div>
-        <div class="col s2">
-          <span class="text-suggest">text-suggest</span>
-        </div>
-        <div class="col s2"><span class="text-small">text-small</span></div>
-        <div class="col s2">
-          <span class="text-small text-red">text-small</span>
-        </div>
-      </div>
-      <hr />
-    </div>
-    <!-- ************************BUTTONS************************** -->
-    <div style="margin-bottom:50px">
-      <h5>Buttons</h5>
-      <div class="row">
-        <div class="col s2">
-          <button class="btn btn-primary">
-            primary
-          </button>
-          <span style="display:block">btn btn-primary</span>
-        </div>
-        <div class="col s2">
-          <button class="btn btn-primary" disabled>
-            disabled
-          </button>
-          <span style="display:block">btn btn-primary</span>
-        </div>
-        <div class="col s2">
-          <button class="btn btn-primary btn-outline">
-            primary outline
-          </button>
-          <span style="display:block">btn btn-primary btn-outline</span>
-        </div>
-        <div class="col s2">
-          <button class="btn btn-outline" disabled>
-            outline (disabled)
-          </button>
-          <span style="display:block">btn btn-outline (disabled)</span>
-        </div>
-        <div class="col s2">
-          <button class="btn btn-destructive">
-            destructive
-          </button>
-          <span style="display:block">btn btn-destructive</span>
-        </div>
-        <div class="col s2">
-          <button class="btn btn-destructive btn-border-none">
-            destructive
-          </button>
-          <span style="display:block">btn btn-destructive btn-border-none</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s2">
-          <div class="btn btn-outline btn-icon">
-            <img
-              class="icon"
-              src="./assets/icons/create_campaign_icon_on.svg"
-            /><span class="text">primary outline</span>
-          </div>
-          <span style="display:block">btn btn-outline btn-icon</span>
-        </div>
-        <div class="col s2">
-          <div class="btn btn-outline btn-icon">
-            <span class="text">primary outline</span>
-            <img
-              class="icon"
-              src="./assets/icons/create_campaign_icon_on.svg"
-            />
-          </div>
-          <span style="display:block">btn btn-outline btn-icon</span>
-        </div>
-        <div class="col s2">
-          <div class="btn btn-outline btn-icon btn-border-none">
-            <img
-              class="icon"
-              src="./assets/icons/create_campaign_icon_on.svg"
-            />
-            <span class="text">primary</span>
-          </div>
-          <span style="display:block"
-            >btn btn-outline btn-icon btn-border-none</span
-          >
-        </div>
-        <div class="col s2">
-          <div class="btn btn-outline btn-icon btn-border-none">
-            <span class="text">primary</span>
-            <img
-              class="icon"
-              src="./assets/icons/create_campaign_icon_on.svg"
-            />
-          </div>
-          <span style="display:block"
-            >btn btn-outline btn-icon btn-border-none</span
-          >
-        </div>
-        <div class="col s2">
-          <button class="btn btn-link">
-            link
-          </button>
-          <span style="display:block">btn btn-link</span>
-        </div>
-        <div class="col s2">
-          <button class="btn btn-default">
-            default
-          </button>
-          <span style="display:block">btn btn-default</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s2">
-          <button class="btn btn-primary btn-tight">
-            tight
-          </button>
-          <span style="display:block">btn btn-primary btn-tight</span>
-        </div>
-        <div class="col s2">
-          <button class="btn btn-primary btn-small">
-            small
-          </button>
-          <span style="display:block">btn btn-primary btn-small</span>
-        </div>
-        <div class="col s2">
-          <button class="btn btn-primary">
-            default
-          </button>
-          <span style="display:block">btn btn-primary</span>
-        </div>
-        <div class="col s2">
-          <button class="btn btn-primary btn-large">
-            large
-          </button>
-          <span style="display:block">btn btn-primary btn-large</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s2">
-          <button class="btn btn-default btn-square">
-            <img class="image" src="./assets/google-merchant-center.png" />
-            default square
-          </button>
-          <span style="display:block">btn btn-default btn-square</span>
-        </div>
-        <div class="col s2">
-          <button class="btn btn-default btn-square">
-            <img class="image" src="./assets/google-merchant-center.png" />
-            default square
-            <img class="image" src="./assets/icons/check_on_fill_icon.svg" />
-          </button>
-          <span style="display:block">btn btn-default btn-square</span>
-        </div>
-        <div class="col s2">
-          <button class="btn btn-primary btn-square">
-            <img class="image" src="./assets/icons/not_sure_white_icon.svg" />
-            primary square
-          </button>
-          <span style="display:block">btn btn-primary btn-square</span>
-        </div>
-        <div class="col s4">
-          <button class="btn btn-default btn-rectangle">
-            <img class="image" src="./assets/icons/import_icon .svg" />
-            primary rectangle
-          </button>
-          <span style="display:block">btn btn-default btn-rectangle</span>
-        </div>
-      </div>
-      <hr />
-    </div>
 
-    <!-- <div *ngIf="filter" class="filter-wrapper">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./stylesheets/main.css" />
+  <title>Document</title>
+</head>
+
+<body style="padding: 40px 60px">
+  <!-- ************************FONTS************************** -->
+  <div style="margin-bottom:50px">
+    <h5>Fonts</h5>
+    <div class="epy-row">
+      <div class="col-2">
+        <span class="title">title</span>
+      </div>
+      <div class="col-2"><span class="subtitle">subtitle</span></div>
+      <div class="col-2">
+        <span class="text-regular">text-regular</span>
+      </div>
+      <div class="col-2">
+        <span class="text-suggest">text-suggest</span>
+      </div>
+      <div class="col-2"><span class="text-small">text-small</span></div>
+      <div class="col-2">
+        <span class="text-small text-red">text-small</span>
+      </div>
+    </div>
+    <hr />
+  </div>
+  <!-- ************************BUTTONS************************** -->
+  <div style="margin-bottom:50px">
+    <h5>Buttons</h5>
+    <div class="epy-row">
+      <div class="col-2">
+        <button class="btn btn-primary">
+          primary
+        </button>
+        <span style="display:block">btn btn-primary</span>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-primary" disabled>
+          disabled
+        </button>
+        <span style="display:block">btn btn-primary</span>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-primary btn-outline">
+          primary outline
+        </button>
+        <span style="display:block">btn btn-primary btn-outline</span>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-outline" disabled>
+          outline (disabled)
+        </button>
+        <span style="display:block">btn btn-outline (disabled)</span>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-destructive">
+          destructive
+        </button>
+        <span style="display:block">btn btn-destructive</span>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-destructive btn-border-none">
+          destructive
+        </button>
+        <span style="display:block">btn btn-destructive btn-border-none</span>
+      </div>
+    </div>
+    <div class="epy-row">
+      <div class="col-2">
+        <div class="btn btn-outline btn-icon">
+          <img class="icon" src="./assets/icons/create_campaign_icon_on.svg" /><span class="text">primary outline</span>
+        </div>
+        <span style="display:block">btn btn-outline btn-icon</span>
+      </div>
+      <div class="col-2">
+        <div class="btn btn-outline btn-icon">
+          <span class="text">primary outline</span>
+          <img class="icon" src="./assets/icons/create_campaign_icon_on.svg" />
+        </div>
+        <span style="display:block">btn btn-outline btn-icon</span>
+      </div>
+      <div class="col-2">
+        <div class="btn btn-outline btn-icon btn-border-none">
+          <img class="icon" src="./assets/icons/create_campaign_icon_on.svg" />
+          <span class="text">primary</span>
+        </div>
+        <span style="display:block">btn btn-outline btn-icon btn-border-none</span>
+      </div>
+      <div class="col-2">
+        <div class="btn btn-outline btn-icon btn-border-none">
+          <span class="text">primary</span>
+          <img class="icon" src="./assets/icons/create_campaign_icon_on.svg" />
+        </div>
+        <span style="display:block">btn btn-outline btn-icon btn-border-none</span>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-link">
+          link
+        </button>
+        <span style="display:block">btn btn-link</span>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-default">
+          default
+        </button>
+        <span style="display:block">btn btn-default</span>
+      </div>
+    </div>
+    <div class="epy-row">
+      <div class="col-2">
+        <button class="btn btn-primary btn-tight">
+          tight
+        </button>
+        <span style="display:block">btn btn-primary btn-tight</span>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-primary btn-small">
+          small
+        </button>
+        <span style="display:block">btn btn-primary btn-small</span>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-primary">
+          default
+        </button>
+        <span style="display:block">btn btn-primary</span>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-primary btn-large">
+          large
+        </button>
+        <span style="display:block">btn btn-primary btn-large</span>
+      </div>
+    </div>
+    <div class="epy-row">
+      <div class="col-2">
+        <button class="btn btn-default btn-square">
+          <img class="image" src="./assets/google-merchant-center.png" />
+          default square
+        </button>
+        <span style="display:block">btn btn-default btn-square</span>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-default btn-square">
+          <img class="image" src="./assets/google-merchant-center.png" />
+          default square
+          <img class="image" src="./assets/icons/check_on_fill_icon.svg" />
+        </button>
+        <span style="display:block">btn btn-default btn-square</span>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-primary btn-square">
+          <img class="image" src="./assets/icons/not_sure_white_icon.svg" />
+          primary square
+        </button>
+        <span style="display:block">btn btn-primary btn-square</span>
+      </div>
+      <div class="col s4">
+        <button class="btn btn-default btn-rectangle">
+          <img class="image" src="./assets/icons/import_icon .svg" />
+          primary rectangle
+        </button>
+        <span style="display:block">btn btn-default btn-rectangle</span>
+      </div>
+    </div>
+    <hr />
+  </div>
+
+  <!-- <div *ngIf="filter" class="filter-wrapper">
                       <input type="text" />
                     </div> -->
 
-    <!-- ************************SELECT************************** -->
-    <div style="margin-bottom:50px">
-      <h5>Select</h5>
-      <div class="row">
-        <div class="col s2">
-          <span style="display:block">select select-box</span>
-          <div class="select select-box">
-            <div class="select-wrapper">
-              <div class="select-trigger">
+  <!-- ************************SELECT************************** -->
+  <div style="margin-bottom:50px">
+    <h5>Select</h5>
+    <div class="epy-row">
+      <div class="col-2">
+        <span style="display:block">select select-box</span>
+        <div class="select select-box">
+          <div class="select-wrapper">
+            <div class="select-trigger">
+              <span>Maximaze Clicks</span>
+              <div class="arrow"></div>
+            </div>
+            <div class="options-wrapper">
+              <span class="option selected">Maximaze Clicks</span>
+              <span class="option">Maximaze Revenue</span>
+              <span class="option">Maximaze Impressions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <span style="display:block">select select-box select-open</span>
+        <div class="select select-box select-open">
+          <div class="select-wrapper">
+            <div class="select-trigger">
+              <div class="select-value">
                 <span>Maximaze Clicks</span>
-                <div class="arrow"></div>
               </div>
-              <div class="options-wrapper">
-                <span class="option selected">Maximaze Clicks</span>
-                <span class="option">Maximaze Revenue</span>
-                <span class="option">Maximaze Impressions</span>
-              </div>
+              <div class="arrow arrow-open"></div>
             </div>
-          </div>
-        </div>
-        <div class="col s2">
-          <span style="display:block">select select-box select-open</span>
-          <div class="select select-box select-open">
-            <div class="select-wrapper">
-              <div class="select-trigger">
-                <div class="select-value">
-                  <span>Maximaze Clicks</span>
-                </div>
-                <div class="arrow arrow-open"></div>
-              </div>
-              <div class="options-wrapper">
-                <span class="option selected">Maximaze Clicks</span>
-                <span class="option">Maximaze Revenue</span>
-                <span class="option">Maximaze Impressions</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s2">
-          <span style="display:block">select select-outline</span>
-          <div class="select select-outline">
-            <div class="select-wrapper">
-              <div class="select-trigger">
-                <div class="select-value">
-                  <span>Maximaze Clicks</span>
-                </div>
-                <div class="arrow arrow-open"></div>
-              </div>
-              <div class="options-wrapper">
-                <span class="option selected">Maximaze Clicks</span>
-                <span class="option">Maximaze Revenue</span>
-                <span class="option">Maximaze Impressions</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s2">
-          <span style="display:block">select select-outline select-open</span>
-          <div class="select select-outline select-open">
-            <div class="select-wrapper">
-              <div class="select-trigger">
-                <div class="select-value">
-                  <span>Maximaze Clicks</span>
-                </div>
-                <div class="arrow arrow-open"></div>
-              </div>
-              <div class="options-wrapper">
-                <span class="option selected">Maximaze Clicks</span>
-                <span class="option">Maximaze Revenue</span>
-                <span class="option">Maximaze Impressions</span>
-              </div>
+            <div class="options-wrapper">
+              <span class="option selected">Maximaze Clicks</span>
+              <span class="option">Maximaze Revenue</span>
+              <span class="option">Maximaze Impressions</span>
             </div>
           </div>
         </div>
       </div>
-      <hr />
-    </div>
-
-    <!-- ************************TOOLTIP************************** -->
-    <div style="margin-bottom:50px">
-      <h5>Tooltip</h5>
-      <div class="row">
-        <div class="col s2">
-          <div class="tooltip">
-            <div class="tooltip-header">
-              <span class="tooltip-title">tooltip title?</span>
+      <div class="col-2">
+        <span style="display:block">select select-outline</span>
+        <div class="select select-outline">
+          <div class="select-wrapper">
+            <div class="select-trigger">
+              <div class="select-value">
+                <span>Maximaze Clicks</span>
+              </div>
+              <div class="arrow arrow-open"></div>
             </div>
-            <div class="tooltip-content">
-              tooltip content
-            </div>
-          </div>
-        </div>
-        <div class="col s2">
-          <div class="tooltip">
-            <div class="tooltip-header">
-              <span class="tooltip-title active">tooltip title?</span>
-            </div>
-            <div class="tooltip-content active">
-              tooltip content
+            <div class="options-wrapper">
+              <span class="option selected">Maximaze Clicks</span>
+              <span class="option">Maximaze Revenue</span>
+              <span class="option">Maximaze Impressions</span>
             </div>
           </div>
         </div>
       </div>
-      <hr />
-    </div>
-
-    <div style="margin-bottom:50px">
-      <div class="row">
-        <div class="col s2">
-          <div class="input input-box">
-            <div class="wrapper-input">
-              <input type="text" placeholder="Campaign name" />
+      <div class="col-2">
+        <span style="display:block">select select-outline select-open</span>
+        <div class="select select-outline select-open">
+          <div class="select-wrapper">
+            <div class="select-trigger">
+              <div class="select-value">
+                <span>Maximaze Clicks</span>
+              </div>
+              <div class="arrow arrow-open"></div>
+            </div>
+            <div class="options-wrapper">
+              <span class="option selected">Maximaze Clicks</span>
+              <span class="option">Maximaze Revenue</span>
+              <span class="option">Maximaze Impressions</span>
             </div>
           </div>
-          <span>input input-box</span>
-        </div>
-        <div class="col s2">
-          <div class="input input-box">
-            <div class="wrapper-input">
-              <img
-                class="icon icon-left"
-                src="./assets/icons/search_icon.svg"
-              />
-              <input type="text" />
-            </div>
-          </div>
-          <span>input input-box</span>
-        </div>
-        <div class="col s2">
-          <div class="input input-box">
-            <div class="wrapper-input">
-              <input type="text" />
-              <img
-                class="icon icon-right"
-                src="./assets/icons/search_icon.svg"
-              />
-            </div>
-          </div>
-          <span>input input-box</span>
-        </div>
-
-        <div class="col s2">
-          <div class="input input-outline">
-            <div class="wrapper-input">
-              <input type="text" />
-            </div>
-          </div>
-          <span>input input-outline</span>
-        </div>
-
-        <div class="col s2">
-          <div class="input input-outline">
-            <div class="wrapper-input">
-              <input type="email" placeholder="email" value="1234" />
-            </div>
-          </div>
-          <span>input input-outline</span>
         </div>
       </div>
     </div>
-  </body>
+    <hr />
+  </div>
+
+  <!-- ************************TOOLTIP************************** -->
+  <div style="margin-bottom:50px">
+    <h5>Tooltip</h5>
+    <div class="epy-row">
+      <div class="col-2">
+        <div class="tooltip">
+          <div class="tooltip-header">
+            <span class="tooltip-title">tooltip title?</span>
+          </div>
+          <div class="tooltip-content">
+            tooltip content
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="tooltip">
+          <div class="tooltip-header">
+            <span class="tooltip-title active">tooltip title?</span>
+          </div>
+          <div class="tooltip-content active">
+            tooltip content
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="tooltip">
+          <div class="tooltip-header">
+            <span class="tooltip-title">tooltip title?</span>
+          </div>
+          <div class="tooltip-content">
+            tooltip content
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="tooltip">
+          <div class="tooltip-header">
+            <span class="tooltip-title active">tooltip title?</span>
+          </div>
+          <div class="tooltip-content active">
+            tooltip content
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="tooltip">
+          <div class="tooltip-header">
+            <span class="tooltip-title">tooltip title?</span>
+          </div>
+          <div class="tooltip-content">
+            tooltip content
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="tooltip">
+          <div class="tooltip-header">
+            <span class="tooltip-title active">tooltip title?</span>
+          </div>
+          <div class="tooltip-content active">
+            tooltip content
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <div style="margin-bottom:50px">
+    <h5>Input</h5>
+    <div class="epy-row">
+      <div class="col-2">
+        <div class="input input-box">
+          <div class="wrapper-input">
+            <input type="text" placeholder="Campaign name" />
+          </div>
+        </div>
+        <span>input input-box</span>
+      </div>
+      <div class="col-2">
+        <div class="input input-box">
+          <div class="wrapper-input">
+            <img class="icon icon-left" src="./assets/icons/search_icon.svg" />
+            <input type="text" />
+          </div>
+        </div>
+        <span>input input-box</span>
+      </div>
+      <div class="col-2">
+        <div class="input input-box">
+          <div class="wrapper-input">
+            <input type="text" />
+            <img class="icon icon-right" src="./assets/icons/search_icon.svg" />
+          </div>
+        </div>
+        <span>input input-box</span>
+      </div>
+
+      <div class="col-2">
+        <div class="input input-outline">
+          <div class="wrapper-input">
+            <input type="text" />
+          </div>
+        </div>
+        <span>input input-outline</span>
+      </div>
+
+      <div class="col-2">
+        <div class="input input-outline">
+          <div class="wrapper-input">
+            <input type="email" placeholder="email" value="1234" />
+          </div>
+        </div>
+        <span>input input-outline</span>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
