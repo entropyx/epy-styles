@@ -150,7 +150,9 @@
   }
 }
 
-// TEMPLATE (Table + Chart)
+// TEMPLATES
+
+// Stat loader (Table + Chart)
 .stat-loader {
   .table-loader {
     margin: 32px 16px;
@@ -169,21 +171,8 @@
   }
 }
 
-.campaign-loader {
-  .title-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 75px;
-  }
-
-  .title-loader {
-    width: 100%;
-  }
-}
-
-// TEMPLATE CAMPAIGN-LOADER
 .divided-loader {
+  min-width: 412px;
   .title-loader {
     display: flex;
     flex-direction: column;
@@ -212,7 +201,48 @@
   }
 }
 
-// PROGRESS BAR
+.campaign-loader {
+  min-width: 420px;
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 75px;
+  }
+
+  .title-loader {
+    width: 100%;
+  }
+}
+
+.campaign-loader-details {
+  min-width: 420px;
+  .title-container {
+    column-gap: 16%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 38px;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  .details-container {
+    column-gap: 16%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 38px;
+  }
+
+  .table-loader {
+    column-gap: 16%;
+  }
+
+  .line-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+// Progress bar
 progress {
   border-radius: 16px;
   display: inline-block;
