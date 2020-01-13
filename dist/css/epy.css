@@ -3208,9 +3208,6 @@ textarea {
   margin-top: 24px;
 }
 
-.divided-loader {
-  min-width: 412px;
-}
 .divided-loader .title-loader {
   display: flex;
   flex-direction: column;
@@ -3234,9 +3231,6 @@ textarea {
   width: 2px;
 }
 
-.campaign-loader {
-  min-width: 420px;
-}
 .campaign-loader .title-container {
   display: flex;
   justify-content: space-between;
@@ -3247,28 +3241,57 @@ textarea {
   width: 100%;
 }
 
-.campaign-loader-details {
-  min-width: 420px;
-}
-.campaign-loader-details .title-container {
+.campaign-details-loader .title-container {
   column-gap: 16%;
   display: grid;
   grid-template-columns: repeat(2, 1fr) 38px;
   margin-bottom: 32px;
   width: 100%;
 }
-.campaign-loader-details .details-container {
+.campaign-details-loader .details-container {
   column-gap: 16%;
   display: grid;
   grid-template-columns: repeat(2, 1fr) 38px;
 }
-.campaign-loader-details .table-loader {
+.campaign-details-loader .table-loader {
   column-gap: 16%;
 }
-.campaign-loader-details .line-details {
+.campaign-details-loader .line-details {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.budget-loader .budget-details {
+  background-color: #ffffff;
+  border: 1px solid #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
+  height: 430px;
+  margin-top: 32px;
+  padding: 32px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
+}
+.budget-loader .budget-details .budget-days {
+  column-gap: 4%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  margin-top: 32px;
+  row-gap: 6%;
+}
+.budget-loader .budget-details .budget-days > .day {
+  animation-duration: 1s !important;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: indeterm-shimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #f7f7f7 8%, #f1f1f1 18%, #f7f7f7 23%);
+  background-size: 800px 104px;
+  border-radius: 2px;
+  height: 40px;
+  width: 100%;
 }
 
 progress {

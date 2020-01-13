@@ -172,7 +172,6 @@
 }
 
 .divided-loader {
-  min-width: 412px;
   .title-loader {
     display: flex;
     flex-direction: column;
@@ -202,7 +201,6 @@
 }
 
 .campaign-loader {
-  min-width: 420px;
   .title-container {
     display: flex;
     justify-content: space-between;
@@ -215,8 +213,7 @@
   }
 }
 
-.campaign-loader-details {
-  min-width: 420px;
+.campaign-details-loader {
   .title-container {
     column-gap: 16%;
     display: grid;
@@ -239,6 +236,34 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+  }
+}
+
+.budget-loader {
+  .budget-details {
+    background-color: $white;
+    border: 1px solid $albaster;
+    border-radius: 8px;
+    box-shadow: $medium-shadow;
+    height: 430px;
+    margin-top: 32px;
+    padding: 32px;
+    -webkit-box-shadow: $medium-shadow;
+
+    .budget-days {
+      column-gap: 4%;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      margin-top: 32px;
+      row-gap: 6%;
+      > .day {
+        @include basic-loader;
+        border-radius: 2px;
+        height: 40px;
+        width: 100%;
+      }
+    }
   }
 }
 
