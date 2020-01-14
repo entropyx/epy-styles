@@ -48,6 +48,17 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      > i::before {
+        font-size: 40px;
+      }
+
+      span {
+        color: $dusty-gray;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15px;
+      }
     }
   }
 
@@ -123,22 +134,4 @@
       color: #decc57;
     }
   }
-}
-
-span.search-icon {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-image: url("../../assets/icons/search.svg");
-  background-repeat: no-repeat;
-  background-size: 16px;
-}
-
-span.shopping-icon {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-image: url("../../assets/icons/shopping_icon.svg");
-  background-repeat: no-repeat;
-  background-size: 16px;
 }

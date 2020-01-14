@@ -32,7 +32,6 @@
   }
 
   .options-container {
-    background: transparent;
     background-color: $white;
     border-radius: 4px;
     border-top: 0;
@@ -98,6 +97,7 @@
 .select-outline {
   .select-trigger {
     @include select-trigger($jungle-green);
+    background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     height: 40px;
@@ -157,14 +157,14 @@
   &.select-outline {
     .select-trigger {
       @include select-trigger($jungle-green);
-      background-color: $white;
+      background-color: transparent;
       border: 1px solid $jungle-green;
       color: $jungle-green;
       height: 40px;
 
       &:focus,
       &:hover {
-        background-color: $white;
+        background-color: transparent;
         border: 1px solid $mountain-meadow;
         color: $mountain-meadow;
       }
@@ -185,7 +185,7 @@
   &.select-outline {
     &.active {
       .select-trigger {
-        background-color: $white;
+        background-color: transparent;
         border: 1px solid $mountain-meadow;
         color: $mountain-meadow;
       }

@@ -5,15 +5,13 @@
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="dist/css/epy.css" />
   <!-- <link rel="stylesheet" href="epy.css" /> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Entropy Font Icons -->
   <link rel="stylesheet" href="https://storage.googleapis.com/assets-front/fonts/epy-icons.css" />
   <!-- End  Entropy Font Icons -->
   <title>Epy Sass Boilerplate for epy-styles</title>
 </head>
 
-<body style="padding: 40px 60px">
+<body style="padding: 40px 60px; background-color: #f1f1f1;">
   <!-- ************************FONTS************************** -->
   <div style="margin-top:50px">
     <h1>Fonts</h1>
@@ -148,27 +146,27 @@
     <div class="epy-row">
       <div class="col-2">
         <button class="btn btn-primary">
-          <i class="fa fa-at left"></i> primary
+          <i class="epy-icon-user left"></i> primary
         </button>
       </div>
       <div class="col-2">
         <button class="btn btn-primary">
-          primary<i class="fa fa-at right"></i>
+          primary<i class="epy-icon-user right"></i>
         </button>
       </div>
       <div class="col-2">
         <button class="btn btn-primary btn-outline">
-          <i class="fa fa-at left"></i>outline
+            <i class="epy-icon-user left"></i>outline
         </button>
       </div>
       <div class="col-2">
         <button class="btn btn-primary btn-outline">
-          outline<i class="fa fa-at right"></i>
+          outline<i class="epy-icon-user right"></i>
         </button>
       </div>
       <div class="col-2">
         <button class="btn btn-destructive">
-          <i class="fa fa-at left"></i>destructive
+            <i class="epy-icon-user left"></i>destructive
         </button>
       </div>
     </div>
@@ -187,7 +185,7 @@
       </div>
       <div class="col-2">
         <div class="btn btn-border-none">
-          <img class="icon left" src="./assets/icons/create_campaign_icon_on.svg" />
+          <i class="epy-icon-create-campaign left"></i>
           Create a new campaign
         </div>
         <span style="display:block">btn btn-border-none</span>
@@ -195,7 +193,7 @@
       <div class="col-2">
         <div class="btn btn-border-none">
           Create a new campaign
-          <img class="icon right" src="./assets/icons/create_campaign_icon_on.svg" />
+          <i class="epy-icon-create-campaign right"></i>
         </div>
         <span style="display:block">btn btn-border-none</span>
       </div>
@@ -205,8 +203,16 @@
         </button>
         <span style="display:block">btn btn-link</span>
       </div>
+      <div class="col-2">
+        
+          <button class="btn btn-link">
+              <i class="epy-icon-create-campaign left"></i>
+            link
+          </button>
+          <span style="display:block">btn btn-link</span>
+        </div>
     </div>
-    <div class="epy-row">
+    <!-- <div class="epy-row">
       <div class="col-2">
         <button class="btn btn-primary btn-tight">
           tight
@@ -233,17 +239,17 @@
       </div>
       <div class="col-2">
         <button class="btn btn-square-small">
-          <img class="icon" src="./assets/icons/change_card.svg" />
+         <i class="epy-icon-cards"></i>
         </button>
         <span style="display:block">btn btn-square-small</span>
       </div>
       <div class="col-2">
         <button class="btn btn-square-small btn-info">
-          <img class="icon" src="./assets/icons/change_table.svg" />
+          <i class="epy-icon-charts"></i>
         </button>
         <span style="display:block">btn btn-square-small btn-info</span>
       </div>
-    </div>
+    </div> -->
     <div class="epy-row">
       <div class="col-2">
         <button class="btn btn-default btn-square">
@@ -302,7 +308,7 @@
         <div class="input input-line validate">
           <div class="input-container icon-left">
             <input class="input-text" type="email" placeholder="email" />
-            <i class="fa fa-at"></i>
+            <i class="epy-icon-user"></i>
           </div>
         </div>
       </div>
@@ -310,7 +316,7 @@
         <span style="display: block;">input input-line validate</span>
         <div class="input input-line validate">
           <div class="input-container icon-right">
-            <i class="fa fa-at"></i>
+            <i class="epy-icon-user"></i>
             <input class="input-text" type="email" placeholder="email" />
           </div>
         </div>
@@ -319,9 +325,9 @@
         <span style="display: block;">input input-line validate</span>
         <div class="input input-line validate">
           <div class="input-container cleaner">
-            <i class="fa fa-at left"></i>
+            <i class="epy-icon-user left"></i>
             <input class="input-text invalid" type="email" placeholder="email" />
-            <i class="fa fa-times clean right"></i>
+            <i class="epy-icon-x clean right"></i>
           </div>
         </div>
       </div>
@@ -352,7 +358,7 @@
       <div class="col-2">
         <div class="input input-outline validate">
           <div class="input-container icon-left">
-            <i class="fa fa-at "></i>
+            <i class="epy-icon-user"></i>
             <input class="input-text" type="email" placeholder="email" />
           </div>
         </div>
@@ -361,16 +367,16 @@
         <div class="input input-outline validate">
           <div class="input-container icon-right">
             <input class="input-text" type="email" placeholder="email" />
-            <i class="fa fa-at "></i>
+            <i class="epy-icon-user"></i>
           </div>
         </div>
       </div>
       <div class="col-2">
         <div class="input input-outline validate">
           <div class="input-container cleaner">
-            <i class="fa fa-at left"></i>
+              <i class="epy-icon-user left"></i>
             <input class="input-text invalid" type="email" placeholder="email" />
-            <i class="fa fa-times clean right"></i>
+            <i class="epy-icon-x clean right"></i>
           </div>
         </div>
       </div>
@@ -527,7 +533,7 @@
         <div class="select select-outline">
           <div class="select-container">
             <div class="select-trigger">
-              <img class="icon" src="./assets/icons/user_editor.svg" />
+              <i class="epy-icon-user-editor"></i>
               <div class="select-value">
                 <span>Editor</span>
               </div>
@@ -545,7 +551,7 @@
         <div class="select select-outline active">
           <div class="select-container">
             <div class="select-trigger">
-              <img class="icon" src="./assets/icons/user_editor.svg" />
+                <i class="epy-icon-user-editor"></i>
               <div class="select-value">
                 <span>Editor</span>
               </div>
@@ -672,7 +678,7 @@
               <div class="input input-outline">
                 <div class="input-container icon-right">
                   <input class="input-text" type="text" placeholder="buscar" />
-                  <img class="icon icon-right" src="./assets/icons/search_icon.svg" />
+                  <i class="epy-icon-search-v1"></i>
                 </div>
               </div>
 
@@ -1122,9 +1128,9 @@
             <span class="card-title">100 - Brand [Entropy]</span>
             <span class="priority-label">High priority</span>
             <div class="camp-type">
-              <div class="icon-circle-container">
-                <span class="search-icon"></span>
-              </div>
+              <!-- <div class="icon-circle-container"> -->
+                <i class="epy-icon-button-search"></i>
+              <!-- </div> -->
               <span>search</span>
 
             </div>
@@ -1150,7 +1156,7 @@
                 <span class="field upper">clicks</span>
                 <b class="metric-score">1.1k</b>
                 <div class="metric-percent">
-                  <i class="material-icons up text-red">arrow_drop_down</i>
+                  <i class="epy-icon-triangle-down text-red"></i>
                   <span>-17.19%</span>
                 </div>
               </div>
@@ -1158,7 +1164,7 @@
                 <span class="field upper">cost</span>
                 <b class="metric-score">$20.0k</b>
                 <div class="metric-percent">
-                  <i class="material-icons up text-green">arrow_drop_down</i>
+                  <i class="epy-icon-triangle-up text-green"></i>
                   <span>-17.19%</span>
                 </div>
               </div>
@@ -1166,7 +1172,7 @@
                 <span class="field upper">revenue</span>
                 <b class="metric-score">$66.5k</b>
                 <div class="metric-percent">
-                  <i class="material-icons up text-green">arrow_drop_up</i>
+                  <i class="epy-icon-triangle-up text-green"></i>
                   <span>36.69%</span>
                 </div>
               </div>
@@ -1199,9 +1205,9 @@
           <div class="card-header">
             <span class="card-title">100 - Brand [Entropy]</span>
             <div class="camp-type">
-              <div class="icon-circle-container">
-                <span class="shopping-icon"></span>
-              </div>
+              <!-- <div class="icon-circle-container"> -->
+                  <i class="epy-icon-button-shopping"></i>
+              <!-- </div> -->
               <span>shopping</span>
 
             </div>
@@ -1227,7 +1233,7 @@
                 <span class="field upper">clicks</span>
                 <b class="metric-score">1.1k</b>
                 <div class="metric-percent">
-                  <i class="material-icons up text-red">arrow_drop_down</i>
+                    <i class="epy-icon-triangle-down text-red"></i>
                   <span>-17.19%</span>
                 </div>
               </div>
@@ -1235,7 +1241,7 @@
                 <span class="field upper">cost</span>
                 <b class="metric-score">$20.0k</b>
                 <div class="metric-percent">
-                  <i class="material-icons up text-green">arrow_drop_down</i>
+                    <i class="epy-icon-triangle-up text-green"></i>
                   <span>-17.19%</span>
                 </div>
               </div>
@@ -1243,7 +1249,7 @@
                 <span class="field upper">revenue</span>
                 <b class="metric-score">$66.5k</b>
                 <div class="metric-percent">
-                  <i class="material-icons up text-green">arrow_drop_up</i>
+                    <i class="epy-icon-triangle-up text-green"></i>
                   <span>36.69%</span>
                 </div>
               </div>

@@ -2323,8 +2323,10 @@ textarea {
   display: flex;
   font-size: 16px;
   line-height: 20px;
-  height: 40px;
-  justify-content: space-between;
+  height: 48px;
+  justify-content: flex-start;
+  margin: 8px;
+  min-width: 88px;
   text-align: center;
   padding: 8px 24px;
   outline: none;
@@ -2350,12 +2352,12 @@ textarea {
   border: 1px solid #cecece;
 }
 .btn-primary.btn-outline {
-  background-color: #ffffff;
+  background-color: transparent;
   border: 1px solid #26c580;
   color: #26c580;
 }
 .btn-primary.btn-outline:focus, .btn-primary.btn-outline:hover {
-  background-color: #ffffff;
+  background-color: transparent;
   border: 1px solid #20ab6f;
   color: #20ab6f;
 }
@@ -2392,7 +2394,7 @@ textarea {
   -webkit-box-shadow: none;
 }
 .btn-destructive:focus, .btn-destructive:hover {
-  background-color: #ffffff;
+  background-color: transparent;
 }
 .btn-destructive.btn-outline {
   border: 1px solid #c55757;
@@ -2422,7 +2424,7 @@ textarea {
   background-color: transparent;
   padding-right: 8px;
   padding-left: 8px;
-  background-color: #ffffff;
+  background-color: transparent;
   color: #26c580;
 }
 .btn-link:hover, .btn-link:focus {
@@ -2434,7 +2436,7 @@ textarea {
   font-weight: 600;
 }
 .btn-link:focus {
-  background-color: #ffffff;
+  background-color: transparent;
   color: #089aa6;
   font-weight: 600;
 }
@@ -2503,8 +2505,8 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  background-color: #ffffff;
   box-shadow: 0 1px 1px 0 rgba(212, 212, 212, 0.5);
-  background-color: transparent;
   border: 1px solid #f1f1f1;
   height: 32px !important;
   min-width: 32px;
@@ -2745,7 +2747,6 @@ textarea {
   margin-left: 4px;
 }
 .select .options-container {
-  background: transparent;
   background-color: #ffffff;
   border-radius: 4px;
   border-top: 0;
@@ -2811,6 +2812,7 @@ textarea {
   line-height: 20px;
   position: relative;
   -webkit-box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
+  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   height: 40px;
@@ -2936,7 +2938,7 @@ textarea {
   line-height: 20px;
   position: relative;
   -webkit-box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
-  background-color: #ffffff;
+  background-color: transparent;
   border: 1px solid #26c580;
   color: #26c580;
   height: 40px;
@@ -2953,7 +2955,7 @@ textarea {
   -webkit-box-shadow: 0 2px 4px 0 rgba(212, 212, 212, 0.5);
 }
 .select-primary.select-outline .select-trigger:focus, .select-primary.select-outline .select-trigger:hover {
-  background-color: #ffffff;
+  background-color: transparent;
   border: 1px solid #20ab6f;
   color: #20ab6f;
 }
@@ -2963,7 +2965,7 @@ textarea {
 }
 
 .select-primary.select-outline.active .select-trigger {
-  background-color: #ffffff;
+  background-color: transparent;
   border: 1px solid #20ab6f;
   color: #20ab6f;
 }
@@ -3361,6 +3363,15 @@ progress::-webkit-progress-value {
   justify-content: center;
   align-items: center;
 }
+.card-campaign .card-header .camp-type > i::before {
+  font-size: 40px;
+}
+.card-campaign .card-header .camp-type span {
+  color: #9b9b9b;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+}
 .card-campaign .camp-details .general-info {
   display: flex;
   margin-top: 20px;
@@ -3421,24 +3432,6 @@ progress::-webkit-progress-value {
 .card-campaign .field.yellow {
   background-color: transparent;
   color: #decc57;
-}
-
-span.search-icon {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-image: url("../../assets/icons/search.svg");
-  background-repeat: no-repeat;
-  background-size: 16px;
-}
-
-span.shopping-icon {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-image: url("../../assets/icons/shopping_icon.svg");
-  background-repeat: no-repeat;
-  background-size: 16px;
 }
 
 .icon-circle-container {

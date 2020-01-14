@@ -15,8 +15,10 @@
   display: flex;
   font-size: 16px;
   line-height: 20px;
-  height: 40px;
-  justify-content: space-between;
+  height: 48px;
+  justify-content: flex-start;
+  margin: 8px;
+  min-width: 88px;
   text-align: center;
   padding: 8px 24px;
   outline: none;
@@ -50,13 +52,13 @@
   }
 
   &.btn-outline {
-    background-color: $white;
+    background-color: transparent;
     border: 1px solid $jungle-green;
     color: $jungle-green;
 
     &:focus,
     &:hover {
-      background-color: $white;
+      background-color: transparent;
       border: 1px solid $mountain-meadow;
       color: $mountain-meadow;
     }
@@ -95,7 +97,7 @@
 
   &:focus,
   &:hover {
-    background-color: $white;
+    background-color: transparent;
   }
 
   &.btn-outline {
@@ -125,7 +127,7 @@
 
 .btn-link {
   @include btn-border-none;
-  background-color: $white;
+  background-color: transparent;
   color: $jungle-green;
 
   &:hover {
@@ -134,7 +136,7 @@
   }
 
   &:focus {
-    background-color: $white;
+    background-color: transparent;
     color: $niagara;
     font-weight: 600;
   }
@@ -198,8 +200,8 @@
 
 .btn-square-small {
   @include btn-figure;
+  background-color: $white;
   box-shadow: $small-shadow;
-  background-color: transparent;
   border: 1px solid $seashell;
   height: 32px !important;
   min-width: 32px;
