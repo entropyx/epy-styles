@@ -1,16 +1,28 @@
+// let text_area_selector = "textarea";
+
+// $(document).on("keyup", text_area_selector, function() {
+//   resize($(this));
+// });
+// $(document).on("keydown", text_area_selector, function() {
+//   resize($(this));
+// });
+
 function resize(element) {
-  if (element[0].scrollHeight < 104) {
-    element[0].style.height = "104px";
+  if (element.scrollHeight < 104) {
+    element.target.style.height = "104px";
   } else {
-    element[0].style.height = element[0].scrollHeight + "px";
+    element.target.style.height = element.target.scrollHeight + "px";
   }
 }
 
-let text_area_selector = "textarea";
+let textareas = document.getElementsByTagName("textarea");
 
-$(document).on("keyup", text_area_selector, function() {
-  resize($(this));
-});
-$(document).on("keydown", text_area_selector, function() {
-  resize($(this));
-});
+for (let textarea of textareas) {
+  textarea.addEventListener("keyup", e => {
+    resize(e);
+  });
+
+  textarea.addEventListener("keydown", e => {
+    resize(e);
+  });
+}
