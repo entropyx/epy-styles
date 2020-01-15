@@ -16,7 +16,8 @@
     "build": "webpack"
   },
   "dependencies": {
-    "materialize-css": "^1.0.0"
+    "materialize-css": "^1.0.0",
+    "webpack-dev-server": "^3.10.1"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^5.1.1",

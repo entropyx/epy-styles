@@ -39,3 +39,12 @@ for (let textarea of document.getElementsByTagName("textarea")) {
   textarea.addEventListener("keyup", e => resize(e));
   textarea.addEventListener("keydown", e => resize(e));
 }
+
+let clean = document.getElementById("clean");
+clean.addEventListener("click", function(event) {
+  let input = document.querySelector("div.input-container.cleaner input").value;
+
+  if (input.length > 0) {
+    document.querySelector("div.input-container.cleaner input").value = "";
+  }
+});
