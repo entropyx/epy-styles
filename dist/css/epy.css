@@ -2665,6 +2665,22 @@ textarea {
   overflow: hidden;
   min-height: 104px;
 }
+.input.input-counter .input-aux-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: relative;
+  font-size: 12px;
+  line-height: 15px;
+}
+.input.input-counter .input-aux-container .counter {
+  color: #717171;
+  position: absolute;
+  right: 0;
+}
+.input.input-counter .input-aux-container .helper-text {
+  color: #c55757;
+}
 
 .input-line .input-label {
   color: #717171;

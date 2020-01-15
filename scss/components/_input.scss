@@ -182,6 +182,28 @@
       min-height: 104px;
     }
   }
+
+  &.input-counter {
+    .input-aux-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      position: relative;
+      font-size: 12px;
+      line-height: 15px;
+
+      .counter {
+        color: $dove-gray;
+
+        position: absolute;
+        right: 0;
+      }
+
+      .helper-text {
+        color: $wuzzy-brown;
+      }
+    }
+  }
 }
 
 .input-line {

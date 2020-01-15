@@ -1,12 +1,32 @@
-// let text_area_selector = "textarea";
+// Input counter
+for (let [i, input] of document.querySelectorAll(".input-counter").entries()) {
+  // create a input-aux-container if doesn't exists
+  if (!input.querySelector(".input-aux-container")) {
+    let inputAuxContainer = document.createElement("div");
+    inputAuxContainer.classList.add("input-aux-container");
+    input.appendChild(inputAuxContainer);
+  }
 
-// $(document).on("keyup", text_area_selector, function() {
-//   resize($(this));
-// });
-// $(document).on("keydown", text_area_selector, function() {
-//   resize($(this));
-// });
+  // create a span (counter) into input-aux-container
+  let counterSpan = document.createElement("span");
+  let id = `input-count-${i + 1}`;
+  counterSpan.id = id;
+  counterSpan.classList.add("counter");
 
+  let auxContainer = input.querySelector(".input-aux-container");
+  auxContainer.appendChild(counterSpan);
+
+  // event to show the current lenght in input
+  input.addEventListener("keyup", e => {
+    const maxLength = e.target.maxLength;
+    const length = e.target.value.length;
+
+    let legend = document.getElementById(`${id}`);
+    legend.innerHTML = `${length}/${maxLength}`;
+  });
+}
+
+// Textarea (height)
 function resize(element) {
   if (element.scrollHeight < 104) {
     element.target.style.height = "104px";
@@ -15,14 +35,7 @@ function resize(element) {
   }
 }
 
-let textareas = document.getElementsByTagName("textarea");
-
-for (let textarea of textareas) {
-  textarea.addEventListener("keyup", e => {
-    resize(e);
-  });
-
-  textarea.addEventListener("keydown", e => {
-    resize(e);
-  });
+for (let textarea of document.getElementsByTagName("textarea")) {
+  textarea.addEventListener("keyup", e => resize(e));
+  textarea.addEventListener("keydown", e => resize(e));
 }
