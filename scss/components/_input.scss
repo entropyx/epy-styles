@@ -183,7 +183,7 @@
     }
   }
 
-  &.input-counter {
+  &.counter {
     .input-aux-container {
       display: flex;
       justify-content: space-between;
@@ -192,7 +192,7 @@
       font-size: 12px;
       line-height: 15px;
 
-      .counter {
+      .number {
         color: $dove-gray;
 
         position: absolute;

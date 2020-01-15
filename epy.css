@@ -2665,7 +2665,7 @@ textarea {
   overflow: hidden;
   min-height: 104px;
 }
-.input.input-counter .input-aux-container {
+.input.counter .input-aux-container {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -2673,12 +2673,12 @@ textarea {
   font-size: 12px;
   line-height: 15px;
 }
-.input.input-counter .input-aux-container .counter {
+.input.counter .input-aux-container .number {
   color: #717171;
   position: absolute;
   right: 0;
 }
-.input.input-counter .input-aux-container .helper-text {
+.input.counter .input-aux-container .helper-text {
   color: #c55757;
 }
 
