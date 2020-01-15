@@ -26,3 +26,13 @@ for (let textarea of textareas) {
     resize(e);
   });
 }
+
+let clean = document.getElementById("clean");
+
+clean.addEventListener("click", function (event) {
+  let input = document.querySelector("div.input-container.cleaner input").value;
+
+  if(input.length > 0) {
+    document.querySelector("div.input-container.cleaner input").value = '';
+  }
+});
