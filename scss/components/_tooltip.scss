@@ -11,8 +11,10 @@
 
   &.active {
     .tooltip-header .tooltip-title {
-      background-image: url("../assets/icons/arrow up tooltip.svg");
-      color: $niagara !important;
+      &:after{
+        color: $niagara;
+        transform: rotate(180deg);
+      }
     }
 
     .tooltip-content {
@@ -25,24 +27,42 @@
 }
 
 .tooltip-header {
-  background-image: url("../assets/icons/help_icon.svg");
-  background-position: 0;
-  background-repeat: no-repeat;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  padding-left: 24px;
-
+  
   .tooltip-title {
-    background-image: url("../assets/icons/arrow_down_tooltip.svg");
-    background-position: 100%;
-    background-repeat: no-repeat;
     color: $java;
     cursor: pointer;
     font-size: 16px;
     font-weight: 400;
     padding-right: 24px;
+    display: flex;
+    &:after, &:before{
+      font-family: 'epyicons' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size: 18px;
+    }
+    &:before{
+      content: "\e95e";
+      display: inherit;
+      margin-right: 8px;
+      color: #9b9b9b;
+    }
+    &:after{
+      content: "\e912";
+      display: inherit;
+      margin-left: 8px; 
+    }
   }
 }
 
@@ -58,9 +78,17 @@
 
 .tooltip-large {
   .tooltip-header {
-    span {
-      display: inline-block;
+    // span {
+    //   display: inline-block;
+    //   width: 100%;
+    // }
+    .tooltip-title{
       width: 100%;
+      display: flex;
+      &:after{
+        color: $niagara;
+        margin-left: auto;
+      }
     }
   }
 }
