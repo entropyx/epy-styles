@@ -51,7 +51,7 @@
       color: $dusty-gray;
     }
 
-    &.icon-left {
+    &.content-left {
       .input-text {
         padding-left: 40px;
       }
@@ -62,7 +62,7 @@
       }
     }
 
-    &.icon-right {
+    &.content-right {
       .input-text {
         padding-right: 40px;
       }
@@ -73,7 +73,7 @@
       }
     }
 
-    &.cleaner {
+    &.content-asides {
       .input-text {
         padding-left: 40px;
         padding-right: 40px;
@@ -126,7 +126,7 @@
     }
   }
 
-  // &.input-cleaner {
+  // &.input-content-asides {
   //   .input-container {
   //     background: url("./assets/icons/x\ -\ small.svg") no-repeat;
   //     background-position: calc(100% - 16px) 50%;
