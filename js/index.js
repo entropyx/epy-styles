@@ -1,3 +1,4 @@
+import '../scss/epy.scss'
 // 1. A todolos inputs con required se les agregara
 // .input-aux-container
 
