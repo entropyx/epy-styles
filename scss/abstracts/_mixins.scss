@@ -24,6 +24,14 @@
   }
 }
 
+@mixin btn-disabled-basic-style {
+  &:disabled,
+  & button[disabled],
+  &.disabled {
+    color: $silver !important;
+  }
+}
+
 // SELECT
 
 @mixin select-trigger($color) {
