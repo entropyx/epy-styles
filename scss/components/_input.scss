@@ -183,25 +183,23 @@
     }
   }
 
-  &.counter {
-    .input-aux-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      position: relative;
-      font-size: 12px;
-      line-height: 15px;
+  .input-aux-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+    font-size: 12px;
+    line-height: 15px;
 
-      .number {
-        color: $dove-gray;
+    .number {
+      color: $dove-gray;
 
-        position: absolute;
-        right: 0;
-      }
+      position: absolute;
+      right: 0;
+    }
 
-      .helper-text {
-        color: $wuzzy-brown;
-      }
+    .helper-text {
+      color: $wuzzy-brown;
     }
   }
 }
