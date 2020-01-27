@@ -1,23 +1,24 @@
-.tooltip {
+.droptip {
   margin-bottom: 45px;
   margin-top: 16px;
+  outline: none;
   width: 100%;
 
   &:hover {
-    .tooltip-header .tooltip-title {
+    .droptip-trigger .droptip-title {
       color: $niagara;
     }
   }
 
   &.active {
-    .tooltip-header .tooltip-title {
-      &:after{
+    .droptip-trigger .droptip-title {
+      &:after {
         color: $niagara;
         transform: rotate(180deg);
       }
     }
 
-    .tooltip-content {
+    .droptip-content {
       display: block;
       padding: 16px;
       transition: 0.25s;
@@ -26,21 +27,22 @@
   }
 }
 
-.tooltip-header {
+.droptip-trigger {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  
-  .tooltip-title {
+
+  .droptip-title {
     color: $java;
     cursor: pointer;
     font-size: 16px;
     font-weight: 400;
     padding-right: 24px;
     display: flex;
-    &:after, &:before{
-      font-family: 'epyicons' !important;
+    &:after,
+    &:before {
+      font-family: "epyicons" !important;
       speak: none;
       font-style: normal;
       font-weight: normal;
@@ -52,21 +54,21 @@
       -moz-osx-font-smoothing: grayscale;
       font-size: 18px;
     }
-    &:before{
+    &:before {
       content: "\e95e";
       display: inherit;
       margin-right: 8px;
       color: #9b9b9b;
     }
-    &:after{
+    &:after {
       content: "\e912";
       display: inherit;
-      margin-left: 8px; 
+      margin-left: 8px;
     }
   }
 }
 
-.tooltip-content {
+.droptip-content {
   background-color: $albaster;
   display: none;
   padding-bottom: 32px;
@@ -75,17 +77,16 @@
   -webkit-transition: 0.25s;
 }
 
-
-.tooltip-large {
-  .tooltip-header {
+.droptip-large {
+  .droptip-trigger {
     // span {
     //   display: inline-block;
     //   width: 100%;
     // }
-    .tooltip-title{
+    .droptip-title {
       width: 100%;
       display: flex;
-      &:after{
+      &:after {
         color: $niagara;
         margin-left: auto;
       }

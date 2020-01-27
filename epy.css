@@ -2852,6 +2852,7 @@ textarea {
   cursor: pointer;
   display: flex;
   font-size: 16px;
+  height: 48px;
   justify-content: space-between;
   line-height: 20px;
   position: relative;
@@ -2859,7 +2860,6 @@ textarea {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  height: 40px;
   padding: 0 16px;
 }
 .select-outline .select-trigger .arrow {
@@ -2889,6 +2889,7 @@ textarea {
   cursor: pointer;
   display: flex;
   font-size: 16px;
+  height: 48px;
   justify-content: space-between;
   line-height: 20px;
   position: relative;
@@ -2936,12 +2937,12 @@ textarea {
   cursor: pointer;
   display: flex;
   font-size: 16px;
+  height: 48px;
   justify-content: space-between;
   line-height: 20px;
   position: relative;
   -webkit-box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
   box-shadow: none !important;
-  height: 40px;
 }
 .select-border-none .select-trigger .arrow {
   font-family: "epyicons" !important;
@@ -2970,6 +2971,7 @@ textarea {
   cursor: pointer;
   display: flex;
   font-size: 16px;
+  height: 48px;
   justify-content: space-between;
   line-height: 20px;
   position: relative;
@@ -2979,7 +2981,6 @@ textarea {
   color: #ffffff;
   border-radius: 4px;
   padding: 0 16px;
-  height: 40px;
 }
 .select-primary .select-trigger .arrow {
   font-family: "epyicons" !important;
@@ -3010,6 +3011,7 @@ textarea {
   cursor: pointer;
   display: flex;
   font-size: 16px;
+  height: 48px;
   justify-content: space-between;
   line-height: 20px;
   position: relative;
@@ -3017,7 +3019,6 @@ textarea {
   background-color: transparent;
   border: 1px solid #26c580;
   color: #26c580;
-  height: 40px;
 }
 .select-primary.select-outline .select-trigger .arrow {
   font-family: "epyicons" !important;
@@ -3063,6 +3064,7 @@ textarea {
   cursor: pointer;
   display: flex;
   font-size: 16px;
+  height: 48px;
   justify-content: space-between;
   line-height: 20px;
   position: relative;
@@ -3096,32 +3098,33 @@ textarea {
   -webkit-box-shadow: 0 2px 4px 0 rgba(212, 212, 212, 0.5);
 }
 
-.tooltip {
+.droptip {
   margin-bottom: 45px;
   margin-top: 16px;
+  outline: none;
   width: 100%;
 }
-.tooltip:hover .tooltip-header .tooltip-title {
+.droptip:hover .droptip-trigger .droptip-title {
   color: #089aa6;
 }
-.tooltip.active .tooltip-header .tooltip-title:after {
+.droptip.active .droptip-trigger .droptip-title:after {
   color: #089aa6;
   transform: rotate(180deg);
 }
-.tooltip.active .tooltip-content {
+.droptip.active .droptip-content {
   display: block;
   padding: 16px;
   transition: 0.25s;
   -webkit-transition: 0.25s;
 }
 
-.tooltip-header {
+.droptip-trigger {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
 }
-.tooltip-header .tooltip-title {
+.droptip-trigger .droptip-title {
   color: #22b5b5;
   cursor: pointer;
   font-size: 16px;
@@ -3129,7 +3132,7 @@ textarea {
   padding-right: 24px;
   display: flex;
 }
-.tooltip-header .tooltip-title:after, .tooltip-header .tooltip-title:before {
+.droptip-trigger .droptip-title:after, .droptip-trigger .droptip-title:before {
   font-family: "epyicons" !important;
   speak: none;
   font-style: normal;
@@ -3142,19 +3145,19 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
 }
-.tooltip-header .tooltip-title:before {
+.droptip-trigger .droptip-title:before {
   content: "";
   display: inherit;
   margin-right: 8px;
   color: #9b9b9b;
 }
-.tooltip-header .tooltip-title:after {
+.droptip-trigger .droptip-title:after {
   content: "";
   display: inherit;
   margin-left: 8px;
 }
 
-.tooltip-content {
+.droptip-content {
   background-color: #f7f7f7;
   display: none;
   padding-bottom: 32px;
@@ -3163,13 +3166,42 @@ textarea {
   -webkit-transition: 0.25s;
 }
 
-.tooltip-large .tooltip-header .tooltip-title {
+.droptip-large .droptip-trigger .droptip-title {
   width: 100%;
   display: flex;
 }
-.tooltip-large .tooltip-header .tooltip-title:after {
+.droptip-large .droptip-trigger .droptip-title:after {
   color: #089aa6;
   margin-left: auto;
+}
+
+.popover {
+  outline: none;
+  position: relative;
+  width: inherit;
+}
+.popover .popover-trigger {
+  cursor: pointer;
+  position: relative;
+  width: fit-content;
+}
+.popover .popover-content {
+  background-color: #fff !important;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 !important;
+  padding: 32px;
+  z-index: 1;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s;
+}
+.popover.active .popover-content {
+  opacity: 1;
+  visibility: visible;
 }
 
 @keyframes indeterm-shimmer {
