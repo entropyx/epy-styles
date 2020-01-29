@@ -68,12 +68,9 @@ body {
   background-color: transparent;
 }
 
-// i.left, .icon &.left {
-//   margin-right: 8px;
-// }
-
 i,
-.icon {
+.icon,
+span {
   &.left {
     margin-right: 8px;
   }
@@ -81,10 +78,6 @@ i,
     margin-left: 8px;
   }
 }
-
-// i.right .content-right{
-//   margin-left: 8px;
-// }
 
 .container {
   margin: initial;

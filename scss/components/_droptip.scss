@@ -1,6 +1,4 @@
 .droptip {
-  margin-bottom: 45px;
-  margin-top: 16px;
   outline: none;
   width: 100%;
 
@@ -19,6 +17,7 @@
     }
 
     .droptip-content {
+      background-color: $albaster;
       display: block;
       padding: 16px;
       transition: 0.25s;
@@ -79,10 +78,6 @@
 
 .droptip-large {
   .droptip-trigger {
-    // span {
-    //   display: inline-block;
-    //   width: 100%;
-    // }
     .droptip-title {
       width: 100%;
       display: flex;
