@@ -86,6 +86,7 @@ $white: #fff;
       + label {
         span {
           background-color: $jungle-green;
+          border: 1px solid $jungle-green;
           &:after {
             background: $white;
             transition: width 150ms ease 100ms;
@@ -99,7 +100,7 @@ $white: #fff;
 
         &:hover {
           span {
-            background-color: $jungle-green;
+            background-color: $silver;
             &:after {
               transition: width 150ms ease 100ms;
             }
@@ -113,7 +114,7 @@ $white: #fff;
     }
     + label {
       span {
-        border: 2px solid $jungle-green;
+        border: 1px solid $silver;
       }
     }
 
@@ -125,7 +126,7 @@ $white: #fff;
       + label {
         span {
           background-color: $albaster;
-          border: 2px solid $alto;
+          border: 1px solid $alto;
 
           &:after {
             background-color: $silver;

@@ -3801,6 +3801,7 @@ progress::-webkit-progress-value {
 }
 .radio input[type=radio]:checked + label span {
   background-color: #26c580;
+  border: 1px solid #26c580;
 }
 .radio input[type=radio]:checked + label span:after {
   background: #fff;
@@ -3811,7 +3812,7 @@ progress::-webkit-progress-value {
   transition: width 150ms ease 100ms;
 }
 .radio input[type=radio]:checked + label:hover span {
-  background-color: #26c580;
+  background-color: #c7c7c7;
 }
 .radio input[type=radio]:checked + label:hover span:after {
   transition: width 150ms ease 100ms;
@@ -3820,7 +3821,7 @@ progress::-webkit-progress-value {
   transition: width 150ms ease 100ms;
 }
 .radio input[type=radio] + label span {
-  border: 2px solid #26c580;
+  border: 1px solid #c7c7c7;
 }
 .radio input[type=radio]:disabled, .radio input[type=radio].disabled, .radio input[type=radio] input[type=radio][disabled] {
   cursor: default !important;
@@ -3828,7 +3829,7 @@ progress::-webkit-progress-value {
 }
 .radio input[type=radio]:disabled + label span, .radio input[type=radio].disabled + label span, .radio input[type=radio] input[type=radio][disabled] + label span {
   background-color: #f7f7f7;
-  border: 2px solid #d4d4d4;
+  border: 1px solid #d4d4d4;
 }
 .radio input[type=radio]:disabled + label span:after, .radio input[type=radio].disabled + label span:after, .radio input[type=radio] input[type=radio][disabled] + label span:after {
   background-color: #c7c7c7;
