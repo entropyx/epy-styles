@@ -1,0 +1,140 @@
+$jungle-green: #26c580;
+$white: #fff;
+
+.radio {
+  margin-top: 8px;
+  label {
+    color: $jungle-green;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+
+    span {
+      background-color: transparent;
+      border-radius: 50%;
+
+      box-sizing: initial;
+      display: inline-block;
+      height: 16px;
+      margin-right: 8px;
+      position: relative;
+      transform-origin: center;
+      transition: background-color 150ms 200ms,
+        transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
+      vertical-align: -6px;
+      width: 16px;
+
+      &:before {
+        background-color: transparent;
+        border-radius: 50%;
+        content: "";
+        height: 8px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: background-color 0.25s;
+        width: 8px;
+      }
+
+      &:after {
+        content: "";
+        background-color: transparent;
+        border-radius: 50%;
+        height: 8px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: background-color 0.25s;
+        width: 8px;
+      }
+    }
+
+    // Time to add some life to it
+    // &:hover {
+    //   span {
+    //     &:before {
+    //       z-index: 20;
+    //       width: 5px;
+    //       transition: width 100ms ease;
+    //       background: blue;
+    //     }
+
+    //     &:after {
+    //       z-index: 20;
+    //       width: 10px;
+    //       transition: width 150ms ease 100ms;
+    //       background: blue;
+    //     }
+    //   }
+    // }
+  }
+
+  input[type="radio"] {
+    background-color: transparent;
+    cursor: pointer;
+    height: 22px;
+    margin-right: -25px;
+    opacity: 0;
+    position: absolute;
+    transform-origin: center;
+    width: 22px;
+    z-index: 10;
+
+    &:checked {
+      + label {
+        span {
+          background-color: $jungle-green;
+          &:after {
+            background: $white;
+            transition: width 150ms ease 100ms;
+          }
+
+          &:before {
+            background: $white;
+            transition: width 150ms ease 100ms;
+          }
+        }
+
+        &:hover {
+          span {
+            background-color: $jungle-green;
+            &:after {
+              transition: width 150ms ease 100ms;
+            }
+
+            &:before {
+              transition: width 150ms ease 100ms;
+            }
+          }
+        }
+      }
+    }
+    + label {
+      span {
+        border: 2px solid $jungle-green;
+      }
+    }
+
+    &:disabled,
+    &.disabled,
+    & input[type="radio"][disabled] {
+      cursor: default !important;
+      pointer-events: none !important;
+      + label {
+        span {
+          background-color: $albaster;
+          border: 2px solid $alto;
+
+          &:after {
+            background-color: $silver;
+          }
+          &:before {
+            background-color: $silver;
+          }
+        }
+      }
+    }
+  }
+}
