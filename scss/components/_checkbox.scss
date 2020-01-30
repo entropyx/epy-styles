@@ -5,9 +5,10 @@
 @import "../abstracts/variables";
 
 .checkbox {
+  margin: 8px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  align-items: center;
+
   label {
     color: $jungle-green;
     cursor: pointer;
@@ -17,7 +18,6 @@
     width: 18px;
     span {
       background-color: transparent;
-      border: 1px solid #cecece !important;
       border-radius: 4px;
       box-sizing: initial;
       display: inline-block;
@@ -79,6 +79,13 @@
     -webkit-transform-origin: center;
     width: 17px;
     z-index: 10;
+
+    + label {
+      span {
+        border: 1px solid $silver;
+      }
+    }
+
     &:before {
       background: $jungle-green;
       content: "";
@@ -109,7 +116,7 @@
       + label {
         span {
           background-color: $jungle-green;
-          border: 1px solid $jungle-green !important;
+          border: 1px solid $jungle-green;
           &:after {
             background: $white;
             transition: width 150ms ease 100ms;
@@ -133,21 +140,38 @@
       + label {
         cursor: default !important;
         span {
-          background-color: $albaster;
-          border: 1px solid $alto;
+          background-color: $seashell;
+          border: 1px solid $silver;
+        }
+      }
+    }
 
-          &:after {
-            background-color: $silver;
-          }
-          &:before {
-            background-color: $silver;
+    &:checked {
+      &:disabled,
+      &.disabled,
+      & input[type="checkbox"][disabled] {
+        cursor: default !important;
+        pointer-events: none !important;
+        + label {
+          cursor: default !important;
+          span {
+            background-color: $seashell;
+            border: 1px solid $silver;
+
+            &:after {
+              background-color: $alto;
+            }
+            &:before {
+              background-color: $alto;
+            }
           }
         }
       }
     }
   }
-  .content-text-style {
-    font-size: 16px;
-    margin-top: 3px;
-  }
+
+  // .content-text-style {
+  //   font-size: 16px;
+  //   margin-top: 3px;
+  // }
 }

@@ -3632,9 +3632,9 @@ progress::-webkit-progress-value {
 }
 
 .checkbox {
+  margin: 8px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  align-items: center;
 }
 .checkbox label {
   color: #26c580;
@@ -3646,7 +3646,6 @@ progress::-webkit-progress-value {
 }
 .checkbox label span {
   background-color: transparent;
-  border: 1px solid #cecece !important;
   border-radius: 4px;
   box-sizing: initial;
   display: inline-block;
@@ -3704,6 +3703,9 @@ progress::-webkit-progress-value {
   width: 17px;
   z-index: 10;
 }
+.checkbox input[type=checkbox] + label span {
+  border: 1px solid #c7c7c7;
+}
 .checkbox input[type=checkbox]:before {
   background: #26c580;
   content: "";
@@ -3730,7 +3732,7 @@ progress::-webkit-progress-value {
 }
 .checkbox input[type=checkbox]:checked + label span {
   background-color: #26c580;
-  border: 1px solid #26c580 !important;
+  border: 1px solid #26c580;
 }
 .checkbox input[type=checkbox]:checked + label span:after {
   background: #ffffff;
@@ -3750,22 +3752,31 @@ progress::-webkit-progress-value {
   cursor: default !important;
 }
 .checkbox input[type=checkbox]:disabled + label span, .checkbox input[type=checkbox].disabled + label span, .checkbox input[type=checkbox] input[type=checkbox][disabled] + label span {
-  background-color: #f7f7f7;
-  border: 1px solid #d4d4d4;
+  background-color: #f1f1f1;
+  border: 1px solid #c7c7c7;
 }
-.checkbox input[type=checkbox]:disabled + label span:after, .checkbox input[type=checkbox].disabled + label span:after, .checkbox input[type=checkbox] input[type=checkbox][disabled] + label span:after {
-  background-color: #c7c7c7;
+.checkbox input[type=checkbox]:checked:disabled, .checkbox input[type=checkbox]:checked.disabled, .checkbox input[type=checkbox]:checked input[type=checkbox][disabled] {
+  cursor: default !important;
+  pointer-events: none !important;
 }
-.checkbox input[type=checkbox]:disabled + label span:before, .checkbox input[type=checkbox].disabled + label span:before, .checkbox input[type=checkbox] input[type=checkbox][disabled] + label span:before {
-  background-color: #c7c7c7;
+.checkbox input[type=checkbox]:checked:disabled + label, .checkbox input[type=checkbox]:checked.disabled + label, .checkbox input[type=checkbox]:checked input[type=checkbox][disabled] + label {
+  cursor: default !important;
 }
-.checkbox .content-text-style {
-  font-size: 16px;
-  margin-top: 3px;
+.checkbox input[type=checkbox]:checked:disabled + label span, .checkbox input[type=checkbox]:checked.disabled + label span, .checkbox input[type=checkbox]:checked input[type=checkbox][disabled] + label span {
+  background-color: #f1f1f1;
+  border: 1px solid #c7c7c7;
+}
+.checkbox input[type=checkbox]:checked:disabled + label span:after, .checkbox input[type=checkbox]:checked.disabled + label span:after, .checkbox input[type=checkbox]:checked input[type=checkbox][disabled] + label span:after {
+  background-color: #d4d4d4;
+}
+.checkbox input[type=checkbox]:checked:disabled + label span:before, .checkbox input[type=checkbox]:checked.disabled + label span:before, .checkbox input[type=checkbox]:checked input[type=checkbox][disabled] + label span:before {
+  background-color: #d4d4d4;
 }
 
 .radio {
-  margin-top: 8px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
 }
 .radio label {
   color: #26c580;
@@ -3821,16 +3832,19 @@ progress::-webkit-progress-value {
   width: 22px;
   z-index: 10;
 }
+.radio input[type=radio] + label span {
+  border: 1px solid #c7c7c7;
+}
 .radio input[type=radio]:checked + label span {
   background-color: #26c580;
   border: 1px solid #26c580;
 }
 .radio input[type=radio]:checked + label span:after {
-  background: #fff;
+  background: #ffffff;
   transition: width 150ms ease 100ms;
 }
 .radio input[type=radio]:checked + label span:before {
-  background: #fff;
+  background: #ffffff;
   transition: width 150ms ease 100ms;
 }
 .radio input[type=radio]:checked + label:hover span {
@@ -3842,9 +3856,6 @@ progress::-webkit-progress-value {
 .radio input[type=radio]:checked + label:hover span:before {
   transition: width 150ms ease 100ms;
 }
-.radio input[type=radio] + label span {
-  border: 1px solid #c7c7c7;
-}
 .radio input[type=radio]:disabled, .radio input[type=radio].disabled, .radio input[type=radio] input[type=radio][disabled] {
   cursor: default !important;
   pointer-events: none !important;
@@ -3853,14 +3864,25 @@ progress::-webkit-progress-value {
   cursor: default !important;
 }
 .radio input[type=radio]:disabled + label span, .radio input[type=radio].disabled + label span, .radio input[type=radio] input[type=radio][disabled] + label span {
-  background-color: #f7f7f7;
-  border: 1px solid #d4d4d4;
+  background-color: #f1f1f1;
+  border: 1px solid #c7c7c7;
 }
-.radio input[type=radio]:disabled + label span:after, .radio input[type=radio].disabled + label span:after, .radio input[type=radio] input[type=radio][disabled] + label span:after {
-  background-color: #c7c7c7;
+.radio input[type=radio]:checked:disabled, .radio input[type=radio]:checked.disabled, .radio input[type=radio]:checked input[type=radio][disabled] {
+  cursor: default !important;
+  pointer-events: none !important;
 }
-.radio input[type=radio]:disabled + label span:before, .radio input[type=radio].disabled + label span:before, .radio input[type=radio] input[type=radio][disabled] + label span:before {
-  background-color: #c7c7c7;
+.radio input[type=radio]:checked:disabled + label, .radio input[type=radio]:checked.disabled + label, .radio input[type=radio]:checked input[type=radio][disabled] + label {
+  cursor: default !important;
+}
+.radio input[type=radio]:checked:disabled + label span, .radio input[type=radio]:checked.disabled + label span, .radio input[type=radio]:checked input[type=radio][disabled] + label span {
+  background-color: #f1f1f1;
+  border: 1px solid #c7c7c7;
+}
+.radio input[type=radio]:checked:disabled + label span:after, .radio input[type=radio]:checked.disabled + label span:after, .radio input[type=radio]:checked input[type=radio][disabled] + label span:after {
+  background-color: #d4d4d4;
+}
+.radio input[type=radio]:checked:disabled + label span:before, .radio input[type=radio]:checked.disabled + label span:before, .radio input[type=radio]:checked input[type=radio][disabled] + label span:before {
+  background-color: #d4d4d4;
 }
 
 /*# sourceMappingURL=epy.css.map */

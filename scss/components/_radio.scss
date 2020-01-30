@@ -1,8 +1,8 @@
-$jungle-green: #26c580;
-$white: #fff;
-
 .radio {
-  margin-top: 8px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+
   label {
     color: $jungle-green;
     cursor: pointer;
@@ -82,6 +82,12 @@ $white: #fff;
     width: 22px;
     z-index: 10;
 
+    + label {
+      span {
+        border: 1px solid $silver;
+      }
+    }
+
     &:checked {
       + label {
         span {
@@ -112,11 +118,6 @@ $white: #fff;
         }
       }
     }
-    + label {
-      span {
-        border: 1px solid $silver;
-      }
-    }
 
     &:disabled,
     &.disabled,
@@ -126,14 +127,30 @@ $white: #fff;
       + label {
         cursor: default !important;
         span {
-          background-color: $albaster;
-          border: 1px solid $alto;
+          background-color: $seashell;
+          border: 1px solid $silver;
+        }
+      }
+    }
 
-          &:after {
-            background-color: $silver;
-          }
-          &:before {
-            background-color: $silver;
+    &:checked {
+      &:disabled,
+      &.disabled,
+      & input[type="radio"][disabled] {
+        cursor: default !important;
+        pointer-events: none !important;
+        + label {
+          cursor: default !important;
+          span {
+            background-color: $seashell;
+            border: 1px solid $silver;
+
+            &:after {
+              background-color: $alto;
+            }
+            &:before {
+              background-color: $alto;
+            }
           }
         }
       }
