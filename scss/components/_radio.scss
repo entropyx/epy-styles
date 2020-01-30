@@ -124,6 +124,7 @@ $white: #fff;
       cursor: default !important;
       pointer-events: none !important;
       + label {
+        cursor: default !important;
         span {
           background-color: $albaster;
           border: 1px solid $alto;

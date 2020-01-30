@@ -3631,6 +3631,11 @@ progress::-webkit-progress-value {
   line-height: 15px;
 }
 
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .checkbox label {
   color: #26c580;
   cursor: pointer;
@@ -3737,9 +3742,26 @@ progress::-webkit-progress-value {
   transition: width 150ms ease 100ms;
   width: 5px;
 }
-.checkbox input[type=checkbox].disabled {
+.checkbox input[type=checkbox]:disabled, .checkbox input[type=checkbox].disabled, .checkbox input[type=checkbox] input[type=checkbox][disabled] {
   cursor: default !important;
   pointer-events: none !important;
+}
+.checkbox input[type=checkbox]:disabled + label, .checkbox input[type=checkbox].disabled + label, .checkbox input[type=checkbox] input[type=checkbox][disabled] + label {
+  cursor: default !important;
+}
+.checkbox input[type=checkbox]:disabled + label span, .checkbox input[type=checkbox].disabled + label span, .checkbox input[type=checkbox] input[type=checkbox][disabled] + label span {
+  background-color: #f7f7f7;
+  border: 1px solid #d4d4d4;
+}
+.checkbox input[type=checkbox]:disabled + label span:after, .checkbox input[type=checkbox].disabled + label span:after, .checkbox input[type=checkbox] input[type=checkbox][disabled] + label span:after {
+  background-color: #c7c7c7;
+}
+.checkbox input[type=checkbox]:disabled + label span:before, .checkbox input[type=checkbox].disabled + label span:before, .checkbox input[type=checkbox] input[type=checkbox][disabled] + label span:before {
+  background-color: #c7c7c7;
+}
+.checkbox .content-text-style {
+  font-size: 16px;
+  margin-top: 3px;
 }
 
 .radio {
@@ -3826,6 +3848,9 @@ progress::-webkit-progress-value {
 .radio input[type=radio]:disabled, .radio input[type=radio].disabled, .radio input[type=radio] input[type=radio][disabled] {
   cursor: default !important;
   pointer-events: none !important;
+}
+.radio input[type=radio]:disabled + label, .radio input[type=radio].disabled + label, .radio input[type=radio] input[type=radio][disabled] + label {
+  cursor: default !important;
 }
 .radio input[type=radio]:disabled + label span, .radio input[type=radio].disabled + label span, .radio input[type=radio] input[type=radio][disabled] + label span {
   background-color: #f7f7f7;

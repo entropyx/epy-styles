@@ -125,13 +125,29 @@
       }
     }
 
-    &.disabled {
+    &:disabled,
+    &.disabled,
+    & input[type="checkbox"][disabled] {
       cursor: default !important;
       pointer-events: none !important;
+      + label {
+        cursor: default !important;
+        span {
+          background-color: $albaster;
+          border: 1px solid $alto;
+
+          &:after {
+            background-color: $silver;
+          }
+          &:before {
+            background-color: $silver;
+          }
+        }
+      }
     }
   }
   .content-text-style {
-      font-size: 16px;
-      margin-top: 3px;
+    font-size: 16px;
+    margin-top: 3px;
   }
 }
