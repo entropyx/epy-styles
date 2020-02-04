@@ -1,0 +1,33 @@
+.popover {
+  outline: none;
+  position: relative;
+  width: 100%;
+
+  .popover-trigger {
+    cursor: pointer;
+    position: relative;
+    width: fit-content;
+  }
+
+  .popover-content {
+    background-color: $white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    display: block;
+    // margin: 0 !important;
+    opacity: 0;
+    padding: 16px;
+    position: absolute;
+    transition: opacity 0.5s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &.active {
+    .popover-content {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

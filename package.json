@@ -1,0 +1,44 @@
+{
+  "name": "@entropyx/epy-styles",
+  "version": "1.2.11",
+  "description": "Official Entropy style library",
+  "keywords": [
+    "styles",
+    "ui",
+    "components"
+  ],
+  "author": ".Entropy",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch scss/epy.scss:epy.css",
+    "start": "webpack --watch",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "dependencies": {
+    "materialize-css": "^1.0.0",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^5.0.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.2",
+    "terser-webpack-plugin": "^2.3.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entropyx/epy-styles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/entropyx/epy-styles/issues"
+  },
+  "homepage": "https://github.com/entropyx/epy-styles#readme"
+}

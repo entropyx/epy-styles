@@ -1,0 +1,272 @@
+@import "../abstracts/variables";
+
+.input {
+  // width: fit-content;
+
+  .input-helper {
+    color: $dusty-gray;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 4px;
+  }
+
+  .input-container {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+
+    .input-text {
+      background-color: transparent;
+      border: none;
+      color: $dove-gray;
+      // height: inherit;
+      outline: none;
+      padding: 16px;
+      // width: inherit;
+
+      &::placeholder {
+        color: $silver;
+      }
+    }
+
+    input {
+      height: 48px;
+      width: 100%;
+    }
+
+    textarea {
+      min-height: 72px;
+      height: 72px;
+      width: inherit;
+    }
+
+    i,
+    .icon {
+      height: 14px;
+      position: absolute;
+      width: 14px;
+      color: $dusty-gray;
+    }
+
+    &.content-left {
+      .input-text {
+        padding-left: 40px;
+      }
+
+      i,
+      .icon {
+        left: 16px;
+      }
+    }
+
+    &.content-right {
+      .input-text {
+        padding-right: 40px;
+      }
+
+      i,
+      .icon {
+        right: 16px;
+      }
+    }
+
+    &.content-asides {
+      .input-text {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      .right {
+        right: 16px;
+      }
+
+      .left {
+        left: 16px;
+      }
+
+      .clean {
+        cursor: pointer;
+      }
+    }
+
+    &.unit-suffix {
+      .unit,
+      .suffix {
+        position: absolute;
+      }
+
+      .input-text {
+        text-align: right;
+        padding-left: 40px;
+        padding-right: 56px;
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+
+      .unit {
+        left: 16px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      .suffix {
+        font-size: 12px;
+        line-height: 15px;
+        right: 16px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  // &.input-content-asides {
+  //   .input-container {
+  //     background: url("./assets/icons/x\ -\ small.svg") no-repeat;
+  //     background-position: calc(100% - 16px) 50%;
+  //     background-size: 14px 14px;
+
+  //     .input-text {
+  //       padding-right: 40px !important;
+  //     }
+  //   }
+  // }
+
+  &.validate {
+    input:not([type]):focus:not([readonly]),
+    input[type="date"]:not(.browser-default):focus:not([readonly]),
+    input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+    input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+    input[type="email"]:not(.browser-default):focus:not([readonly]),
+    input[type="number"]:not(.browser-default):focus:not([readonly]),
+    input[type="password"]:not(.browser-default):focus:not([readonly]),
+    input[type="search"]:not(.browser-default):focus:not([readonly]),
+    input[type="tel"]:not(.browser-default):focus:not([readonly]),
+    input[type="text"]:not(.browser-default):focus:not([readonly]),
+    input[type="time"]:not(.browser-default):focus:not([readonly]),
+    input[type="url"]:not(.browser-default):focus:not([readonly]),
+    textarea.input-text:focus:not([readonly]) {
+      border-bottom: 1px solid $jungle-green;
+      box-shadow: 0 1px 0 0 $jungle-green;
+      -webkit-box-shadow: 0 1px 0 0 $jungle-green;
+    }
+
+    input[type="date"]:invalid,
+    input[type="datetime-local"]:invalid,
+    input[type="datetime"]:invalid,
+    input[type="email"]:invalid,
+    input[type="email"]:required,
+    input[type="number"]:invalid,
+    input[type="password"]:invalid,
+    input[type="search"]:invalid,
+    input[type="tel"]:invalid,
+    input[type="text"]:invalid,
+    input[type="time"]:invalid,
+    input[type="url"]:invalid,
+    textarea:required:focus,
+    .invalid {
+      border-bottom: 1px solid $wuzzy-brown;
+      box-shadow: 0 1px 0 0 $wuzzy-brown;
+      -webkit-box-shadow: 0 1px 0 0 $wuzzy-brown;
+    }
+
+    textarea {
+      resize: none;
+      overflow: hidden;
+      min-height: 104px;
+    }
+  }
+
+  .input-aux-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+    font-size: 12px;
+    line-height: 15px;
+
+    .number {
+      color: $dove-gray;
+
+      position: absolute;
+      right: 0;
+    }
+
+    .helper-text {
+      color: $wuzzy-brown;
+    }
+  }
+}
+
+.input-line {
+  .input-label {
+    color: $dove-gray;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+  .input-container {
+    background-color: $albaster !important;
+    border-radius: 4px 4px 0 0;
+
+    input:not([type]),
+    input[type="date"]:not(.browser-default),
+    input[type="datetime-local"]:not(.browser-default),
+    input[type="datetime"]:not(.browser-default),
+    input[type="email"]:not(.browser-default),
+    input[type="number"]:not(.browser-default),
+    input[type="password"]:not(.browser-default),
+    input[type="search"]:not(.browser-default),
+    input[type="tel"]:not(.browser-default),
+    input[type="text"]:not(.browser-default),
+    input[type="time"]:not(.browser-default),
+    input[type="url"]:not(.browser-default),
+    textarea.input-text {
+      border-bottom: 1px solid $dusty-gray;
+    }
+
+    .input-text {
+      &:disabled,
+      &input[disabled],
+      &.disabled {
+        background-color: $albaster;
+        border-bottom: none !important;
+        color: $silver;
+        cursor: auto;
+        pointer-events: none !important;
+      }
+    }
+  }
+}
+
+.input-outline {
+  .input-label {
+    color: $dusty-gray;
+    display: inline-block;
+    font-family: $aux-font;
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+  .input-container {
+    .input-text {
+      border: 1px solid $silver;
+      border-radius: 4px;
+
+      &:disabled,
+      &input[disabled],
+      &.disabled {
+        background-color: $albaster;
+        color: $silver;
+        cursor: auto;
+        pointer-events: none !important;
+      }
+    }
+  }
+}

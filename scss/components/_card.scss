@@ -1,0 +1,137 @@
+@mixin card {
+  border-radius: 5px;
+  //border de campanas graficos, card pasos para crear campana
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+
+  &.hoverable {
+    &:focus {
+      box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1) !important;
+      transition: box-shadow 0.25s;
+    }
+  }
+}
+
+.card {
+  @include card;
+}
+
+.card-panel {
+  @include card;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  padding: 32px;
+}
+
+.card-campaign {
+  .card-header {
+    align-items: center;
+    display: flex;
+
+    .card-title {
+      font-size: 24px;
+      font-weight: 400;
+      transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .priority-label {
+      color: $java;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 15px;
+      margin-left: 16px;
+    }
+
+    .camp-type {
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      > i::before {
+        font-size: 40px;
+      }
+
+      span {
+        color: $dusty-gray;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15px;
+      }
+    }
+  }
+
+  .camp-details {
+    .general-info {
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 22px;
+
+      .field-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-right: 70px;
+      }
+    }
+
+    .stats {
+      display: flex;
+      width: 100%;
+      padding-top: 14px;
+      justify-content: space-between;
+      align-items: center;
+      left: 0px;
+      bottom: 0px;
+      border-top: 1px solid $albaster;
+
+      .stat {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 16px;
+
+        .metric-score {
+          line-height: 20px;
+          margin-left: 16px;
+          margin-right: 16px;
+        }
+
+        .metric-percent {
+          align-items: center;
+          display: flex;
+          color: $dusty-gray;
+          font-family: $aux-font;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .field {
+    line-height: 19px;
+
+    &.subtitle {
+      color: $dusty-gray;
+      font-family: $aux-font;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    &.upper {
+      color: $dusty-gray;
+      font-size: 10px;
+      font-family: $aux-font;
+    }
+    &.green {
+      color: $jungle-green;
+    }
+
+    &.yellow {
+      background-color: transparent;
+      color: #decc57;
+    }
+  }
+}

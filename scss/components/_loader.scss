@@ -1,0 +1,288 @@
+// ANIMATIONS
+@keyframes indeterm-shimmer {
+  0% {
+    background-position: -368px 0;
+  }
+  100% {
+    background-position: 368px 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.bot-loader {
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-name: float;
+  background: url("https://storage.googleapis.com/assets-front/img/Meditacion.min.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 100%;
+}
+
+@mixin basic-loader {
+  animation-duration: 1s !important;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: indeterm-shimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: $loader-gradient;
+  background-size: 800px 104px;
+}
+
+.bar-loader {
+  @include basic-loader;
+  border-radius: 2px;
+  height: 16px;
+  margin-bottom: 16px;
+
+  &.title {
+    width: 25%;
+  }
+  &.content-large {
+    width: 30%;
+  }
+  &.subtitle {
+    width: 20%;
+  }
+  &.detail {
+    width: 92px !important;
+  }
+  &.dark {
+    background: $alto;
+    animation: none;
+  }
+}
+
+.circle-loader {
+  @include basic-loader;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.table-loader {
+  column-gap: 8%;
+  display: grid;
+
+  &.col7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  &.col6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  &.col5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  &.col4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &.col3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &.col2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &.col1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chart-loader {
+  display: flex;
+  height: 114px;
+  justify-content: center;
+  width: 100%;
+
+  .chart-stroke-1 {
+    border-right: 200px solid transparent;
+    border-top: 114px solid $white;
+    width: 50%;
+  }
+  .chart-stroke-2 {
+    border-bottom: 77px solid $white;
+    border-left: 140px solid transparent;
+    border-right: 100px solid transparent;
+    margin-left: -175px;
+  }
+  .chart-stroke-3 {
+    border-left: 108px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 80px solid $white;
+    margin-left: -127px;
+    width: 150px;
+  }
+  .chart-stroke-4 {
+    border-bottom: 77px solid $white;
+    border-left: 185px solid transparent;
+    border-right: 107px solid transparent;
+    margin-left: -239px;
+  }
+  .chart-stroke-5 {
+    border-left: 66px solid transparent;
+    border-right: 61px solid transparent;
+    border-top: 44px solid $white;
+    margin-left: -138px;
+  }
+  .chart-stroke-6 {
+    border-bottom: 114px solid $white;
+    border-left: 156px solid transparent;
+    border-right: 0 solid transparent;
+    margin-left: -132px;
+    width: 50%;
+  }
+}
+
+// TEMPLATES
+
+// Stat loader (Table + Chart)
+.stat-loader {
+  .table-loader {
+    margin: 32px 16px;
+  }
+}
+
+.stat-loader-2 {
+  .divided-loader {
+    .table-loader-container {
+      grid-template-columns: 24% 3% 24% 3% 24% 3% 24%;
+    }
+  }
+
+  .chart-loader {
+    margin-top: 24px;
+  }
+}
+
+.divided-loader {
+  .title-loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+  }
+
+  .table-loader-container {
+    display: grid;
+    grid-template-columns: 20% 18px 20% 18px 20% 18px 20%;
+
+    .bar-loader {
+      width: 70%;
+    }
+
+    .table-loader {
+      margin-top: 16px;
+    }
+
+    .bar-divider {
+      box-sizing: border-box;
+      border-right: 1px solid $albaster;
+      height: 80px;
+      width: 2px;
+    }
+  }
+}
+
+.campaign-loader {
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 75px;
+  }
+
+  .title-loader {
+    width: 100%;
+  }
+}
+
+.campaign-details-loader {
+  .title-container {
+    column-gap: 16%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 38px;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  .details-container {
+    column-gap: 16%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 38px;
+  }
+
+  .table-loader {
+    column-gap: 16%;
+  }
+
+  .line-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+.budget-loader {
+  .budget-details {
+    background-color: $white;
+    border: 1px solid $albaster;
+    border-radius: 8px;
+    box-shadow: $medium-shadow;
+    height: 430px;
+    margin-top: 32px;
+    padding: 32px;
+    -webkit-box-shadow: $medium-shadow;
+
+    .budget-days {
+      column-gap: 4%;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      margin-top: 32px;
+      row-gap: 6%;
+      > .day {
+        @include basic-loader;
+        border-radius: 2px;
+        height: 40px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Progress bar
+progress {
+  border-radius: 16px;
+  display: inline-block;
+  width: 100%;
+}
+progress::-webkit-progress-bar {
+  background-color: $seashell;
+  border-radius: 16px;
+  height: 8px;
+}
+progress::-webkit-progress-value {
+  background-color: $java;
+  border-radius: 16px;
+  display: inline-block;
+  float: left;
+  height: 8px;
+  transition: ease 1s;
+}

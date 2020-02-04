@@ -1,0 +1,101 @@
+/**
+ * Basic typography style for copy text
+ */
+
+@import "../abstracts/variables";
+
+body {
+  font-family: $main-font;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $dove-gray;
+  font-family: $aux-font;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.title {
+  color: $dove-gray;
+  font-family: $aux-font;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.subtitle {
+  color: $dune;
+  font-family: $aux-font;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 27px;
+}
+
+.text-regular {
+  color: $dusty-gray;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.text-suggest {
+  color: $silver;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.text-small {
+  color: $silver;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.text-danger {
+  @extend .text-small;
+  color: $wuzzy-brown;
+}
+
+.text-green {
+  color: $jungle-green;
+}
+
+.text-blue {
+  color: $java;
+}
+
+.text-red {
+  color: $wuzzy-brown;
+}
+
+.text-yellow {
+  color: $bus-yellow;
+}
+
+.text-light-green {
+  color: $yellow-green;
+}
+
+.text-lavander {
+  color: $lavander;
+}
+
+.text-purple {
+  color: $royal-purple;
+}
+
+.text-white {
+  color: $white;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $main-font;
+}

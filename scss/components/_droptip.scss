@@ -1,0 +1,90 @@
+.droptip {
+  outline: none;
+  width: 100%;
+
+  &:hover {
+    .droptip-trigger .droptip-title {
+      color: $niagara;
+    }
+  }
+
+  &.active {
+    .droptip-trigger .droptip-title {
+      &:after {
+        color: $niagara;
+        transform: rotate(180deg);
+      }
+    }
+
+    .droptip-content {
+      background-color: $albaster;
+      display: block;
+      padding: 16px;
+      transition: 0.25s;
+      -webkit-transition: 0.25s;
+    }
+  }
+}
+
+.droptip-trigger {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+
+  .droptip-title {
+    color: $java;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 24px;
+    display: flex;
+    &:after,
+    &:before {
+      font-family: "epyicons" !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size: 18px;
+    }
+    &:before {
+      content: "\e95e";
+      display: inherit;
+      margin-right: 8px;
+      color: #9b9b9b;
+    }
+    &:after {
+      content: "\e912";
+      display: inherit;
+      margin-left: 8px;
+    }
+  }
+}
+
+.droptip-content {
+  background-color: $albaster;
+  display: none;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+}
+
+.droptip-large {
+  .droptip-trigger {
+    .droptip-title {
+      width: 100%;
+      display: flex;
+      &:after {
+        color: $niagara;
+        margin-left: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.icon-circle-container {
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid $alto;
+  border-radius: 100%;
+  display: flex;
+  height: 38px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 38px;
+
+  + span {
+    color: $dusty-gray;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+  }
+}
