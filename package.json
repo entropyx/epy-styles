@@ -1,6 +1,6 @@
 {
-  "name": "epy-scss",
-  "version": "1.3.40",
+  "name": "@entropyx/epy-styles",
+  "version": "1.2.11",
   "description": "Official Entropy style library",
   "keywords": [
     "styles",
