@@ -2859,6 +2859,7 @@ textarea {
   height: 48px;
   justify-content: space-between;
   line-height: 20px;
+  min-width: fit-content;
   position: relative;
   -webkit-box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
   background-color: transparent;
@@ -2867,6 +2868,7 @@ textarea {
   padding: 0 16px;
 }
 .select-outline .select-trigger .arrow {
+  color: #26c580;
   font-family: "epyicons" !important;
   speak: none;
   font-style: normal;
@@ -2896,6 +2898,7 @@ textarea {
   height: 48px;
   justify-content: space-between;
   line-height: 20px;
+  min-width: fit-content;
   position: relative;
   -webkit-box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
   border-bottom: 1px solid #9b9b9b;
@@ -2903,8 +2906,10 @@ textarea {
   border-radius: 4px 4px 0 0;
   box-shadow: none !important;
   height: 48px;
+  padding: 16px;
 }
 .select-line .select-trigger .arrow {
+  color: #26c580;
   font-family: "epyicons" !important;
   speak: none;
   font-style: normal;
@@ -2923,11 +2928,8 @@ textarea {
   box-shadow: 0 2px 4px 0 rgba(212, 212, 212, 0.5);
   -webkit-box-shadow: 0 2px 4px 0 rgba(212, 212, 212, 0.5);
 }
-.select-line .select-trigger .select-value {
-  padding-left: 16px;
-}
 .select-line .select-trigger .arrow {
-  margin-right: 16px;
+  margin-right: 0px !important;
   margin-left: 8px;
 }
 .select-line .select-details {
@@ -2944,11 +2946,13 @@ textarea {
   height: 48px;
   justify-content: space-between;
   line-height: 20px;
+  min-width: fit-content;
   position: relative;
   -webkit-box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
   box-shadow: none !important;
 }
 .select-border-none .select-trigger .arrow {
+  color: #26c580;
   font-family: "epyicons" !important;
   speak: none;
   font-style: normal;
@@ -2978,6 +2982,7 @@ textarea {
   height: 48px;
   justify-content: space-between;
   line-height: 20px;
+  min-width: fit-content;
   position: relative;
   -webkit-box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
   background-color: #26c580;
@@ -2987,6 +2992,7 @@ textarea {
   padding: 0 16px;
 }
 .select-primary .select-trigger .arrow {
+  color: #ffffff;
   font-family: "epyicons" !important;
   speak: none;
   font-style: normal;
@@ -3018,6 +3024,7 @@ textarea {
   height: 48px;
   justify-content: space-between;
   line-height: 20px;
+  min-width: fit-content;
   position: relative;
   -webkit-box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
   background-color: transparent;
@@ -3025,6 +3032,7 @@ textarea {
   color: #26c580;
 }
 .select-primary.select-outline .select-trigger .arrow {
+  color: #26c580;
   font-family: "epyicons" !important;
   speak: none;
   font-style: normal;
@@ -3071,12 +3079,14 @@ textarea {
   height: 48px;
   justify-content: space-between;
   line-height: 20px;
+  min-width: fit-content;
   position: relative;
   -webkit-box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
 }
 .select-line.active .select-trigger .arrow,
 .select-outline.active .select-trigger .arrow,
 .select-border-none.active .select-trigger .arrow {
+  color: "dark-green";
   font-family: "epyicons" !important;
   speak: none;
   font-style: normal;

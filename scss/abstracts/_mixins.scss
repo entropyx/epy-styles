@@ -44,10 +44,12 @@
   height: 48px;
   justify-content: space-between;
   line-height: 20px;
+  min-width: fit-content;
   position: relative;
   -webkit-box-shadow: $medium-shadow;
 
   .arrow {
+    color: $color;
     font-family: "epyicons" !important;
     speak: none;
     font-style: normal;
