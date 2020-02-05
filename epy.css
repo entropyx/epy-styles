@@ -2008,7 +2008,7 @@ h6 {
   color: #2e2a25;
   font-family: "Open Sans";
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 28px;
 }
 
@@ -2078,6 +2078,10 @@ textarea {
 }
 
 .bold {
+  font-weight: 700;
+}
+
+.semi-bold {
   font-weight: 600;
 }
 

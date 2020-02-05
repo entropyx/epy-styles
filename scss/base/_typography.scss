@@ -33,17 +33,9 @@ h6 {
   color: $dune;
   font-family: $aux-font;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 28px;
 }
-
-// .subtitle {
-//   color: $dune;
-//   font-family: $aux-font;
-//   font-size: 20px;
-//   font-weight: bold;
-//   line-height: 27px;
-// }
 
 .text-regular {
   color: $dusty-gray;
@@ -112,5 +104,9 @@ textarea {
 }
 
 .bold {
+  font-weight: 700;
+}
+
+.semi-bold {
   font-weight: 600;
 }
