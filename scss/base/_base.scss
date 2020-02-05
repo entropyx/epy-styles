@@ -33,39 +33,39 @@ body {
 }
 
 .content-green {
-  background-color: $jungle-green;
+  background-color: $jungle-green !important;
 }
 
 .content-blue {
-  background-color: $java;
+  background-color: $java !important;
 }
 
 .content-red {
-  background-color: $wuzzy-brown;
+  background-color: $wuzzy-brown !important;
 }
 
 .content-yellow {
-  background-color: $bus-yellow;
+  background-color: $bus-yellow !important;
 }
 
 .content-light-green {
-  background-color: $yellow-green;
+  background-color: $yellow-green !important;
 }
 
 .content-lavander {
-  background-color: $lavander;
+  background-color: $lavander !important;
 }
 
 .content-purple {
-  background-color: $royal-purple;
+  background-color: $royal-purple !important;
 }
 
 .content-white {
-  background-color: $white;
+  background-color: $white !important;
 }
 
 .content-transparent {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 i,
@@ -82,8 +82,4 @@ span {
 .container {
   margin: initial;
   width: 100%;
-}
-
-.upper {
-  text-transform: uppercase;
 }

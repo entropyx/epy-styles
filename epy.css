@@ -1917,39 +1917,39 @@ body ::-webkit-scrollbar-track {
 }
 
 .content-green {
-  background-color: #26c580;
+  background-color: #26c580 !important;
 }
 
 .content-blue {
-  background-color: #22b5b5;
+  background-color: #22b5b5 !important;
 }
 
 .content-red {
-  background-color: #c55757;
+  background-color: #c55757 !important;
 }
 
 .content-yellow {
-  background-color: #ffde03;
+  background-color: #ffde03 !important;
 }
 
 .content-light-green {
-  background-color: #b8e986;
+  background-color: #b8e986 !important;
 }
 
 .content-lavander {
-  background-color: #bb6ad4;
+  background-color: #bb6ad4 !important;
 }
 
 .content-purple {
-  background-color: #8336b0;
+  background-color: #8336b0 !important;
 }
 
 .content-white {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 .content-transparent {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 i.left,
@@ -1966,10 +1966,6 @@ span.right {
 .container {
   margin: initial;
   width: 100%;
-}
-
-.upper {
-  text-transform: uppercase;
 }
 
 @font-face {
@@ -2000,20 +1996,20 @@ h6 {
   line-height: 24px;
 }
 
-.title {
+.page-title {
   color: #717171;
   font-family: "Open Sans";
   font-size: 24px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 32px;
 }
 
-.subtitle {
+.title {
   color: #2e2a25;
   font-family: "Open Sans";
   font-size: 20px;
-  font-weight: bold;
-  line-height: 27px;
+  font-weight: 600;
+  line-height: 28px;
 }
 
 .text-regular {
@@ -2029,45 +2025,44 @@ h6 {
 }
 
 .text-small, .text-danger {
-  color: #c7c7c7;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .text-danger {
-  color: #c55757;
+  color: #c55757 !important;
 }
 
 .text-green {
-  color: #26c580;
+  color: #26c580 !important;
 }
 
 .text-blue {
-  color: #22b5b5;
+  color: #22b5b5 !important;
 }
 
 .text-red {
-  color: #c55757;
+  color: #c55757 !important;
 }
 
 .text-yellow {
-  color: #ffde03;
+  color: #ffde03 !important;
 }
 
 .text-light-green {
-  color: #b8e986;
+  color: #b8e986 !important;
 }
 
 .text-lavander {
-  color: #bb6ad4;
+  color: #bb6ad4 !important;
 }
 
 .text-purple {
-  color: #8336b0;
+  color: #8336b0 !important;
 }
 
 .text-white {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 button,
@@ -2076,6 +2071,14 @@ optgroup,
 select,
 textarea {
   font-family: "Source Sans Pro";
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .left-align {

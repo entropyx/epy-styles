@@ -21,21 +21,29 @@ h6 {
   line-height: 24px;
 }
 
-.title {
+.page-title {
   color: $dove-gray;
   font-family: $aux-font;
   font-size: 24px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 32px;
 }
 
-.subtitle {
+.title {
   color: $dune;
   font-family: $aux-font;
   font-size: 20px;
-  font-weight: bold;
-  line-height: 27px;
+  font-weight: 600;
+  line-height: 28px;
 }
+
+// .subtitle {
+//   color: $dune;
+//   font-family: $aux-font;
+//   font-size: 20px;
+//   font-weight: bold;
+//   line-height: 27px;
+// }
 
 .text-regular {
   color: $dusty-gray;
@@ -50,46 +58,45 @@ h6 {
 }
 
 .text-small {
-  color: $silver;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .text-danger {
   @extend .text-small;
-  color: $wuzzy-brown;
+  color: $wuzzy-brown !important;
 }
 
 .text-green {
-  color: $jungle-green;
+  color: $jungle-green !important;
 }
 
 .text-blue {
-  color: $java;
+  color: $java !important;
 }
 
 .text-red {
-  color: $wuzzy-brown;
+  color: $wuzzy-brown !important;
 }
 
 .text-yellow {
-  color: $bus-yellow;
+  color: $bus-yellow !important;
 }
 
 .text-light-green {
-  color: $yellow-green;
+  color: $yellow-green !important;
 }
 
 .text-lavander {
-  color: $lavander;
+  color: $lavander !important;
 }
 
 .text-purple {
-  color: $royal-purple;
+  color: $royal-purple !important;
 }
 
 .text-white {
-  color: $white;
+  color: $white !important;
 }
 
 button,
@@ -98,4 +105,12 @@ optgroup,
 select,
 textarea {
   font-family: $main-font;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 600;
 }
