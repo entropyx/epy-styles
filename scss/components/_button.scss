@@ -217,9 +217,9 @@
 
 .btn-square-small {
   @include btn-figure;
-  background-color: $white;
+  // background-color: $white;
   box-shadow: $small-shadow;
-  border: 1px solid $seashell;
+  // border: 1px solid $seashell;
   height: 32px !important;
   min-width: 32px;
   padding: 8px;
