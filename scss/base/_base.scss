@@ -15,6 +15,8 @@ html {
 
 body {
   color: $dove-gray;
+  margin: 0;
+  padding: 0;
 
   ::-webkit-scrollbar {
     width: 8px;
@@ -30,6 +32,38 @@ body {
     border-radius: 0px;
     background-color: #f5f5f5;
   }
+}
+
+i,
+.icon,
+span {
+  &.left {
+    margin-right: 8px;
+  }
+  &.right {
+    margin-left: 8px;
+  }
+}
+
+.container {
+  margin: initial;
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+li,
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .content-green {
@@ -66,20 +100,4 @@ body {
 
 .content-transparent {
   background-color: transparent !important;
-}
-
-i,
-.icon,
-span {
-  &.left {
-    margin-right: 8px;
-  }
-  &.right {
-    margin-left: 8px;
-  }
-}
-
-.container {
-  margin: initial;
-  width: 100%;
 }
