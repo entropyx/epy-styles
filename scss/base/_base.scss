@@ -66,6 +66,15 @@ a {
   text-decoration: none;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  td {
+    padding: 10px;
+  }
+}
+
 .content-green {
   background-color: $jungle-green !important;
 }

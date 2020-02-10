@@ -72,6 +72,14 @@ a {
   text-decoration: none;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table td {
+  padding: 10px;
+}
+
 .content-green {
   background-color: #26c580 !important;
 }
@@ -1892,12 +1900,12 @@ progress::-webkit-progress-value {
 }
 .checkbox input[type=checkbox]:checked + label span:after {
   background: #ffffff;
-  transition: width 150ms ease 100ms;
+  transition: width 50ms ease 75ms;
   width: 10px;
 }
 .checkbox input[type=checkbox]:checked + label span:before {
   background: #ffffff;
-  transition: width 150ms ease 100ms;
+  transition: width 50ms ease 75ms;
   width: 5px;
 }
 .checkbox input[type=checkbox]:disabled, .checkbox input[type=checkbox].disabled, .checkbox input[type=checkbox] input[type=checkbox][disabled] {
@@ -1949,7 +1957,6 @@ progress::-webkit-progress-value {
   margin-right: 8px;
   position: relative;
   transform-origin: center;
-  transition: background-color 150ms 200ms, transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
   vertical-align: -6px;
   width: 16px;
 }
@@ -1962,7 +1969,6 @@ progress::-webkit-progress-value {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  transition: background-color 0.25s;
   width: 8px;
 }
 .radio label span:after {
@@ -1974,7 +1980,6 @@ progress::-webkit-progress-value {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  transition: background-color 0.25s;
   width: 8px;
 }
 .radio input[type=radio] {
@@ -1997,20 +2002,20 @@ progress::-webkit-progress-value {
 }
 .radio input[type=radio]:checked + label span:after {
   background: #ffffff;
-  transition: width 150ms ease 100ms;
+  transition: width 50ms ease 75ms;
 }
 .radio input[type=radio]:checked + label span:before {
   background: #ffffff;
-  transition: width 150ms ease 100ms;
+  transition: width 50ms ease 75ms;
 }
 .radio input[type=radio]:checked + label:hover span {
   background-color: #c7c7c7;
 }
 .radio input[type=radio]:checked + label:hover span:after {
-  transition: width 150ms ease 100ms;
+  transition: width 50ms ease 75ms;
 }
 .radio input[type=radio]:checked + label:hover span:before {
-  transition: width 150ms ease 100ms;
+  transition: width 50ms ease 75ms;
 }
 .radio input[type=radio]:disabled, .radio input[type=radio].disabled, .radio input[type=radio] input[type=radio][disabled] {
   cursor: default !important;

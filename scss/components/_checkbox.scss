@@ -117,13 +117,13 @@
           border: 1px solid $jungle-green;
           &:after {
             background: $white;
-            transition: width 150ms ease 100ms;
+            transition: width 50ms ease 75ms;
             width: 10px;
           }
 
           &:before {
             background: $white;
-            transition: width 150ms ease 100ms;
+            transition: width 50ms ease 75ms;
             width: 5px;
           }
         }
