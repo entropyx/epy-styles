@@ -1662,7 +1662,7 @@ progress::-webkit-progress-value {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   width: 100%;
 }
-.card.hoverable:focus {
+.card.hoverable:hover {
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1) !important;
   transition: box-shadow 0.25s;
 }
@@ -1675,7 +1675,7 @@ progress::-webkit-progress-value {
   margin-bottom: 16px;
   padding: 32px;
 }
-.card-panel.hoverable:focus {
+.card-panel.hoverable:hover {
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1) !important;
   transition: box-shadow 0.25s;
 }
