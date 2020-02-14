@@ -1,4 +1,6 @@
-.tooltip {
+// Nota: La clase sin el prefijo epy se va a eliminar
+
+.tooltip, .epyc-tooltip {
   outline: none;
   position: relative;
   width: 100%;

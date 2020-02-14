@@ -1,5 +1,7 @@
 // BASE
-.select {
+// Nota: La clase sin el prefijo epy se va a eliminar
+
+.select, .epyc-select {
   width: 100%;
   .select-container {
     position: relative;
