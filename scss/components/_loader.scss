@@ -20,7 +20,8 @@
   }
 }
 
-.bot-loader {
+.bot-loader,
+.epyc-bot-loader {
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
   animation-name: float;
@@ -41,7 +42,8 @@
   background-size: 800px 104px;
 }
 
-.bar-loader {
+.bar-loader,
+.epic-bar-loader {
   @include basic-loader;
   border-radius: 2px;
   height: 16px;
@@ -65,14 +67,16 @@
   }
 }
 
-.circle-loader {
+.circle-loader,
+.epyc-circle-loader {
   @include basic-loader;
   width: 38px;
   height: 38px;
   border-radius: 50%;
 }
 
-.table-loader {
+.table-loader,
+.epyc-table-loader {
   column-gap: 8%;
   display: grid;
 
@@ -105,7 +109,8 @@
   }
 }
 
-.chart-loader {
+.chart-loader,
+.epyc-chart-loader {
   display: flex;
   height: 114px;
   justify-content: center;
@@ -153,13 +158,15 @@
 // TEMPLATES
 
 // Stat loader (Table + Chart)
-.stat-loader {
+.stat-loader,
+.epyc-stat-loader {
   .table-loader {
     margin: 32px 16px;
   }
 }
 
-.stat-loader-2 {
+.stat-loader-2,
+.epyc-stat-loader-2 {
   .divided-loader {
     .table-loader-container {
       grid-template-columns: 24% 3% 24% 3% 24% 3% 24%;
@@ -171,7 +178,8 @@
   }
 }
 
-.divided-loader {
+.divided-loader,
+.epyc-divided-loader {
   .title-loader {
     display: flex;
     flex-direction: column;
@@ -200,7 +208,8 @@
   }
 }
 
-.campaign-loader {
+.campaign-loader,
+.epyc-campaign-loader {
   .title-container {
     display: flex;
     justify-content: space-between;
@@ -213,7 +222,8 @@
   }
 }
 
-.campaign-details-loader {
+.campaign-details-loader,
+.epyc-campaign-details-loader {
   .title-container {
     column-gap: 16%;
     display: grid;
@@ -239,7 +249,8 @@
   }
 }
 
-.budget-loader {
+.budget-loader,
+.epyc-budget-loader {
   .budget-details {
     background-color: $white;
     border: 1px solid $albaster;

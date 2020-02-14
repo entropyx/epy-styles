@@ -1,7 +1,8 @@
 // BASE
 // Nota: La clase sin el prefijo epy se va a eliminar
 
-.select, .epyc-select {
+.select,
+.epyc-select {
   width: 100%;
   .select-container {
     position: relative;
@@ -97,112 +98,113 @@
       right: 0;
     }
   }
-}
 
-// TRIGGER TYPE
-
-.select-outline {
-  .select-trigger {
-    @include select-trigger($jungle-green);
-    background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    padding: 0 16px;
-  }
-}
-
-.select-line {
-  .select-trigger {
-    @include select-trigger($jungle-green);
-    border-bottom: 1px solid $dusty-gray;
-    background-color: $albaster;
-    border-radius: 4px 4px 0 0;
-    box-shadow: none !important;
-    height: 48px;
-    padding: 16px;
-
-    .select-value {
-      // padding-left: 16px;
-    }
-    .arrow {
-      margin-right: 0px !important;
-      margin-left: 8px;
-    }
-  }
-
-  .select-details {
-    margin-top: -2.5px;
-  }
-}
-
-.select-border-none {
-  .select-trigger {
-    @include select-trigger($jungle-green);
-    box-shadow: none !important;
-  }
-}
-
-// TRIGGER COLOR
-
-.select-primary {
-  .select-trigger {
-    @include select-trigger($white);
-    background-color: $jungle-green;
-    border: none;
-    color: $white;
-    border-radius: 4px;
-    padding: 0 16px;
-
-    &:focus,
-    &:hover {
-      background-color: $mountain-meadow;
-    }
-  }
+  // TRIGGER TYPE
 
   &.select-outline {
     .select-trigger {
       @include select-trigger($jungle-green);
       background-color: transparent;
-      border: 1px solid $jungle-green;
-      color: $jungle-green;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      padding: 0 16px;
+    }
+  }
+
+  &.select-line {
+    .select-trigger {
+      @include select-trigger($jungle-green);
+      border-bottom: 1px solid $dusty-gray;
+      background-color: $albaster;
+      border-radius: 4px 4px 0 0;
+      box-shadow: none !important;
+      height: 48px;
+      padding: 16px;
+
+      .select-value {
+        // padding-left: 16px;
+      }
+      .arrow {
+        margin-right: 0px !important;
+        margin-left: 8px;
+      }
+    }
+
+    .select-details {
+      margin-top: -2.5px;
+    }
+  }
+
+  &.select-border-none {
+    .select-trigger {
+      @include select-trigger($jungle-green);
+      box-shadow: none !important;
+      // padding: 0 16px;
+    }
+  }
+
+  // TRIGGER COLOR
+
+  &.select-primary {
+    .select-trigger {
+      @include select-trigger($white);
+      background-color: $jungle-green;
+      border: none;
+      color: $white;
+      border-radius: 4px;
+      padding: 0 16px;
 
       &:focus,
       &:hover {
+        background-color: $mountain-meadow;
+      }
+    }
+
+    &.select-outline {
+      .select-trigger {
+        @include select-trigger($jungle-green);
         background-color: transparent;
-        border: 1px solid $mountain-meadow;
-        color: $mountain-meadow;
+        border: 1px solid $jungle-green;
+        color: $jungle-green;
+
+        &:focus,
+        &:hover {
+          background-color: transparent;
+          border: 1px solid $mountain-meadow;
+          color: $mountain-meadow;
+        }
       }
     }
   }
-}
 
-// ACTIVE CLASS
-.select-primary {
-  &.active {
-    .select-trigger {
-      background-color: $mountain-meadow;
-    }
-  }
-}
-
-.select-primary {
-  &.select-outline {
+  // ACTIVE CLASS
+  &.select-primary {
     &.active {
       .select-trigger {
-        background-color: transparent;
-        border: 1px solid $mountain-meadow;
-        color: $mountain-meadow;
+        background-color: $mountain-meadow;
       }
     }
   }
-}
 
-.select-line,
-.select-outline,
-.select-border-none {
-  &.active {
-    .select-trigger {
-      @include select-trigger("dark-green");
+  &.select-primary {
+    &.select-outline {
+      &.active {
+        .select-trigger {
+          background-color: transparent;
+          border: 1px solid $mountain-meadow;
+          color: $mountain-meadow;
+        }
+      }
+    }
+  }
+
+  &.select-line,
+  &.select-outline,
+  &.select-border-none {
+    &.active {
+      .select-trigger {
+        @include select-trigger("dark-green");
+      }
     }
   }
 }

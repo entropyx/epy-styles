@@ -1,6 +1,7 @@
 @import "../abstracts/variables";
 
-.input, .epyc-input {
+.input,
+.epyc-input {
   // width: fit-content;
 
   .input-helper {
@@ -200,70 +201,70 @@
       color: $wuzzy-brown;
     }
   }
-}
 
-.input-line {
-  .input-label {
-    color: $dove-gray;
-    display: inline-block;
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 8px;
-  }
-  .input-container {
-    background-color: $albaster !important;
-    border-radius: 4px 4px 0 0;
-
-    input:not([type]),
-    input[type="date"]:not(.browser-default),
-    input[type="datetime-local"]:not(.browser-default),
-    input[type="datetime"]:not(.browser-default),
-    input[type="email"]:not(.browser-default),
-    input[type="number"]:not(.browser-default),
-    input[type="password"]:not(.browser-default),
-    input[type="search"]:not(.browser-default),
-    input[type="tel"]:not(.browser-default),
-    input[type="text"]:not(.browser-default),
-    input[type="time"]:not(.browser-default),
-    input[type="url"]:not(.browser-default),
-    textarea.input-text {
-      border-bottom: 1px solid $dusty-gray;
+  &.input-line {
+    .input-label {
+      color: $dove-gray;
+      display: inline-block;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 8px;
     }
+    .input-container {
+      background-color: $albaster !important;
+      border-radius: 4px 4px 0 0;
 
-    .input-text {
-      &:disabled,
-      &input[disabled],
-      &.disabled {
-        background-color: $albaster;
-        border-bottom: none !important;
-        color: $silver;
-        cursor: auto;
-        pointer-events: none !important;
+      input:not([type]),
+      input[type="date"]:not(.browser-default),
+      input[type="datetime-local"]:not(.browser-default),
+      input[type="datetime"]:not(.browser-default),
+      input[type="email"]:not(.browser-default),
+      input[type="number"]:not(.browser-default),
+      input[type="password"]:not(.browser-default),
+      input[type="search"]:not(.browser-default),
+      input[type="tel"]:not(.browser-default),
+      input[type="text"]:not(.browser-default),
+      input[type="time"]:not(.browser-default),
+      input[type="url"]:not(.browser-default),
+      textarea.input-text {
+        border-bottom: 1px solid $dusty-gray;
+      }
+
+      .input-text {
+        &:disabled,
+        &input[disabled],
+        &.disabled {
+          background-color: $albaster;
+          border-bottom: none !important;
+          color: $silver;
+          cursor: auto;
+          pointer-events: none !important;
+        }
       }
     }
   }
-}
 
-.input-outline {
-  .input-label {
-    color: $dusty-gray;
-    display: inline-block;
-    font-family: $aux-font;
-    font-size: 10px;
-    margin-bottom: 8px;
-  }
-  .input-container {
-    .input-text {
-      border: 1px solid $silver;
-      border-radius: 4px;
+  &.input-outline {
+    .input-label {
+      color: $dusty-gray;
+      display: inline-block;
+      font-family: $aux-font;
+      font-size: 10px;
+      margin-bottom: 8px;
+    }
+    .input-container {
+      .input-text {
+        border: 1px solid $silver;
+        border-radius: 4px;
 
-      &:disabled,
-      &input[disabled],
-      &.disabled {
-        background-color: $albaster;
-        color: $silver;
-        cursor: auto;
-        pointer-events: none !important;
+        &:disabled,
+        &input[disabled],
+        &.disabled {
+          background-color: $albaster;
+          color: $silver;
+          cursor: auto;
+          pointer-events: none !important;
+        }
       }
     }
   }
