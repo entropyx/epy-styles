@@ -251,6 +251,10 @@ textarea {
   text-align: justify;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .epy-container {
   margin-left: auto;
   margin-right: auto;
@@ -1886,12 +1890,15 @@ progress::-webkit-progress-value {
   transition: ease 1s;
 }
 
-.card, .epyc-card {
+.card,
+.epyc-card {
   border-radius: 5px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
   width: 100%;
 }
-.card.hoverable:hover, .epyc-card.hoverable:hover {
+.card.hoverable:hover,
+.epyc-card.hoverable:hover {
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1) !important;
   transition: box-shadow 0.25s;
 }
@@ -1899,6 +1906,7 @@ progress::-webkit-progress-value {
 .card-panel {
   border-radius: 5px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
   width: 100%;
   margin-top: 8px;
   margin-bottom: 16px;
