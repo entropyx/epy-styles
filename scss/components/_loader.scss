@@ -80,6 +80,30 @@
   column-gap: 8%;
   display: grid;
 
+  &.col12 {
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 4%;
+  }
+
+  &.col11 {
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 4%;
+  }
+
+  &.col10 {
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 4%;
+  }
+
+  &.col9 {
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 4%;
+  }
+
+  &.col8 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
   &.col7 {
     grid-template-columns: repeat(7, 1fr);
   }
