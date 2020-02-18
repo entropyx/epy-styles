@@ -81,27 +81,28 @@
   display: grid;
 
   &.col12 {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     column-gap: 4%;
   }
 
   &.col11 {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(11, 1fr);
     column-gap: 4%;
   }
 
   &.col10 {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     column-gap: 4%;
   }
 
   &.col9 {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     column-gap: 4%;
   }
 
   &.col8 {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 4%;
   }
 
   &.col7 {

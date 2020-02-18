@@ -1672,27 +1672,28 @@ textarea {
 }
 .table-loader.col12,
 .epyc-table-loader.col12 {
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   column-gap: 4%;
 }
 .table-loader.col11,
 .epyc-table-loader.col11 {
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   column-gap: 4%;
 }
 .table-loader.col10,
 .epyc-table-loader.col10 {
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   column-gap: 4%;
 }
 .table-loader.col9,
 .epyc-table-loader.col9 {
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(9, 1fr);
   column-gap: 4%;
 }
 .table-loader.col8,
 .epyc-table-loader.col8 {
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  column-gap: 4%;
 }
 .table-loader.col7,
 .epyc-table-loader.col7 {
