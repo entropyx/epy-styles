@@ -255,12 +255,12 @@ textarea {
   margin-right: auto;
   width: 90%;
 }
-@media only screen and (min-width: 22.5em) and (max-width: 85.375em) {
+@media only screen and (min-width: 480px) and (max-width: 1080px) {
   .epy-container {
     width: 85%;
   }
 }
-@media only screen and (min-width: 85.375em) {
+@media only screen and (min-width: 1080px) {
   .epy-container {
     max-width: 1366px;
     width: 80%;
@@ -285,7 +285,7 @@ textarea {
   display: table;
 }
 
-@media only screen and (max-width: 22.5em) {
+@media only screen and (max-width: 480px) {
   .col-1-s {
     width: 23%;
   }
@@ -318,7 +318,7 @@ textarea {
     display: none !important;
   }
 }
-@media only screen and (min-width: 22.5em) and (max-width: 48em) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   .col-1-m {
     width: 10.5%;
   }
@@ -383,7 +383,7 @@ textarea {
     display: none !important;
   }
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 768px) {
   .col-1 {
     width: 6.3333333333%;
   }
@@ -1095,6 +1095,8 @@ textarea {
   right: 0;
   top: 100%;
   width: -webkit-fill-available;
+  position: absolute;
+  z-index: 100;
   z-index: 2;
 }
 .select .select-details .options-container,
@@ -2052,7 +2054,6 @@ progress::-webkit-progress-value {
 
 .checkbox,
 .epyc-checkbox {
-  margin: 8px;
   display: flex;
   align-items: center;
 }
@@ -2229,18 +2230,20 @@ progress::-webkit-progress-value {
   background-color: #d4d4d4;
 }
 
-.radio, .epyc-radio {
-  margin: 8px;
+.radio,
+.epyc-radio {
   display: flex;
   align-items: center;
 }
-.radio label, .epyc-radio label {
+.radio label,
+.epyc-radio label {
   color: #26c580;
   cursor: pointer;
   display: inline-block;
   position: relative;
 }
-.radio label span, .epyc-radio label span {
+.radio label span,
+.epyc-radio label span {
   background-color: transparent;
   border-radius: 50%;
   box-sizing: initial;
@@ -2252,7 +2255,8 @@ progress::-webkit-progress-value {
   vertical-align: -6px;
   width: 16px;
 }
-.radio label span:before, .epyc-radio label span:before {
+.radio label span:before,
+.epyc-radio label span:before {
   background-color: transparent;
   border-radius: 50%;
   content: "";
@@ -2263,7 +2267,8 @@ progress::-webkit-progress-value {
   transform: translate(-50%, -50%);
   width: 8px;
 }
-.radio label span:after, .epyc-radio label span:after {
+.radio label span:after,
+.epyc-radio label span:after {
   content: "";
   background-color: transparent;
   border-radius: 50%;
@@ -2274,7 +2279,8 @@ progress::-webkit-progress-value {
   transform: translate(-50%, -50%);
   width: 8px;
 }
-.radio input[type=radio], .epyc-radio input[type=radio] {
+.radio input[type=radio],
+.epyc-radio input[type=radio] {
   background-color: transparent;
   cursor: pointer;
   height: 22px;
@@ -2285,56 +2291,87 @@ progress::-webkit-progress-value {
   width: 22px;
   z-index: 10;
 }
-.radio input[type=radio] + label span, .epyc-radio input[type=radio] + label span {
+.radio input[type=radio] + label span,
+.epyc-radio input[type=radio] + label span {
   border: 1px solid #c7c7c7;
 }
-.radio input[type=radio]:checked + label span, .epyc-radio input[type=radio]:checked + label span {
+.radio input[type=radio]:checked + label span,
+.epyc-radio input[type=radio]:checked + label span {
   background-color: #26c580;
   border: 1px solid #26c580;
 }
-.radio input[type=radio]:checked + label span:after, .epyc-radio input[type=radio]:checked + label span:after {
+.radio input[type=radio]:checked + label span:after,
+.epyc-radio input[type=radio]:checked + label span:after {
   background: #ffffff;
   transition: width 50ms ease 75ms;
 }
-.radio input[type=radio]:checked + label span:before, .epyc-radio input[type=radio]:checked + label span:before {
+.radio input[type=radio]:checked + label span:before,
+.epyc-radio input[type=radio]:checked + label span:before {
   background: #ffffff;
   transition: width 50ms ease 75ms;
 }
-.radio input[type=radio]:checked + label:hover span, .epyc-radio input[type=radio]:checked + label:hover span {
+.radio input[type=radio]:checked + label:hover span,
+.epyc-radio input[type=radio]:checked + label:hover span {
   background-color: #c7c7c7;
 }
-.radio input[type=radio]:checked + label:hover span:after, .epyc-radio input[type=radio]:checked + label:hover span:after {
+.radio input[type=radio]:checked + label:hover span:after,
+.epyc-radio input[type=radio]:checked + label:hover span:after {
   transition: width 50ms ease 75ms;
 }
-.radio input[type=radio]:checked + label:hover span:before, .epyc-radio input[type=radio]:checked + label:hover span:before {
+.radio input[type=radio]:checked + label:hover span:before,
+.epyc-radio input[type=radio]:checked + label:hover span:before {
   transition: width 50ms ease 75ms;
 }
-.radio input[type=radio]:disabled, .radio input[type=radio].disabled, .radio input[type=radio] input[type=radio][disabled], .epyc-radio input[type=radio]:disabled, .epyc-radio input[type=radio].disabled, .epyc-radio input[type=radio] input[type=radio][disabled] {
+.radio input[type=radio]:disabled, .radio input[type=radio].disabled, .radio input[type=radio] input[type=radio][disabled],
+.epyc-radio input[type=radio]:disabled,
+.epyc-radio input[type=radio].disabled,
+.epyc-radio input[type=radio] input[type=radio][disabled] {
   cursor: default !important;
   pointer-events: none !important;
 }
-.radio input[type=radio]:disabled + label, .radio input[type=radio].disabled + label, .radio input[type=radio] input[type=radio][disabled] + label, .epyc-radio input[type=radio]:disabled + label, .epyc-radio input[type=radio].disabled + label, .epyc-radio input[type=radio] input[type=radio][disabled] + label {
+.radio input[type=radio]:disabled + label, .radio input[type=radio].disabled + label, .radio input[type=radio] input[type=radio][disabled] + label,
+.epyc-radio input[type=radio]:disabled + label,
+.epyc-radio input[type=radio].disabled + label,
+.epyc-radio input[type=radio] input[type=radio][disabled] + label {
   cursor: default !important;
 }
-.radio input[type=radio]:disabled + label span, .radio input[type=radio].disabled + label span, .radio input[type=radio] input[type=radio][disabled] + label span, .epyc-radio input[type=radio]:disabled + label span, .epyc-radio input[type=radio].disabled + label span, .epyc-radio input[type=radio] input[type=radio][disabled] + label span {
+.radio input[type=radio]:disabled + label span, .radio input[type=radio].disabled + label span, .radio input[type=radio] input[type=radio][disabled] + label span,
+.epyc-radio input[type=radio]:disabled + label span,
+.epyc-radio input[type=radio].disabled + label span,
+.epyc-radio input[type=radio] input[type=radio][disabled] + label span {
   background-color: #f1f1f1;
   border: 1px solid #c7c7c7;
 }
-.radio input[type=radio]:checked:disabled, .radio input[type=radio]:checked.disabled, .radio input[type=radio]:checked input[type=radio][disabled], .epyc-radio input[type=radio]:checked:disabled, .epyc-radio input[type=radio]:checked.disabled, .epyc-radio input[type=radio]:checked input[type=radio][disabled] {
+.radio input[type=radio]:checked:disabled, .radio input[type=radio]:checked.disabled, .radio input[type=radio]:checked input[type=radio][disabled],
+.epyc-radio input[type=radio]:checked:disabled,
+.epyc-radio input[type=radio]:checked.disabled,
+.epyc-radio input[type=radio]:checked input[type=radio][disabled] {
   cursor: default !important;
   pointer-events: none !important;
 }
-.radio input[type=radio]:checked:disabled + label, .radio input[type=radio]:checked.disabled + label, .radio input[type=radio]:checked input[type=radio][disabled] + label, .epyc-radio input[type=radio]:checked:disabled + label, .epyc-radio input[type=radio]:checked.disabled + label, .epyc-radio input[type=radio]:checked input[type=radio][disabled] + label {
+.radio input[type=radio]:checked:disabled + label, .radio input[type=radio]:checked.disabled + label, .radio input[type=radio]:checked input[type=radio][disabled] + label,
+.epyc-radio input[type=radio]:checked:disabled + label,
+.epyc-radio input[type=radio]:checked.disabled + label,
+.epyc-radio input[type=radio]:checked input[type=radio][disabled] + label {
   cursor: default !important;
 }
-.radio input[type=radio]:checked:disabled + label span, .radio input[type=radio]:checked.disabled + label span, .radio input[type=radio]:checked input[type=radio][disabled] + label span, .epyc-radio input[type=radio]:checked:disabled + label span, .epyc-radio input[type=radio]:checked.disabled + label span, .epyc-radio input[type=radio]:checked input[type=radio][disabled] + label span {
+.radio input[type=radio]:checked:disabled + label span, .radio input[type=radio]:checked.disabled + label span, .radio input[type=radio]:checked input[type=radio][disabled] + label span,
+.epyc-radio input[type=radio]:checked:disabled + label span,
+.epyc-radio input[type=radio]:checked.disabled + label span,
+.epyc-radio input[type=radio]:checked input[type=radio][disabled] + label span {
   background-color: #f1f1f1;
   border: 1px solid #c7c7c7;
 }
-.radio input[type=radio]:checked:disabled + label span:after, .radio input[type=radio]:checked.disabled + label span:after, .radio input[type=radio]:checked input[type=radio][disabled] + label span:after, .epyc-radio input[type=radio]:checked:disabled + label span:after, .epyc-radio input[type=radio]:checked.disabled + label span:after, .epyc-radio input[type=radio]:checked input[type=radio][disabled] + label span:after {
+.radio input[type=radio]:checked:disabled + label span:after, .radio input[type=radio]:checked.disabled + label span:after, .radio input[type=radio]:checked input[type=radio][disabled] + label span:after,
+.epyc-radio input[type=radio]:checked:disabled + label span:after,
+.epyc-radio input[type=radio]:checked.disabled + label span:after,
+.epyc-radio input[type=radio]:checked input[type=radio][disabled] + label span:after {
   background-color: #d4d4d4;
 }
-.radio input[type=radio]:checked:disabled + label span:before, .radio input[type=radio]:checked.disabled + label span:before, .radio input[type=radio]:checked input[type=radio][disabled] + label span:before, .epyc-radio input[type=radio]:checked:disabled + label span:before, .epyc-radio input[type=radio]:checked.disabled + label span:before, .epyc-radio input[type=radio]:checked input[type=radio][disabled] + label span:before {
+.radio input[type=radio]:checked:disabled + label span:before, .radio input[type=radio]:checked.disabled + label span:before, .radio input[type=radio]:checked input[type=radio][disabled] + label span:before,
+.epyc-radio input[type=radio]:checked:disabled + label span:before,
+.epyc-radio input[type=radio]:checked.disabled + label span:before,
+.epyc-radio input[type=radio]:checked input[type=radio][disabled] + label span:before {
   background-color: #d4d4d4;
 }
 
