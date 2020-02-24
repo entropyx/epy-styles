@@ -22,3 +22,10 @@
 .hidden {
   display: none !important;
 }
+
+span,
+i {
+  &.rotate {
+    transform: rotate(180deg);
+  }
+}

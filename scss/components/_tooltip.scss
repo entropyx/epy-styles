@@ -1,6 +1,7 @@
 // Nota: La clase sin el prefijo epy se va a eliminar
 
-.tooltip, .epyc-tooltip {
+.tooltip,
+.epyc-tooltip {
   outline: none;
   position: relative;
   width: 100%;
@@ -25,7 +26,7 @@
     visibility: hidden;
     // width: fit-content !important;
     width: max-content;
-    z-index: 1;
+    z-index: 100;
   }
 
   &.active {
