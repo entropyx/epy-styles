@@ -68,14 +68,6 @@
       display: flex;
       margin-top: 20px;
       margin-bottom: 22px;
-
-      .field-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-right: 70px;
-      }
     }
 
     .stats {
@@ -112,8 +104,6 @@
   }
 
   .field {
-    line-height: 19px;
-
     &.subtitle {
       color: $dusty-gray;
       font-family: $aux-font;
@@ -121,11 +111,6 @@
       font-weight: bold;
     }
 
-    &.upper {
-      color: $dusty-gray;
-      font-size: 10px;
-      font-family: $aux-font;
-    }
     &.green {
       color: $jungle-green;
     }

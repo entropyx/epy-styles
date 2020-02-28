@@ -17,7 +17,8 @@
     height: inherit;
     justify-content: space-between;
     position: relative;
-    width: 100%;
+    // width: 100%;
+    width: fit-content;
 
     .input-text {
       background-color: transparent;

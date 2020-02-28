@@ -278,13 +278,10 @@
 .epyc-budget-loader {
   .budget-details {
     background-color: $white;
-    border: 1px solid $albaster;
     border-radius: 8px;
-    box-shadow: $medium-shadow;
     height: 430px;
-    margin-top: 32px;
-    padding: 32px;
-    -webkit-box-shadow: $medium-shadow;
+    // margin-top: 32px;
+    // padding: 32px;
 
     .budget-days {
       column-gap: 4%;

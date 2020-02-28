@@ -110,3 +110,21 @@ textarea {
 .semi-bold {
   font-weight: 600;
 }
+
+.field-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 70px;
+}
+
+.field {
+  line-height: 19px;
+
+  &.upper {
+    color: $dusty-gray;
+    font-size: 10px;
+    font-family: $aux-font;
+  }
+}
