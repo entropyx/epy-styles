@@ -808,7 +808,8 @@ i.rotate {
   height: inherit;
   justify-content: space-between;
   position: relative;
-  width: fit-content;
+  width: 100%;
+  min-width: 104px;
 }
 .input .input-container .input-text,
 .epyc-input .input-container .input-text {
