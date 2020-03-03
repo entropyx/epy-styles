@@ -292,7 +292,7 @@
       row-gap: 6%;
       > .day {
         @include basic-loader;
-        border-radius: 2px;
+        border-radius: 5px;
         height: 40px;
         width: 100%;
       }

@@ -1185,9 +1185,11 @@ i.rotate {
   position: relative;
   -webkit-box-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
   background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #c7c7c7;
   border-radius: 4px;
+  box-shadow: none;
   padding: 0 16px;
+  -webkit-box-shadow: none;
 }
 .select.select-outline .select-trigger .arrow,
 .epyc-select.select-outline .select-trigger .arrow {
@@ -1911,7 +1913,7 @@ i.rotate {
   background: #f6f7f8;
   background: linear-gradient(to right, #f7f7f7 8%, #f1f1f1 18%, #f7f7f7 23%);
   background-size: 800px 104px;
-  border-radius: 2px;
+  border-radius: 5px;
   height: 40px;
   width: 100%;
 }
