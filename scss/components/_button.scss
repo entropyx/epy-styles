@@ -8,22 +8,27 @@
 
 .btn,
 .epyc-btn {
-  align-items: center;
   background-color: transparent;
   border-radius: 4px;
   color: $dusty-gray;
   cursor: pointer;
-  display: flex;
   font-size: 16px;
   line-height: 20px;
   height: 48px;
-  justify-content: center;
   margin: 8px;
   min-width: 88px;
   text-align: center;
   padding: 0px 32px;
   outline: none;
   width: fit-content;
+
+  // &:first-of-type {
+  //   margin-left: 0;
+  // }
+
+  // &:last-of-type {
+  //   margin-right: 0;
+  // }
 
   &:hover,
   &:focus {
@@ -36,6 +41,12 @@
   &.disabled {
     cursor: auto !important;
     pointer-events: none !important;
+  }
+
+  .btn-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 
   svg {
@@ -234,6 +245,11 @@
     padding-bottom: 24px;
     padding-top: 24px;
     width: 390px;
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
+
     &:hover,
     &:focus {
       box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1) !important;

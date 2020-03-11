@@ -1,21 +1,24 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const TerserJSPlugin = require('terser-webpack-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserJSPlugin = require("terser-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
   entry: "./js/index.js",
   mode: "production",
   optimization: {
-    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({
-      assetNameRegExp: /\.min\.css$/g,
-      cssProcessor: require('cssnano'),
-      cssProcessorPluginOptions: {
-        preset: ['default', { discardComments: { removeAll: true } }],
-      },
-      canPrint: true
-    })],
+    minimizer: [
+      new TerserJSPlugin({}),
+      new OptimizeCSSAssetsPlugin({
+        assetNameRegExp: /\.min\.css$/g,
+        cssProcessor: require("cssnano"),
+        cssProcessorPluginOptions: {
+          preset: ["default", { discardComments: { removeAll: true } }]
+        },
+        canPrint: true
+      })
+    ]
   },
   plugins: [
     // new MiniCssExtractPlugin({
@@ -23,9 +26,9 @@ module.exports = {
     // }),
     new CopyWebpackPlugin([{ from: "assets", to: "assets" }]),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].css',
-      chunkFilename: 'css/[id].min.css',
-    }),
+      filename: "css/epy.css",
+      chunkFilename: "css/[id].min.css"
+    })
     // new CopyWebpackPlugin([{ from: "epy.css", to: "css/epy.css" }])
   ],
   module: {
@@ -43,7 +46,7 @@ module.exports = {
           // },
           MiniCssExtractPlugin.loader,
           "css-loader?url=false",
-          "sass-loader",
+          "sass-loader"
         ]
       },
       {

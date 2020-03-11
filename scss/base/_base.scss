@@ -78,6 +78,20 @@ table {
   }
 }
 
+epy-button {
+  &:first-of-type {
+    .epyc-btn {
+      margin-left: 0;
+    }
+  }
+
+  &:last-of-type {
+    .epyc-btn {
+      margin-right: 0;
+    }
+  }
+}
+
 .content-green {
   background-color: $jungle-green !important;
 }

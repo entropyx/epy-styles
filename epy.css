@@ -79,6 +79,13 @@ table td {
   padding: 10px;
 }
 
+epy-button:first-of-type .epyc-btn {
+  margin-left: 0;
+}
+epy-button:last-of-type .epyc-btn {
+  margin-right: 0;
+}
+
 .content-green {
   background-color: #26c580 !important;
 }
@@ -237,7 +244,6 @@ textarea {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-right: 70px;
 }
 
 .field {
@@ -508,16 +514,13 @@ i.rotate {
 }
 .btn,
 .epyc-btn {
-  align-items: center;
   background-color: transparent;
   border-radius: 4px;
   color: #9b9b9b;
   cursor: pointer;
-  display: flex;
   font-size: 16px;
   line-height: 20px;
   height: 48px;
-  justify-content: center;
   margin: 8px;
   min-width: 88px;
   text-align: center;
@@ -537,6 +540,12 @@ i.rotate {
 .epyc-btn.disabled {
   cursor: auto !important;
   pointer-events: none !important;
+}
+.btn .btn-container,
+.epyc-btn .btn-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .btn svg,
 .epyc-btn svg {
@@ -746,6 +755,13 @@ i.rotate {
   padding-top: 24px;
   width: 152px;
 }
+.btn.btn-square .btn-container,
+.epyc-btn.btn-square .btn-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .btn.btn-square:hover, .btn.btn-square:focus,
 .epyc-btn.btn-square:hover,
 .epyc-btn.btn-square:focus {
@@ -775,6 +791,13 @@ i.rotate {
   width: 32px !important;
   -webkit-box-shadow: 0 1px 1px 0 rgba(212, 212, 212, 0.5);
 }
+.btn.btn-square-small .btn-container,
+.epyc-btn.btn-square-small .btn-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .btn.btn-rectangle,
 .epyc-btn.btn-rectangle {
   align-items: center;
@@ -786,6 +809,19 @@ i.rotate {
   padding-bottom: 24px;
   padding-top: 24px;
   width: 390px;
+}
+.btn.btn-rectangle .btn-container,
+.epyc-btn.btn-rectangle .btn-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 480px) {
+  .btn.btn-rectangle,
+.epyc-btn.btn-rectangle {
+    width: 100%;
+  }
 }
 .btn.btn-rectangle:hover, .btn.btn-rectangle:focus,
 .epyc-btn.btn-rectangle:hover,
