@@ -3,17 +3,17 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
 /**
  * Set up a decent box model on the root element
  */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
 html {
   box-sizing: border-box;
 }
@@ -1800,6 +1800,7 @@ i.rotate {
   display: flex;
   height: 114px;
   justify-content: center;
+  overflow: hidden;
   width: 100%;
 }
 .chart-loader .chart-stroke-1,
