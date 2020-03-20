@@ -1561,15 +1561,14 @@ i.rotate {
 }
 .droptip .droptip-trigger,
 .epyc-droptip .droptip-trigger {
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  cursor: pointer;
+  margin-bottom: 16px;
   margin-top: 0;
+  width: fit-content;
 }
 .droptip .droptip-trigger .droptip-title,
 .epyc-droptip .droptip-trigger .droptip-title {
   color: #22b5b5;
-  cursor: pointer;
   font-size: 16px;
   font-weight: 400;
   padding-right: 24px;
@@ -1607,6 +1606,10 @@ i.rotate {
 .epyc-droptip .droptip-content {
   background-color: #f7f7f7;
   display: none;
+  color: #717171;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 19px;
   padding-bottom: 32px;
   padding-top: 32px;
   transition: 0.25s;
