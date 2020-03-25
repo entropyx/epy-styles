@@ -830,12 +830,32 @@ i.rotate {
   -webkit-box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1) !important;
 }
 
+.input .input-label,
+.epyc-input .input-label {
+  margin-right: 4px;
+}
 .input .input-helper,
 .epyc-input .input-helper {
   color: #9b9b9b;
+  display: inline-block;
   font-size: 14px;
   line-height: 18px;
-  margin-left: 4px;
+}
+.input:not(.title-container) .input-label,
+.input:not(.title-container) .input-helper,
+.epyc-input:not(.title-container) .input-label,
+.epyc-input:not(.title-container) .input-helper {
+  margin-bottom: 8px;
+}
+.input .title-container,
+.epyc-input .title-container {
+  margin-bottom: 8px;
+}
+.input .title-container .input-label,
+.input .title-container .input-helper,
+.epyc-input .title-container .input-label,
+.epyc-input .title-container .input-helper {
+  margin-bottom: 0;
 }
 .input .input-container,
 .epyc-input .input-container {
@@ -1042,7 +1062,6 @@ i.rotate {
   display: inline-block;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 8px;
 }
 .input.input-line .input-container,
 .epyc-input.input-line .input-container {
@@ -1093,7 +1112,6 @@ i.rotate {
   display: inline-block;
   font-family: "Open Sans";
   font-size: 10px;
-  margin-bottom: 8px;
 }
 .input.input-outline .input-container .input-text,
 .epyc-input.input-outline .input-container .input-text {
@@ -1118,17 +1136,12 @@ i.rotate {
 .epyc-select .select-container {
   position: relative;
 }
-.select .select-container .title-container,
-.epyc-select .select-container .title-container {
-  display: flex;
-  align-items: baseline;
-}
 .select .select-container .select-label,
 .epyc-select .select-container .select-label {
   color: #717171;
   display: inline-block;
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-right: 4px;
 }
 .select .select-container .select-label.upper,
 .epyc-select .select-container .select-label.upper {
@@ -1137,15 +1150,30 @@ i.rotate {
   font-size: 10px;
   margin-bottom: 8px;
 }
-.select .select-helper,
-.epyc-select .select-helper {
+.select .select-container .select-helper,
+.epyc-select .select-container .select-helper {
   color: #9b9b9b;
   font-size: 14px;
   line-height: 18px;
-  margin-left: 4px;
 }
-.select .select-details,
-.epyc-select .select-details {
+.select .select-container:not(.title-container) .select-label,
+.select .select-container:not(.title-container) .select-helper,
+.epyc-select .select-container:not(.title-container) .select-label,
+.epyc-select .select-container:not(.title-container) .select-helper {
+  margin-bottom: 8px;
+}
+.select .select-container .title-container,
+.epyc-select .select-container .title-container {
+  margin-bottom: 8px;
+}
+.select .select-container .title-container .select-label,
+.select .select-container .title-container .select-helper,
+.epyc-select .select-container .title-container .select-label,
+.epyc-select .select-container .title-container .select-helper {
+  margin-bottom: 0;
+}
+.select .select-container .select-details,
+.epyc-select .select-container .select-details {
   background-color: #ffffff;
   border-radius: 4px;
   border-top: 0;
@@ -1159,16 +1187,15 @@ i.rotate {
   top: 100%;
   width: -webkit-fill-available;
   position: absolute;
-  z-index: 100;
   z-index: 2;
 }
-.select .select-details .options-container,
-.epyc-select .select-details .options-container {
+.select .select-container .select-details .options-container,
+.epyc-select .select-container .select-details .options-container {
   overflow-y: auto;
   max-height: 272px;
 }
-.select .select-details .option,
-.epyc-select .select-details .option {
+.select .select-container .select-details .option,
+.epyc-select .select-container .select-details .option {
   border-bottom: 1px solid #f7f7f7;
   position: relative;
   display: block;
@@ -1181,18 +1208,18 @@ i.rotate {
   margin: 1px 0;
   text-align: left;
 }
-.select .select-details .option:hover,
-.epyc-select .select-details .option:hover {
+.select .select-container .select-details .option:hover,
+.epyc-select .select-container .select-details .option:hover {
   cursor: pointer;
   background-color: #ededed;
 }
-.select .select-details .option.selected,
-.epyc-select .select-details .option.selected {
+.select .select-container .select-details .option.selected,
+.epyc-select .select-container .select-details .option.selected {
   color: #ffffff !important;
   background-color: #c7c7c7;
 }
-.select .select-details .input,
-.epyc-select .select-details .input {
+.select .select-container .select-details .input,
+.epyc-select .select-container .select-details .input {
   width: 98%;
   margin: 8px 1%;
 }
