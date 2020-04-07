@@ -22,14 +22,6 @@
   outline: none;
   width: fit-content;
 
-  // &:first-of-type {
-  //   margin-left: 0;
-  // }
-
-  // &:last-of-type {
-  //   margin-right: 0;
-  // }
-
   &:hover,
   &:focus {
     box-shadow: $x-large-shadow;
@@ -114,18 +106,47 @@
   }
 
   &.btn-destructive {
-    @include btn-border-none;
-    @include btn-disabled-basic-style;
-    background-color: transparent;
-    color: $wuzzy-brown;
+    background-color: $wuzzy-brown;
+    border: none;
+    color: $white;
 
     &:focus,
     &:hover {
-      background-color: transparent;
+      background-color: #b63f3f;
+    }
+
+    &:disabled,
+    & button[disabled],
+    &.disabled {
+      background-color: $silver;
+      border: 1px solid #cecece;
     }
 
     &.btn-outline {
+      background-color: transparent;
       border: 1px solid $wuzzy-brown;
+      color: $wuzzy-brown;
+
+      &:focus,
+      &:hover {
+        background-color: transparent;
+        border: 1px solid #b63f3f;
+        color: #b63f3f;
+      }
+    }
+
+    &.btn-border-none {
+      border: none;
+      background-color: transparent;
+      box-shadow: none;
+      color: $wuzzy-brown;
+
+      &:focus,
+      &:hover {
+        background-color: transparent;
+        border: none;
+        color: #b63f3f;
+      }
     }
   }
 
@@ -228,9 +249,7 @@
 
   &.btn-square-small {
     @include btn-figure;
-    // background-color: $white;
     box-shadow: $small-shadow;
-    // border: 1px solid $seashell;
     height: 32px !important;
     min-width: 32px;
     padding: 8px;

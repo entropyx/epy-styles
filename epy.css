@@ -3,17 +3,17 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
 /**
  * Set up a decent box model on the root element
  */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900|Source+Sans+Pro:400,500,600,700,800,900");
 html {
   box-sizing: border-box;
 }
@@ -612,33 +612,48 @@ i.rotate {
 }
 .btn.btn-destructive,
 .epyc-btn.btn-destructive {
+  background-color: #c55757;
   border: none;
-  background-color: transparent;
-  padding-right: 8px;
-  padding-left: 8px;
-  background-color: transparent;
-  color: #c55757;
+  color: #ffffff;
 }
-.btn.btn-destructive:hover, .btn.btn-destructive:focus,
-.epyc-btn.btn-destructive:hover,
-.epyc-btn.btn-destructive:focus {
-  box-shadow: none;
-  -webkit-box-shadow: none;
+.btn.btn-destructive:focus, .btn.btn-destructive:hover,
+.epyc-btn.btn-destructive:focus,
+.epyc-btn.btn-destructive:hover {
+  background-color: #b63f3f;
 }
 .btn.btn-destructive:disabled, .btn.btn-destructive button[disabled], .btn.btn-destructive.disabled,
 .epyc-btn.btn-destructive:disabled,
 .epyc-btn.btn-destructive button[disabled],
 .epyc-btn.btn-destructive.disabled {
-  color: #c7c7c7 !important;
-}
-.btn.btn-destructive:focus, .btn.btn-destructive:hover,
-.epyc-btn.btn-destructive:focus,
-.epyc-btn.btn-destructive:hover {
-  background-color: transparent;
+  background-color: #c7c7c7;
+  border: 1px solid #cecece;
 }
 .btn.btn-destructive.btn-outline,
 .epyc-btn.btn-destructive.btn-outline {
+  background-color: transparent;
   border: 1px solid #c55757;
+  color: #c55757;
+}
+.btn.btn-destructive.btn-outline:focus, .btn.btn-destructive.btn-outline:hover,
+.epyc-btn.btn-destructive.btn-outline:focus,
+.epyc-btn.btn-destructive.btn-outline:hover {
+  background-color: transparent;
+  border: 1px solid #b63f3f;
+  color: #b63f3f;
+}
+.btn.btn-destructive.btn-border-none,
+.epyc-btn.btn-destructive.btn-border-none {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: #c55757;
+}
+.btn.btn-destructive.btn-border-none:focus, .btn.btn-destructive.btn-border-none:hover,
+.epyc-btn.btn-destructive.btn-border-none:focus,
+.epyc-btn.btn-destructive.btn-border-none:hover {
+  background-color: transparent;
+  border: none;
+  color: #b63f3f;
 }
 .btn.btn-info,
 .epyc-btn.btn-info {
