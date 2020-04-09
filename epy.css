@@ -145,6 +145,7 @@ h4,
 h5,
 h6 {
   color: #717171;
+  display: inline-block;
   font-family: "Open Sans";
   font-weight: 600;
   line-height: 24px;
@@ -152,6 +153,7 @@ h6 {
 
 .page-title {
   color: #717171;
+  display: inline-block;
   font-family: "Open Sans";
   font-size: 24px;
   font-weight: 600;
@@ -160,6 +162,7 @@ h6 {
 
 .title {
   color: #2e2a25;
+  display: inline-block;
   font-family: "Open Sans";
   font-size: 20px;
   font-weight: 700;
@@ -168,18 +171,21 @@ h6 {
 
 .text-regular {
   color: #9b9b9b;
+  display: inline-block;
   font-size: 16px;
   line-height: 20px;
 }
 
 .text-suggest {
   color: #c7c7c7;
+  display: inline-block;
   font-size: 16px;
   line-height: 20px;
 }
 
 .text-small, .text-danger {
   font-size: 12px;
+  display: inline-block;
   line-height: 16px;
 }
 
@@ -189,34 +195,42 @@ h6 {
 
 .text-green {
   color: #26c580 !important;
+  display: inline-block;
 }
 
 .text-blue {
   color: #22b5b5 !important;
+  display: inline-block;
 }
 
 .text-red {
   color: #c55757 !important;
+  display: inline-block;
 }
 
 .text-yellow {
   color: #ffde03 !important;
+  display: inline-block;
 }
 
 .text-light-green {
   color: #b8e986 !important;
+  display: inline-block;
 }
 
 .text-lavander {
   color: #bb6ad4 !important;
+  display: inline-block;
 }
 
 .text-purple {
   color: #8336b0 !important;
+  display: inline-block;
 }
 
 .text-white {
   color: #ffffff !important;
+  display: inline-block;
 }
 
 button,
