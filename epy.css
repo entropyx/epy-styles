@@ -609,6 +609,20 @@ i.rotate {
   border: 1px solid #cecece !important;
   color: #c7c7c7 !important;
 }
+.btn.btn-primary.btn-border-none,
+.epyc-btn.btn-primary.btn-border-none {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: #26c580;
+}
+.btn.btn-primary.btn-border-none:focus, .btn.btn-primary.btn-border-none:hover,
+.epyc-btn.btn-primary.btn-border-none:focus,
+.epyc-btn.btn-primary.btn-border-none:hover {
+  background-color: transparent;
+  border: none;
+  color: #20ab6f;
+}
 .btn.btn-outline,
 .epyc-btn.btn-outline {
   color: #9b9b9b;

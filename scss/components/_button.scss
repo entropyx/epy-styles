@@ -88,6 +88,20 @@
         color: $silver !important;
       }
     }
+
+    &.btn-border-none {
+      border: none;
+      background-color: transparent;
+      box-shadow: none;
+      color: $jungle-green;
+
+      &:focus,
+      &:hover {
+        background-color: transparent;
+        border: none;
+        color: $mountain-meadow;
+      }
+    }
   }
 
   &.btn-outline {
