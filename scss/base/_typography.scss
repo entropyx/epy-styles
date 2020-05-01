@@ -16,7 +16,6 @@ h4,
 h5,
 h6 {
   color: $dove-gray;
-  display: inline-block;
   font-family: $aux-font;
   font-weight: 600;
   line-height: 24px;
@@ -24,7 +23,6 @@ h6 {
 
 .page-title {
   color: $dove-gray;
-  display: inline-block;
   font-family: $aux-font;
   font-size: 24px;
   font-weight: 600;
@@ -33,7 +31,6 @@ h6 {
 
 .title {
   color: $dune;
-  display: inline-block;
   font-family: $aux-font;
   font-size: 20px;
   font-weight: 700;
@@ -42,21 +39,18 @@ h6 {
 
 .text-regular {
   color: $dusty-gray;
-  display: inline-block;
   font-size: 16px;
   line-height: 20px;
 }
 
 .text-suggest {
   color: $silver;
-  display: inline-block;
   font-size: 16px;
   line-height: 20px;
 }
 
 .text-small {
   font-size: 12px;
-  display: inline-block;
   line-height: 16px;
 }
 
@@ -67,42 +61,34 @@ h6 {
 
 .text-green {
   color: $jungle-green !important;
-  display: inline-block;
 }
 
 .text-blue {
   color: $java !important;
-  display: inline-block;
 }
 
 .text-red {
   color: $wuzzy-brown !important;
-  display: inline-block;
 }
 
 .text-yellow {
   color: $bus-yellow !important;
-  display: inline-block;
 }
 
 .text-light-green {
   color: $yellow-green !important;
-  display: inline-block;
 }
 
 .text-lavander {
   color: $lavander !important;
-  display: inline-block;
 }
 
 .text-purple {
   color: $royal-purple !important;
-  display: inline-block;
 }
 
 .text-white {
   color: $white !important;
-  display: inline-block;
 }
 
 button,
