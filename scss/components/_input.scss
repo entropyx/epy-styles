@@ -11,7 +11,7 @@
 
 
   .input-helper {
-    color: $dusty-gray;
+    color: var(--dusty-gray);
     display: inline-block;
     font-size: 14px;
     line-height: 18px;
@@ -45,13 +45,13 @@
     .input-text {
       background-color: transparent;
       border: none;
-      color: $dove-gray;
+      color: var(--dove-gray);
       font-size: 16px;
       outline: none;
       padding: 16px;
 
       &::placeholder {
-        color: $silver;
+        color: var(--silver);
       }
     }
 
@@ -69,7 +69,7 @@
       height: 14px;
       position: absolute;
       width: 14px;
-      color: $dusty-gray;
+      color: var(--dusty-gray);
     }
 
     &.content-left {
@@ -161,9 +161,9 @@
     input[type="time"]:not(.browser-default):focus:not([readonly]),
     input[type="url"]:not(.browser-default):focus:not([readonly]),
     textarea.input-text:focus:not([readonly]) {
-      border-bottom: 1px solid $jungle-green;
-      box-shadow: 0 1px 0 0 $jungle-green;
-      -webkit-box-shadow: 0 1px 0 0 $jungle-green;
+      border-bottom: 1px solid var(--jungle-green);
+      box-shadow: 0 1px 0 0 var(--jungle-green);
+      -webkit-box-shadow: 0 1px 0 0 var(--jungle-green);
     }
 
     input[type="date"]:invalid,
@@ -180,9 +180,9 @@
     input[type="url"]:invalid,
     textarea:required:focus,
     .invalid {
-      border-bottom: 1px solid $wuzzy-brown;
-      box-shadow: 0 1px 0 0 $wuzzy-brown;
-      -webkit-box-shadow: 0 1px 0 0 $wuzzy-brown;
+      border-bottom: 1px solid var(--wuzzy-brown);
+      box-shadow: 0 1px 0 0 var(--wuzzy-brown);
+      -webkit-box-shadow: 0 1px 0 0 var(--wuzzy-brown);
     }
 
     textarea {
@@ -200,26 +200,26 @@
     line-height: 15px;
 
     .number {
-      color: $dove-gray;
+      color: var(--dove-gray);
 
       position: absolute;
       right: 0;
     }
 
     .helper-text {
-      color: $wuzzy-brown;
+      color: var(--wuzzy-brown);
     }
   }
 
   &.input-line {
     .input-label {
-      color: $dove-gray;
+      color: var(--dove-gray);
       display: inline-block;
       font-size: 16px;
       line-height: 20px;
     }
     .input-container {
-      background-color: $albaster !important;
+      background-color: var(--albaster) !important;
       border-radius: 4px 4px 0 0;
 
       input:not([type]),
@@ -235,16 +235,16 @@
       input[type="time"]:not(.browser-default),
       input[type="url"]:not(.browser-default),
       textarea.input-text {
-        border-bottom: 1px solid $dusty-gray;
+        border-bottom: 1px solid var(--dusty-gray);
       }
 
       .input-text {
         &:disabled,
         &input[disabled],
         &.disabled {
-          background-color: $albaster;
+          background-color: var(--albaster);
           border-bottom: none !important;
-          color: $silver;
+          color: var(--silver);
           cursor: auto;
           pointer-events: none !important;
         }
@@ -254,21 +254,21 @@
 
   &.input-outline {
     .input-label {
-      color: $dusty-gray;
+      color: var(--dusty-gray);
       display: inline-block;
-      font-family: $aux-font;
+      font-family: var(--aux-font);
       font-size: 10px;
     }
     .input-container {
       .input-text {
-        border: 1px solid $silver;
+        border: 1px solid var(--silver);
         border-radius: 4px;
 
         &:disabled,
         &input[disabled],
         &.disabled {
-          background-color: $albaster;
-          color: $silver;
+          background-color: var(--albaster);
+          color: var(--silver);
           cursor: auto;
           pointer-events: none !important;
         }

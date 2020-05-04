@@ -13,10 +13,10 @@
   }
 
   .tooltip-content {
-    background-color: $dusty-gray;
+    background-color: var(--dusty-gray);
     border-radius: 4px;
-    box-shadow: $medium-shadow;
-    color: $white;
+    box-shadow: var(--medium-shadow);
+    color: var(--white);
     display: block;
     // margin: 0 !important;
     padding: 4px 16px;

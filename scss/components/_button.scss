@@ -10,7 +10,7 @@
 .epyc-btn {
   background-color: transparent;
   border-radius: 4px;
-  color: $dusty-gray;
+  color: var(--dusty-gray);
   cursor: pointer;
   font-size: 16px;
   line-height: 20px;
@@ -24,8 +24,8 @@
 
   &:hover,
   &:focus {
-    box-shadow: $x-large-shadow;
-    -webkit-box-shadow: $x-large-shadow;
+    box-shadow: var(--x-large-shadow);
+    -webkit-box-shadow: var(--x-large-shadow);
   }
 
   &:disabled,
@@ -52,40 +52,40 @@
   // TYPE
 
   &.btn-primary {
-    background-color: $jungle-green;
+    background-color: var(--jungle-green);
     border: none;
-    box-shadow: $medium-shadow;
-    -webkit-box-shadow: $medium-shadow;
-    color: $white;
+    box-shadow: var(--medium-shadow);
+    -webkit-box-shadow: var(--medium-shadow);
+    color: var(--white);
     &:focus,
     &:hover {
-      background-color: $mountain-meadow;
+      background-color: var(--mountain-meadow);
     }
 
     &:disabled,
     & button[disabled],
     &.disabled {
-      background-color: $silver;
+      background-color: var(--silver);
       border: 1px solid #cecece;
     }
 
     &.btn-outline {
       background-color: transparent;
-      border: 1px solid $jungle-green;
-      color: $jungle-green;
+      border: 1px solid var(--jungle-green);
+      color: var(--jungle-green);
 
       &:focus,
       &:hover {
         background-color: transparent;
-        border: 1px solid $mountain-meadow;
-        color: $mountain-meadow;
+        border: 1px solid var(--mountain-meadow);
+        color: var(--mountain-meadow);
       }
 
       &:disabled,
       & button[disabled],
       &.disabled {
         border: 1px solid #cecece !important;
-        color: $silver !important;
+        color: var(--silver) !important;
       }
     }
 
@@ -93,36 +93,36 @@
       border: none;
       background-color: transparent;
       box-shadow: none;
-      color: $jungle-green;
+      color: var(--jungle-green);
 
       &:focus,
       &:hover {
         background-color: transparent;
         border: none;
-        color: $mountain-meadow;
+        color: var(--mountain-meadow);
       }
     }
   }
 
   &.btn-outline {
-    color: $dusty-gray;
-    border: 1px solid $alto;
+    color: var(--dusty-gray);
+    border: 1px solid var(--alto);
     background-color: transparent;
-    box-shadow: $medium-shadow;
-    -webkit-box-shadow: $medium-shadow;
+    box-shadow: var(--medium-shadow);
+    -webkit-box-shadow: var(--medium-shadow);
 
     &:disabled,
     & button[disabled],
     &.disabled {
       border: 1px solid #cecece !important;
-      color: $silver !important;
+      color: var(--silver) !important;
     }
   }
 
   &.btn-destructive {
-    background-color: $wuzzy-brown;
+    background-color: var(--wuzzy-brown);
     border: none;
-    color: $white;
+    color: var(--white);
 
     &:focus,
     &:hover {
@@ -132,14 +132,14 @@
     &:disabled,
     & button[disabled],
     &.disabled {
-      background-color: $silver;
+      background-color: var(--silver);
       border: 1px solid #cecece;
     }
 
     &.btn-outline {
       background-color: transparent;
-      border: 1px solid $wuzzy-brown;
-      color: $wuzzy-brown;
+      border: 1px solid var(--wuzzy-brown);
+      color: var(--wuzzy-brown);
 
       &:focus,
       &:hover {
@@ -153,7 +153,7 @@
       border: none;
       background-color: transparent;
       box-shadow: none;
-      color: $wuzzy-brown;
+      color: var(--wuzzy-brown);
 
       &:focus,
       &:hover {
@@ -165,24 +165,24 @@
   }
 
   &.btn-info {
-    background-color: $java !important;
+    background-color: var(--java) !important;
     border: none !important;
-    box-shadow: $small-shadow;
-    color: $white;
+    box-shadow: var(--small-shadow);
+    color: var(--white);
     padding: 8px;
-    -webkit-box-shadow: $small-shadow;
+    -webkit-box-shadow: var(--small-shadow);
   }
 
   &.btn-default {
     @include btn-disabled-basic-style;
-    background-color: $white;
-    box-shadow: $medium-shadow;
+    background-color: var(--white);
+    box-shadow: var(--medium-shadow);
     border: none;
-    color: $dusty-gray;
-    -webkit-box-shadow: $medium-shadow;
+    color: var(--dusty-gray);
+    -webkit-box-shadow: var(--medium-shadow);
 
     &:focus {
-      background-color: $white;
+      background-color: var(--white);
     }
   }
 
@@ -190,16 +190,16 @@
     @include btn-border-none;
     @include btn-disabled-basic-style;
     background-color: transparent;
-    color: $jungle-green;
+    color: var(--jungle-green);
 
     &:hover {
-      color: $java;
+      color: var(--java);
       font-weight: 600;
     }
 
     &:focus {
       background-color: transparent;
-      color: $niagara;
+      color: var(--niagara);
       font-weight: 600;
     }
   }
@@ -216,18 +216,18 @@
     height: 32px !important;
     padding-top: 4px !important;
     padding-bottom: 4px !important;
-    box-shadow: $small-shadow !important;
+    box-shadow: var(--small-shadow) !important;
   }
 
   &.btn-large {
     font-size: 18px !important;
     height: 48px !important;
-    box-shadow: $large-shadow !important;
+    box-shadow: var(--large-shadow) !important;
   }
 
   &.btn-tight {
     min-width: 88px;
-    box-shadow: $small-shadow !important;
+    box-shadow: var(--small-shadow) !important;
   }
 
   // CONTENT
@@ -241,7 +241,7 @@
   // FIGURE
   &.btn-square {
     @include btn-figure;
-    box-shadow: $x-large-shadow !important;
+    box-shadow: var(--x-large-shadow) !important;
     height: 144px;
     padding-bottom: 24px;
     padding-top: 24px;
@@ -263,17 +263,17 @@
 
   &.btn-square-small {
     @include btn-figure;
-    box-shadow: $small-shadow;
+    box-shadow: var(--small-shadow);
     height: 32px !important;
     min-width: 32px;
     padding: 8px;
     width: 32px !important;
-    -webkit-box-shadow: $small-shadow;
+    -webkit-box-shadow: var(--small-shadow);
   }
 
   &.btn-rectangle {
     @include btn-figure;
-    box-shadow: $x-large-shadow !important;
+    box-shadow: var(--x-large-shadow) !important;
     height: 144px;
     padding-bottom: 24px;
     padding-top: 24px;
