@@ -36,7 +36,7 @@
     }
 
     .priority-label {
-      color: $java;
+      color: var(--java);
       font-size: 12px;
       font-weight: 600;
       line-height: 15px;
@@ -55,7 +55,7 @@
       }
 
       span {
-        color: $dusty-gray;
+        color: var(--dusty-gray);
         font-size: 12px;
         font-weight: 600;
         line-height: 15px;
@@ -78,7 +78,7 @@
       align-items: center;
       left: 0px;
       bottom: 0px;
-      border-top: 1px solid $albaster;
+      border-top: 1px solid var(--albaster);
 
       .stat {
         align-items: center;
@@ -95,8 +95,8 @@
         .metric-percent {
           align-items: center;
           display: flex;
-          color: $dusty-gray;
-          font-family: $aux-font;
+          color: var(--dusty-gray);
+          font-family: var(--aux-font);
           font-size: 15px;
         }
       }
@@ -105,14 +105,14 @@
 
   .field {
     &.subtitle {
-      color: $dusty-gray;
-      font-family: $aux-font;
+      color: var(--dusty-gray);
+      font-family: var(--aux-font);
       font-size: 12px;
       font-weight: bold;
     }
 
     &.green {
-      color: $jungle-green;
+      color: var(--jungle-green);
     }
 
     &.yellow {

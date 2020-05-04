@@ -1,7 +1,6 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
-@import "../abstracts/variables";
 /**
  * Set up a decent box model on the root element
  */
@@ -9,12 +8,69 @@ html {
   box-sizing: border-box;
 }
 
+:root {
+  // Primary colors
+  --jungle-green: #26c580;
+  --mountain-meadow: #20ab6f;
+  --algae-green: #92ddb5;
+
+  --java: #22b5b5;
+  --niagara: #089aa6;
+  --aqua-island: #abdedf;
+
+  // Secondary colors
+  --yellow-green: #b8e986;
+  --conifer: #97dd50;
+  --tusk: #e1f6cc;
+
+  --lavander: #bb6ad4;
+  --purple-heart: #9c2dbd;
+  --french-lilac: #e2bfec;
+
+  --royal-purple: #8336b0;
+  --daisy-bush: #5e2c9e;
+  --amethyst: #a253c3;
+
+
+  // Gray variation
+  --dune: #2e2a25;
+  --dove-gray: #717171;
+  --dusty-gray: #9b9b9b;
+  --silver: #c7c7c7;
+  --alto: #d4d4d4;
+  --seashell: #f1f1f1;
+  --albaster: #f7f7f7;
+
+  --white: #ffffff;
+
+  // Others
+  --sherpa-blue: #003e52;
+  --matisse: #1c7593;
+  --wuzzy-brown: #c55757;
+  --bus-yellow: #ffde03;
+
+  // Gradients
+  --green-gradient: linear-gradient(90deg, var(--java) 0%, var(--jungle-green) 100%);
+  --blue-gradient: linear-gradient(90deg, #29bbc6 0%, var(--matisse) 100%);
+  --loader-gradient: linear-gradient(to right, var(--albaster) 8%, var(--seashell) 18%, var(--albaster) 23%);
+  
+  // Shadows
+  --small-shadow: 0 1px 1px 0 rgba(212, 212, 212, 0.5);
+  --medium-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
+  --large-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.51);
+  --x-large-shadow: 0 2px 4px 0 rgba(212, 212, 212, 0.5);
+
+  // Fonts
+  --main-font: "Source Sans Pro";
+  --aux-font: "Open Sans";
+}
+
 /**
  * Basic styles
  */
 
 body {
-  color: $dove-gray;
+  color: var(--dove-gray);
   margin: 0;
   padding: 0;
 
@@ -37,6 +93,7 @@ body {
 * {
   outline: none;
 }
+
 i,
 .icon,
 span {
@@ -88,35 +145,35 @@ epy-button {
 }
 
 .content-green {
-  background-color: $jungle-green !important;
+  background-color: var(--jungle-green) !important;
 }
 
 .content-blue {
-  background-color: $java !important;
+  background-color: var(--java) !important;
 }
 
 .content-red {
-  background-color: $wuzzy-brown !important;
+  background-color: var(--wuzzy-brown) !important;
 }
 
 .content-yellow {
-  background-color: $bus-yellow !important;
+  background-color: var(--bus-yellow) !important;
 }
 
 .content-light-green {
-  background-color: $yellow-green !important;
+  background-color: var(--yellow-green) !important;
 }
 
 .content-lavander {
-  background-color: $lavander !important;
+  background-color: var(--lavander) !important;
 }
 
 .content-purple {
-  background-color: $royal-purple !important;
+  background-color: var(--royal-purple) !important;
 }
 
 .content-white {
-  background-color: $white !important;
+  background-color: var(--white) !important;
 }
 
 .content-transparent {

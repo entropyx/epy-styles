@@ -11,7 +11,7 @@
   align-items: center;
 
   label {
-    color: $jungle-green;
+    color: var(--jungle-green);
     cursor: pointer;
     display: inline-block;
     margin-right: 8px;
@@ -29,7 +29,7 @@
       vertical-align: -6px;
       width: 15px;
       &:before {
-        background: $jungle-green;
+        background: var(--jungle-green);
         content: "";
         height: 2px;
         position: absolute;
@@ -42,7 +42,7 @@
       }
 
       &:after {
-        background: $jungle-green;
+        background: var(--jungle-green);
         content: "";
         height: 2px;
         left: 5px;
@@ -55,7 +55,7 @@
       }
 
       &.disabled {
-        background: $silver;
+        background: var(--silver);
         cursor: text !important;
         pointer-events: none !important;
       }
@@ -81,12 +81,12 @@
 
     + label {
       span {
-        border: 1px solid $silver;
+        border: 1px solid var(--silver);
       }
     }
 
     &:before {
-      background: $jungle-green;
+      background: var(--jungle-green);
       content: "";
       height: 2px;
       left: 4px;
@@ -99,7 +99,7 @@
     }
 
     &:after {
-      background: $jungle-green;
+      background: var(--jungle-green);
       content: "";
       height: 2px;
       left: 5px;
@@ -114,16 +114,16 @@
     &:checked {
       + label {
         span {
-          background-color: $jungle-green;
-          border: 1px solid $jungle-green;
+          background-color: var(--jungle-green);
+          border: 1px solid var(--jungle-green);
           &:after {
-            background: $white;
+            background: var(--white);
             transition: width 50ms ease 75ms;
             width: 10px;
           }
 
           &:before {
-            background: $white;
+            background: var(--white);
             transition: width 50ms ease 75ms;
             width: 5px;
           }
@@ -139,8 +139,8 @@
       + label {
         cursor: default !important;
         span {
-          background-color: $seashell;
-          border: 1px solid $silver;
+          background-color: var(--seashell);
+          border: 1px solid var(--silver);
         }
       }
     }
@@ -154,23 +154,18 @@
         + label {
           cursor: default !important;
           span {
-            background-color: $seashell;
-            border: 1px solid $silver;
+            background-color: var(--seashell);
+            border: 1px solid var(--silver);
 
             &:after {
-              background-color: $alto;
+              background-color: var(--alto);
             }
             &:before {
-              background-color: $alto;
+              background-color: var(--alto);
             }
           }
         }
       }
     }
   }
-
-  // .content-text-style {
-  //   font-size: 16px;
-  //   margin-top: 3px;
-  // }
 }

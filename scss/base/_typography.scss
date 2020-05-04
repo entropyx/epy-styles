@@ -2,10 +2,9 @@
  * Basic typography style for copy text
  */
 
-@import "../abstracts/variables";
 
 body {
-  font-family: $main-font;
+  font-family: var(--main-font);
   font-size: 16px;
 }
 
@@ -15,36 +14,36 @@ h3,
 h4,
 h5,
 h6 {
-  color: $dove-gray;
-  font-family: $aux-font;
+  color: var(--dove-gray);
+  font-family: var(--aux-font);
   font-weight: 600;
   line-height: 24px;
 }
 
 .page-title {
-  color: $dove-gray;
-  font-family: $aux-font;
+  color: var(--dove-gray);
+  font-family: var(--aux-font);
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
 }
 
 .title {
-  color: $dune;
-  font-family: $aux-font;
+  color: var(--dune);
+  font-family: var(--aux-font);
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
 }
 
 .text-regular {
-  color: $dusty-gray;
+  color: var(--dusty-gray);
   font-size: 16px;
   line-height: 20px;
 }
 
 .text-suggest {
-  color: $silver;
+  color: var(--silver);
   font-size: 16px;
   line-height: 20px;
 }
@@ -56,39 +55,39 @@ h6 {
 
 .text-danger {
   @extend .text-small;
-  color: $wuzzy-brown !important;
+  color: var(--wuzzy-brown) !important;
 }
 
 .text-green {
-  color: $jungle-green !important;
+  color: var(--jungle-green) !important;
 }
 
 .text-blue {
-  color: $java !important;
+  color: var(--java) !important;
 }
 
 .text-red {
-  color: $wuzzy-brown !important;
+  color: var(--wuzzy-brown) !important;
 }
 
 .text-yellow {
-  color: $bus-yellow !important;
+  color: var(--bus-yellow) !important;
 }
 
 .text-light-green {
-  color: $yellow-green !important;
+  color: var(--yellow-green) !important;
 }
 
 .text-lavander {
-  color: $lavander !important;
+  color: var(--lavander) !important;
 }
 
 .text-purple {
-  color: $royal-purple !important;
+  color: var(--royal-purple) !important;
 }
 
 .text-white {
-  color: $white !important;
+  color: var(--white) !important;
 }
 
 button,
@@ -96,7 +95,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: $main-font;
+  font-family: var(--main-font);
 }
 
 .upper {
@@ -123,8 +122,8 @@ textarea {
   line-height: 19px;
 
   &.upper {
-    color: $dusty-gray;
+    color: var(--dusty-gray);
     font-size: 10px;
-    font-family: $aux-font;
+    font-family: var(--aux-font);
   }
 }
