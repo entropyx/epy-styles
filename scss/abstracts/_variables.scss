@@ -11,12 +11,12 @@ $main-font: "Source Sans Pro";
 $aux-font: "Open Sans";
 
 // Primary colors
-$jungle-green: #26c580;
-$mountain-meadow: #20ab6f;
+$klein-blue: #002CB2; $jungle-green: $klein-blue; // previously #26c580;
+$blue-ribbon: #0040FF; $mountain-meadow: $blue-ribbon; // previously #20ab6f;
 $algae-green: #92ddb5;
 
-$java: #22b5b5;
-$niagara: #089aa6;
+$governor-bay: #4C32A6; $java: $governor-bay; // previously #22b5b5
+$meteorite: #3B2680; $niagara: $meteorite; // previously #089aa6;
 $aqua-island: #abdedf;
 
 // Secondary colors
@@ -32,14 +32,19 @@ $royal-purple: #8336b0;
 $daisy-bush: #5e2c9e;
 $amethyst: #a253c3;
 
+$epy-green: #02BF97;
+$epy-green-light: #02F2BF;
+$epy-green-medium: #02D9AB;
+$epy-green-dark: #02A683;
+$epy-green-deep: #018C6F;
 // Gray variation
 $dune: #2e2a25;
-$dove-gray: #717171;
+$stratos: #001247; $dove-gray: $stratos; // previously #717171
 $dusty-gray: #9b9b9b;
 $silver: #c7c7c7;
 $alto: #d4d4d4;
 $seashell: #f1f1f1;
-$albaster: #f7f7f7;
+$albaster: rgba(230,236,255,0.6); // previously #f7f7f7
 
 $white: #ffffff;
 
