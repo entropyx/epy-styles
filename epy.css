@@ -153,11 +153,14 @@ h6 {
 .text-danger {
   color: #c55757 !important; }
 
+.text-primary {
+  color: #002CB2; }
+
 .text-green {
   color: #02BF97 !important; }
 
 .text-blue {
-  color: #4C32A6 !important; }
+  color: #0040FF !important; }
 
 .text-red {
   color: #c55757 !important; }
