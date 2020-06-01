@@ -9,6 +9,68 @@ html {
   box-sizing: border-box;
 }
 
+:root {
+  // Primary colors
+  --klein-blue: #002CB2;
+  --blue-ribbon: #0040FF;
+  --algae-green: #92ddb5;
+
+  --governor-bay: #4C32A6;
+  --meteorite: #3B2680;
+  --aqua-island: #abdedf;
+
+  // Secondary colors
+  --yellow-green: #b8e986;
+  --conifer: #97dd50;
+  --tusk: #e1f6cc;
+
+  --lavander: #bb6ad4;
+  --purple-heart: #9c2dbd;
+  --french-lilac: #e2bfec;
+
+  --royal-purple: #8336b0;
+  --daisy-bush: #5e2c9e;
+  --amethyst: #a253c3;
+
+  --epy-green: #02BF97;
+  --epy-green-light: #02F2BF;
+  --epy-green-medium: #02D9AB;
+  --epy-green-dark: #02A683;
+  --epy-green-deep: #018C6F;
+
+  // Gray variation
+  --dune: #2e2a25;
+  --stratos: #001247;
+  --dusty-gray: #9b9b9b;
+  --silver: #c7c7c7;
+  --alto: #d4d4d4;
+  --seashell: #f1f1f1;
+  --albaster:rgba(230,236,255,0.6);;
+
+  --white: #ffffff;
+
+  // Others
+  --sherpa-blue: #003e52;
+  --matisse: #1c7593;
+  --wuzzy-brown: #c55757;
+  --bus-yellow: #ffde03;
+
+  // Gradients
+  --green-gradient: linear-gradient(90deg, var(--java) 0%, var(--jungle-green) 100%);
+  --blue-gradient: linear-gradient(90deg, #29bbc6 0%, var(--matisse) 100%);
+  --loader-gradient: linear-gradient(to right, var(--albaster) 8%, var(--seashell) 18%, var(--albaster) 23%);
+  
+  // Shadows
+  --small-shadow: 0 1px 1px 0 rgba(212, 212, 212, 0.5);
+  --medium-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.5);
+  --large-shadow: 0 2px 2px 0 rgba(212, 212, 212, 0.51);
+  --x-large-shadow: 0 2px 4px 0 rgba(212, 212, 212, 0.5);
+
+  // Fonts
+  --main-font: "Source Sans Pro";
+  --aux-font: "Open Sans";
+}
+
 /**
  * Basic styles
  */
